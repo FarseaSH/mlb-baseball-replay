@@ -17,7 +17,7 @@ on:
         type: boolean
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -73,21 +73,26 @@ jobs:
 
       - name: Restore incremental state from state branch
         working-directory: code
+        env:
+          STATE_REPO_TOKEN: ${{ secrets.PRIVATE_STATE_TOKEN != '' && secrets.PRIVATE_STATE_TOKEN || github.token }}
         run: |
           set -euo pipefail
           STATE_REF="${{ steps.state_ref.outputs.value }}"
+          STATE_REPO_URL="https://x-access-token:${STATE_REPO_TOKEN}@github.com/${{ github.repository }}.git"
 
-          if git ls-remote --exit-code --heads origin "refs/heads/${STATE_REF}" >/dev/null 2>&1; then
-            git fetch --depth=1 origin "${STATE_REF}"
-            if git cat-file -e "FETCH_HEAD:public" 2>/dev/null; then
-              git checkout FETCH_HEAD -- public
+          if git ls-remote --exit-code --heads "${STATE_REPO_URL}" "refs/heads/${STATE_REF}" >/dev/null 2>&1; then
+            rm -rf ../state-restore
+            git clone --depth=1 --branch "${STATE_REF}" "${STATE_REPO_URL}" ../state-restore
+            if [ -d ../state-restore/public ]; then
+              mkdir -p public
+              rsync -a --delete ../state-restore/public/ public/
             else
               mkdir -p public
             fi
-            echo "restored public from origin/${STATE_REF}"
+            echo "restored public from ${STATE_REF} in ${{ github.repository }}"
           else
             mkdir -p public
-            echo "state branch origin/${STATE_REF} not found, start from empty public"
+            echo "state branch ${STATE_REF} not found in ${{ github.repository }}, start from empty public"
           fi
 
       - name: Build static site
@@ -102,19 +107,19 @@ jobs:
       - name: Persist incremental state to state branch
         working-directory: code
         env:
-          STATE_PUSH_TOKEN: ${{ secrets.PRIVATE_STATE_TOKEN != '' && secrets.PRIVATE_STATE_TOKEN || secrets.PRIVATE_REPO_TOKEN }}
+          STATE_REPO_TOKEN: ${{ secrets.PRIVATE_STATE_TOKEN != '' && secrets.PRIVATE_STATE_TOKEN || github.token }}
         run: |
           set -euo pipefail
           STATE_REF="${{ steps.state_ref.outputs.value }}"
           STATE_DIR="../state-branch-workdir"
+          STATE_REPO_URL="https://x-access-token:${STATE_REPO_TOKEN}@github.com/${{ github.repository }}.git"
 
           rm -rf "${STATE_DIR}"
 
-          if git ls-remote --exit-code --heads origin "refs/heads/${STATE_REF}" >/dev/null 2>&1; then
-            git fetch --depth=1 origin "${STATE_REF}"
-            git worktree add "${STATE_DIR}" "origin/${STATE_REF}"
+          if git ls-remote --exit-code --heads "${STATE_REPO_URL}" "refs/heads/${STATE_REF}" >/dev/null 2>&1; then
+            git clone --depth=1 --branch "${STATE_REF}" "${STATE_REPO_URL}" "${STATE_DIR}"
           else
-            git worktree add --detach "${STATE_DIR}"
+            git clone --depth=1 "${STATE_REPO_URL}" "${STATE_DIR}"
             (
               cd "${STATE_DIR}"
               git checkout --orphan "${STATE_REF}"
@@ -133,12 +138,12 @@ jobs:
               echo "no state changes to commit"
             else
               git commit -m "Update incremental public state"
-              git remote set-url origin "https://x-access-token:${STATE_PUSH_TOKEN}@github.com/${{ secrets.PRIVATE_CODE_REPO }}.git"
+              git remote set-url origin "${STATE_REPO_URL}"
               git push origin "HEAD:${STATE_REF}"
             fi
           )
 
-          git worktree remove "${STATE_DIR}" --force
+          rm -rf "${STATE_DIR}" ../state-restore
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
