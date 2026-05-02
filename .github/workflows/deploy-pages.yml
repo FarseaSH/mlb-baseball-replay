@@ -1,0 +1,164 @@
+name: Build and Deploy MLB Pages
+
+on:
+  schedule:
+    # GitHub Actions cron 使用 UTC。
+    # 覆盖北京时间 02:30 到 13:30（对应 UTC 18:30 到次日 05:30），每 10 分钟执行一次。
+    - cron: "30,40,50 18 * * *"
+    - cron: "*/10 19-23 * * *"
+    - cron: "*/10 0-4 * * *"
+    - cron: "0,10,20,30 5 * * *"
+  workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: "是否强制全量刷新最近两周（等价 --force-refresh）"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Los_Angeles
+
+    steps:
+      - name: Validate required config
+        run: |
+          if [ -z "${{ secrets.PRIVATE_CODE_REPO }}" ]; then
+            echo "::error::Missing secret PRIVATE_CODE_REPO (example: your-org/mlb-baseball-replay-code)"
+            exit 1
+          fi
+
+          if [ -z "${{ secrets.PRIVATE_REPO_TOKEN }}" ]; then
+            echo "::error::Missing secret PRIVATE_REPO_TOKEN"
+            exit 1
+          fi
+
+      - name: Resolve state branch
+        id: state_ref
+        run: |
+          if [ -n "${{ secrets.PRIVATE_STATE_REF }}" ]; then
+            echo "value=${{ secrets.PRIVATE_STATE_REF }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=site-state" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout private generator repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ secrets.PRIVATE_CODE_REPO }}
+          ref: ${{ secrets.PRIVATE_CODE_REF != '' && secrets.PRIVATE_CODE_REF || 'main' }}
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          path: code
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        working-directory: code
+        run: python -m pip install -r requirements.txt
+
+      - name: Restore incremental state from state branch
+        working-directory: code
+        run: |
+          set -euo pipefail
+          STATE_REF="${{ steps.state_ref.outputs.value }}"
+
+          if git ls-remote --exit-code --heads origin "refs/heads/${STATE_REF}" >/dev/null 2>&1; then
+            git fetch --depth=1 origin "${STATE_REF}"
+            if git cat-file -e "FETCH_HEAD:public" 2>/dev/null; then
+              git checkout FETCH_HEAD -- public
+            else
+              mkdir -p public
+            fi
+            echo "restored public from origin/${STATE_REF}"
+          else
+            mkdir -p public
+            echo "state branch origin/${STATE_REF} not found, start from empty public"
+          fi
+
+      - name: Build static site
+        working-directory: code
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.force_refresh }}" = "true" ]; then
+            python scripts/sync_site.py --force-refresh
+          else
+            python scripts/sync_site.py
+          fi
+
+      - name: Persist incremental state to state branch
+        working-directory: code
+        env:
+          STATE_PUSH_TOKEN: ${{ secrets.PRIVATE_STATE_TOKEN != '' && secrets.PRIVATE_STATE_TOKEN || secrets.PRIVATE_REPO_TOKEN }}
+        run: |
+          set -euo pipefail
+          STATE_REF="${{ steps.state_ref.outputs.value }}"
+          STATE_DIR="../state-branch-workdir"
+
+          rm -rf "${STATE_DIR}"
+
+          if git ls-remote --exit-code --heads origin "refs/heads/${STATE_REF}" >/dev/null 2>&1; then
+            git fetch --depth=1 origin "${STATE_REF}"
+            git worktree add "${STATE_DIR}" "origin/${STATE_REF}"
+          else
+            git worktree add --detach "${STATE_DIR}"
+            (
+              cd "${STATE_DIR}"
+              git checkout --orphan "${STATE_REF}"
+              git rm -rf . >/dev/null 2>&1 || true
+            )
+          fi
+
+          rsync -a --delete public/ "${STATE_DIR}/public/"
+
+          (
+            cd "${STATE_DIR}"
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public
+            if git diff --cached --quiet; then
+              echo "no state changes to commit"
+            else
+              git commit -m "Update incremental public state"
+              git remote set-url origin "https://x-access-token:${STATE_PUSH_TOKEN}@github.com/${{ secrets.PRIVATE_CODE_REPO }}.git"
+              git push origin "HEAD:${STATE_REF}"
+            fi
+          )
+
+          git worktree remove "${STATE_DIR}" --force
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare Pages output
+        run: |
+          mkdir -p code/public
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: code/public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
