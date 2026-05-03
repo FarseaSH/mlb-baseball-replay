@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 822988,
+    "official_date": "2026-05-02",
+    "game_datetime": "2026-05-02T22:10:00Z",
+    "away_label": "SF",
+    "home_label": "TB",
+    "away_name": "San Francisco Giants",
+    "home_name": "Tampa Bay Rays",
+    "away_score": 1,
+    "home_score": 5,
+    "venue_name": "Tropicana Field",
+    "away_starting_pitcher": "Roupp, L",
+    "home_starting_pitcher": "Jax, G",
+    "html_path": "games/2026-05-02-sf-at-tb-822988.html",
+    "title": "SF @ TB",
+    "final_score": "SF 1 - 5 TB"
+  },
+  {
     "game_pk": 824771,
     "official_date": "2026-05-02",
     "game_datetime": "2026-05-02T20:10:00Z",
