@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824680,
+    "official_date": "2026-05-18",
+    "game_datetime": "2026-05-18T23:40:00Z",
+    "away_label": "MIL",
+    "home_label": "CHC",
+    "away_name": "Milwaukee Brewers",
+    "home_name": "Chicago Cubs",
+    "away_score": 9,
+    "home_score": 3,
+    "venue_name": "Wrigley Field",
+    "away_starting_pitcher": "Sproat, B",
+    "home_starting_pitcher": "Imanaga, S",
+    "html_path": "games/2026-05-18-mil-at-chc-824680.html",
+    "title": "MIL @ CHC",
+    "final_score": "MIL 9 - 3 CHC"
+  },
+  {
     "game_pk": 824114,
     "official_date": "2026-05-18",
     "game_datetime": "2026-05-18T23:10:00Z",
@@ -15,6 +32,40 @@
     "html_path": "games/2026-05-18-bos-at-kc-824114.html",
     "title": "BOS @ KC",
     "final_score": "BOS 3 - 1 KC"
+  },
+  {
+    "game_pk": 823549,
+    "official_date": "2026-05-18",
+    "game_datetime": "2026-05-18T23:05:00Z",
+    "away_label": "TOR",
+    "home_label": "NYY",
+    "away_name": "Toronto Blue Jays",
+    "home_name": "New York Yankees",
+    "away_score": 6,
+    "home_score": 7,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Corbin, P",
+    "home_starting_pitcher": "Weathers, R",
+    "html_path": "games/2026-05-18-tor-at-nyy-823549.html",
+    "title": "TOR @ NYY",
+    "final_score": "TOR 6 - 7 NYY"
+  },
+  {
+    "game_pk": 824277,
+    "official_date": "2026-05-18",
+    "game_datetime": "2026-05-18T22:40:00Z",
+    "away_label": "CLE",
+    "home_label": "DET",
+    "away_name": "Cleveland Guardians",
+    "home_name": "Detroit Tigers",
+    "away_score": 8,
+    "home_score": 2,
+    "venue_name": "Comerica Park",
+    "away_starting_pitcher": "Cecconi, S",
+    "home_starting_pitcher": "Valdez, F",
+    "html_path": "games/2026-05-18-cle-at-det-824277.html",
+    "title": "CLE @ DET",
+    "final_score": "CLE 8 - 2 DET"
   },
   {
     "game_pk": 823867,
