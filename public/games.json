@@ -1,5 +1,39 @@
 [
   {
+    "game_pk": 824032,
+    "official_date": "2026-05-20",
+    "game_datetime": "2026-05-21T01:38:00Z",
+    "away_label": "ATH",
+    "home_label": "LAA",
+    "away_name": "Athletics",
+    "home_name": "Los Angeles Angels",
+    "away_score": 6,
+    "home_score": 5,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Civale, A",
+    "home_starting_pitcher": "Kochanowicz, J",
+    "html_path": "games/2026-05-20-ath-at-laa-824032.html",
+    "title": "ATH @ LAA",
+    "final_score": "ATH 6 - 5 LAA"
+  },
+  {
+    "game_pk": 823299,
+    "official_date": "2026-05-20",
+    "game_datetime": "2026-05-21T00:40:00Z",
+    "away_label": "LAD",
+    "home_label": "SD",
+    "away_name": "Los Angeles Dodgers",
+    "home_name": "San Diego Padres",
+    "away_score": 4,
+    "home_score": 0,
+    "venue_name": "Petco Park",
+    "away_starting_pitcher": "Ohtani, S",
+    "home_starting_pitcher": "Vásquez, R",
+    "html_path": "games/2026-05-20-lad-at-sd-823299.html",
+    "title": "LAD @ SD",
+    "final_score": "LAD 4 - 0 SD"
+  },
+  {
     "game_pk": 823057,
     "official_date": "2026-05-20",
     "game_datetime": "2026-05-20T23:45:00Z",
@@ -49,6 +83,23 @@
     "html_path": "games/2026-05-20-bos-at-kc-824111.html",
     "title": "BOS @ KC",
     "final_score": "BOS 4 - 3 KC"
+  },
+  {
+    "game_pk": 823547,
+    "official_date": "2026-05-20",
+    "game_datetime": "2026-05-20T23:05:00Z",
+    "away_label": "TOR",
+    "home_label": "NYY",
+    "away_name": "Toronto Blue Jays",
+    "home_name": "New York Yankees",
+    "away_score": 2,
+    "home_score": 1,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Yesavage, T",
+    "home_starting_pitcher": "Schlittler, C",
+    "html_path": "games/2026-05-20-tor-at-nyy-823547.html",
+    "title": "TOR @ NYY",
+    "final_score": "TOR 2 - 1 NYY"
   },
   {
     "game_pk": 822735,
