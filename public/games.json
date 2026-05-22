@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824679,
+    "official_date": "2026-05-22",
+    "game_datetime": "2026-05-22T18:20:00Z",
+    "away_label": "HOU",
+    "home_label": "CHC",
+    "away_name": "Houston Astros",
+    "home_name": "Chicago Cubs",
+    "away_score": 4,
+    "home_score": 2,
+    "venue_name": "Wrigley Field",
+    "away_starting_pitcher": "Arrighetti, S",
+    "home_starting_pitcher": "Taillon, J",
+    "html_path": "games/2026-05-22-hou-at-chc-824679.html",
+    "title": "HOU @ CHC",
+    "final_score": "HOU 4 - 2 CHC"
+  },
+  {
     "game_pk": 825083,
     "official_date": "2026-05-21",
     "game_datetime": "2026-05-22T01:40:00Z",
