@@ -9354,37 +9354,73 @@
                 });
             };
 
+            const isGateHiddenTrigger = (trigger) => {
+                const timelineItem = trigger.closest(".timeline-item");
+                return timelineItem ? timelineItem.classList.contains(HIDDEN_CLASS) : true;
+            };
+
+            const revealTrigger = (trigger) => {
+                if (!trigger || trigger.dataset.revealed === "1") {
+                    return false;
+                }
+
+                const gateId = Number.parseInt(trigger.dataset.revealGate || "", 10);
+                if (Number.isNaN(gateId)) {
+                    return false;
+                }
+
+                const timelineItem = trigger.closest(".timeline-item");
+                if (timelineItem) {
+                    const detailBlock = timelineItem.querySelector("[data-ab-detail]");
+                    if (detailBlock) {
+                        detailBlock.classList.remove(AB_HIDDEN_CLASS);
+                    }
+                }
+
+                const actualEvent = trigger.dataset.eventText || "";
+                const actualBadgeVariant = trigger.dataset.actualBadgeVariant || "default";
+                trigger.textContent = actualEvent;
+                trigger.dataset.revealed = "1";
+                trigger.disabled = true;
+                trigger.classList.remove("cursor-pointer");
+                trigger.classList.add("cursor-default", "pointer-events-none");
+                trigger.classList.remove("vs-reveal-pulse");
+                setBadgeVariant(trigger, actualBadgeVariant);
+                revealGate(gateId);
+                return true;
+            };
+
+            const findNextVisibleTrigger = () => {
+                const triggers = Array.from(document.querySelectorAll(".reveal-trigger[data-reveal-gate]"));
+                return triggers.find((trigger) => trigger.dataset.revealed !== "1" && !isGateHiddenTrigger(trigger));
+            };
+
             document.querySelectorAll(".reveal-trigger[data-reveal-gate]").forEach((trigger) => {
                 trigger.addEventListener("click", () => {
-                    if (trigger.dataset.revealed === "1") {
-                        return;
-                    }
-
-                    const gateId = Number.parseInt(trigger.dataset.revealGate || "", 10);
-                    if (Number.isNaN(gateId)) {
-                        return;
-                    }
-
-                    const timelineItem = trigger.closest(".timeline-item");
-                    if (timelineItem) {
-                        const detailBlock = timelineItem.querySelector("[data-ab-detail]");
-                        if (detailBlock) {
-                            detailBlock.classList.remove(AB_HIDDEN_CLASS);
-                        }
-                    }
-
-                    const actualEvent = trigger.dataset.eventText || "";
-                    const actualBadgeVariant = trigger.dataset.actualBadgeVariant || "default";
-                    trigger.textContent = actualEvent;
-                    trigger.dataset.revealed = "1";
-                    trigger.disabled = true;
-                    trigger.classList.remove("cursor-pointer");
-                    trigger.classList.add("cursor-default", "pointer-events-none");
-                    trigger.classList.remove("vs-reveal-pulse");
-                    setBadgeVariant(trigger, actualBadgeVariant);
-
-                    revealGate(gateId);
+                    revealTrigger(trigger);
                 });
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key !== "Enter" || event.altKey || event.ctrlKey || event.metaKey) {
+                    return;
+                }
+
+                const target = event.target;
+                if (
+                    target instanceof HTMLElement
+                    && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)
+                ) {
+                    return;
+                }
+
+                const nextTrigger = findNextVisibleTrigger();
+                if (!nextTrigger) {
+                    return;
+                }
+
+                event.preventDefault();
+                revealTrigger(nextTrigger);
             });
         })();
     </script>

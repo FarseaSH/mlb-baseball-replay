@@ -1905,7 +1905,7 @@
                                 
                                 
                                 <span class="badge-red inline-flex rounded-full border-[1.5px] bg-white px-3 py-0.5 text-[13px] font-bold shadow-sm">
-                                    Groundout
+                                    Forceout
                                 </span>
                                 
                             </div>
@@ -1919,9 +1919,11 @@
 
                         <div class="mt-1 text-[17px] leading-snug text-gray-900" data-ab-detail>
                             
-                            <p>
-                                <span class="player-name-ref">Harrison Bader</span> grounds out, third baseman Zack Gelof to first baseman Nick Kurtz.
-                            </p>
+                            
+                            <p><span class="player-name-ref">Harrison Bader</span> grounds into a force out, third baseman Zack Gelof to second baseman Jeff McNeil.</p>
+                            
+                            <p><span class="player-name-ref">Drew Gilbert</span> out at 2nd.</p>
+                            
                             
                             <p class="mt-3 text-[17px] text-gray-900"><span class="font-bold">3 outs</span></p>
                             
@@ -3893,7 +3895,7 @@
                                 </div>
                                 <div class="min-w-0 text-[15px] font-medium leading-tight text-gray-800">
                                     <div>0 - 1</div>
-                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">Groundout</div>
+                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">FC</div>
                                 </div>
                             </div>
 
@@ -5767,7 +5769,7 @@
                                 </div>
                                 <div class="min-w-0 text-[15px] font-medium leading-tight text-gray-800">
                                     <div>0 - 2</div>
-                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">K, Groundout</div>
+                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">K, FC</div>
                                 </div>
                             </div>
 
@@ -8089,7 +8091,7 @@
                                 </div>
                                 <div class="min-w-0 text-[15px] font-medium leading-tight text-gray-800">
                                     <div>0 - 3</div>
-                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">Flyout, K, Groundout</div>
+                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">Flyout, K, FC</div>
                                 </div>
                             </div>
 
@@ -10781,7 +10783,7 @@
                                 </div>
                                 <div class="min-w-0 text-[15px] font-medium leading-tight text-gray-800">
                                     <div>0 - 4</div>
-                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">K, Flyout, K, Groundout</div>
+                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">K, Flyout, K, FC</div>
                                 </div>
                             </div>
 
@@ -11378,37 +11380,73 @@
                 });
             };
 
+            const isGateHiddenTrigger = (trigger) => {
+                const timelineItem = trigger.closest(".timeline-item");
+                return timelineItem ? timelineItem.classList.contains(HIDDEN_CLASS) : true;
+            };
+
+            const revealTrigger = (trigger) => {
+                if (!trigger || trigger.dataset.revealed === "1") {
+                    return false;
+                }
+
+                const gateId = Number.parseInt(trigger.dataset.revealGate || "", 10);
+                if (Number.isNaN(gateId)) {
+                    return false;
+                }
+
+                const timelineItem = trigger.closest(".timeline-item");
+                if (timelineItem) {
+                    const detailBlock = timelineItem.querySelector("[data-ab-detail]");
+                    if (detailBlock) {
+                        detailBlock.classList.remove(AB_HIDDEN_CLASS);
+                    }
+                }
+
+                const actualEvent = trigger.dataset.eventText || "";
+                const actualBadgeVariant = trigger.dataset.actualBadgeVariant || "default";
+                trigger.textContent = actualEvent;
+                trigger.dataset.revealed = "1";
+                trigger.disabled = true;
+                trigger.classList.remove("cursor-pointer");
+                trigger.classList.add("cursor-default", "pointer-events-none");
+                trigger.classList.remove("vs-reveal-pulse");
+                setBadgeVariant(trigger, actualBadgeVariant);
+                revealGate(gateId);
+                return true;
+            };
+
+            const findNextVisibleTrigger = () => {
+                const triggers = Array.from(document.querySelectorAll(".reveal-trigger[data-reveal-gate]"));
+                return triggers.find((trigger) => trigger.dataset.revealed !== "1" && !isGateHiddenTrigger(trigger));
+            };
+
             document.querySelectorAll(".reveal-trigger[data-reveal-gate]").forEach((trigger) => {
                 trigger.addEventListener("click", () => {
-                    if (trigger.dataset.revealed === "1") {
-                        return;
-                    }
-
-                    const gateId = Number.parseInt(trigger.dataset.revealGate || "", 10);
-                    if (Number.isNaN(gateId)) {
-                        return;
-                    }
-
-                    const timelineItem = trigger.closest(".timeline-item");
-                    if (timelineItem) {
-                        const detailBlock = timelineItem.querySelector("[data-ab-detail]");
-                        if (detailBlock) {
-                            detailBlock.classList.remove(AB_HIDDEN_CLASS);
-                        }
-                    }
-
-                    const actualEvent = trigger.dataset.eventText || "";
-                    const actualBadgeVariant = trigger.dataset.actualBadgeVariant || "default";
-                    trigger.textContent = actualEvent;
-                    trigger.dataset.revealed = "1";
-                    trigger.disabled = true;
-                    trigger.classList.remove("cursor-pointer");
-                    trigger.classList.add("cursor-default", "pointer-events-none");
-                    trigger.classList.remove("vs-reveal-pulse");
-                    setBadgeVariant(trigger, actualBadgeVariant);
-
-                    revealGate(gateId);
+                    revealTrigger(trigger);
                 });
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key !== "Enter" || event.altKey || event.ctrlKey || event.metaKey) {
+                    return;
+                }
+
+                const target = event.target;
+                if (
+                    target instanceof HTMLElement
+                    && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)
+                ) {
+                    return;
+                }
+
+                const nextTrigger = findNextVisibleTrigger();
+                if (!nextTrigger) {
+                    return;
+                }
+
+                event.preventDefault();
+                revealTrigger(nextTrigger);
             });
         })();
     </script>

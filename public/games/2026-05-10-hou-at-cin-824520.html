@@ -1693,14 +1693,15 @@
                 >
                 
                 <div class="flex items-start gap-4">
-                    <div class="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white text-sm font-bold text-gray-500">
-                        RU
+                    <div class="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full border border-gray-200 bg-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-6 h-6 text-gray-500">
+                            <path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z" fill="currentColor" />
+                            <path d="M2.5 2 21.5 23M21.5 2 2.5 23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                        </svg>
                     </div>
 
-                    <div class="flex flex-col justify-center pt-0.5 items-start">
-                        <span class="badge-red mb-1.5 inline-flex rounded-full border px-3 py-0.5 text-[13px] font-semibold">
-                            Runner Out
-                        </span>
+                    <div class="flex flex-col justify-center pt-0.5">
+                        <span class="mb-0.5 text-sm font-bold text-gray-500">Runner Out</span>
                         <p class="text-[17px] leading-snug text-gray-900"><span class="player-name-ref">Cam Smith</span> caught stealing 2nd base, catcher Tyler Stephenson to shortstop Elly De La Cruz.</p>
                         
                         <p class="mt-3 text-[17px] leading-snug text-gray-900"><span class="font-bold">2 outs</span></p>
@@ -9911,37 +9912,73 @@
                 });
             };
 
+            const isGateHiddenTrigger = (trigger) => {
+                const timelineItem = trigger.closest(".timeline-item");
+                return timelineItem ? timelineItem.classList.contains(HIDDEN_CLASS) : true;
+            };
+
+            const revealTrigger = (trigger) => {
+                if (!trigger || trigger.dataset.revealed === "1") {
+                    return false;
+                }
+
+                const gateId = Number.parseInt(trigger.dataset.revealGate || "", 10);
+                if (Number.isNaN(gateId)) {
+                    return false;
+                }
+
+                const timelineItem = trigger.closest(".timeline-item");
+                if (timelineItem) {
+                    const detailBlock = timelineItem.querySelector("[data-ab-detail]");
+                    if (detailBlock) {
+                        detailBlock.classList.remove(AB_HIDDEN_CLASS);
+                    }
+                }
+
+                const actualEvent = trigger.dataset.eventText || "";
+                const actualBadgeVariant = trigger.dataset.actualBadgeVariant || "default";
+                trigger.textContent = actualEvent;
+                trigger.dataset.revealed = "1";
+                trigger.disabled = true;
+                trigger.classList.remove("cursor-pointer");
+                trigger.classList.add("cursor-default", "pointer-events-none");
+                trigger.classList.remove("vs-reveal-pulse");
+                setBadgeVariant(trigger, actualBadgeVariant);
+                revealGate(gateId);
+                return true;
+            };
+
+            const findNextVisibleTrigger = () => {
+                const triggers = Array.from(document.querySelectorAll(".reveal-trigger[data-reveal-gate]"));
+                return triggers.find((trigger) => trigger.dataset.revealed !== "1" && !isGateHiddenTrigger(trigger));
+            };
+
             document.querySelectorAll(".reveal-trigger[data-reveal-gate]").forEach((trigger) => {
                 trigger.addEventListener("click", () => {
-                    if (trigger.dataset.revealed === "1") {
-                        return;
-                    }
-
-                    const gateId = Number.parseInt(trigger.dataset.revealGate || "", 10);
-                    if (Number.isNaN(gateId)) {
-                        return;
-                    }
-
-                    const timelineItem = trigger.closest(".timeline-item");
-                    if (timelineItem) {
-                        const detailBlock = timelineItem.querySelector("[data-ab-detail]");
-                        if (detailBlock) {
-                            detailBlock.classList.remove(AB_HIDDEN_CLASS);
-                        }
-                    }
-
-                    const actualEvent = trigger.dataset.eventText || "";
-                    const actualBadgeVariant = trigger.dataset.actualBadgeVariant || "default";
-                    trigger.textContent = actualEvent;
-                    trigger.dataset.revealed = "1";
-                    trigger.disabled = true;
-                    trigger.classList.remove("cursor-pointer");
-                    trigger.classList.add("cursor-default", "pointer-events-none");
-                    trigger.classList.remove("vs-reveal-pulse");
-                    setBadgeVariant(trigger, actualBadgeVariant);
-
-                    revealGate(gateId);
+                    revealTrigger(trigger);
                 });
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key !== "Enter" || event.altKey || event.ctrlKey || event.metaKey) {
+                    return;
+                }
+
+                const target = event.target;
+                if (
+                    target instanceof HTMLElement
+                    && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)
+                ) {
+                    return;
+                }
+
+                const nextTrigger = findNextVisibleTrigger();
+                if (!nextTrigger) {
+                    return;
+                }
+
+                event.preventDefault();
+                revealTrigger(nextTrigger);
             });
         })();
     </script>
