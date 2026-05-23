@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823461,
+    "official_date": "2026-05-22",
+    "game_datetime": "2026-05-22T22:40:00Z",
+    "away_label": "CLE",
+    "home_label": "PHI",
+    "away_name": "Cleveland Guardians",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 1,
+    "home_score": 0,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Williams, G",
+    "home_starting_pitcher": "Sánchez, C",
+    "html_path": "games/2026-05-22-cle-at-phi-823461.html",
+    "title": "CLE @ PHI",
+    "final_score": "CLE 1 - 0 PHI"
+  },
+  {
     "game_pk": 824679,
     "official_date": "2026-05-22",
     "game_datetime": "2026-05-22T18:20:00Z",
