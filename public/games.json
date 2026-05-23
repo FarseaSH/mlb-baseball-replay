@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824674,
+    "official_date": "2026-05-23",
+    "game_datetime": "2026-05-23T18:20:00Z",
+    "away_label": "HOU",
+    "home_label": "CHC",
+    "away_name": "Houston Astros",
+    "home_name": "Chicago Cubs",
+    "away_score": 3,
+    "home_score": 0,
+    "venue_name": "Wrigley Field",
+    "away_starting_pitcher": "Teng, K",
+    "home_starting_pitcher": "Rea, C",
+    "html_path": "games/2026-05-23-hou-at-chc-824674.html",
+    "title": "HOU @ CHC",
+    "final_score": "HOU 3 - 0 CHC"
+  },
+  {
     "game_pk": 824518,
     "official_date": "2026-05-23",
     "game_datetime": "2026-05-23T17:10:00Z",
