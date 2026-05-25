@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824107,
+    "official_date": "2026-05-25",
+    "game_datetime": "2026-05-25T19:40:00Z",
+    "away_label": "NYY",
+    "home_label": "KC",
+    "away_name": "New York Yankees",
+    "home_name": "Kansas City Royals",
+    "away_score": 4,
+    "home_score": 3,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Warren, W",
+    "home_starting_pitcher": "Wacha, M",
+    "html_path": "games/2026-05-25-nyy-at-kc-824107.html",
+    "title": "NYY @ KC",
+    "final_score": "NYY 4 - 3 KC"
+  },
+  {
     "game_pk": 824598,
     "official_date": "2026-05-25",
     "game_datetime": "2026-05-25T18:10:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-05-25-stl-at-mil-823784.html",
     "title": "STL @ MIL",
     "final_score": "STL 1 - 5 MIL"
+  },
+  {
+    "game_pk": 824838,
+    "official_date": "2026-05-25",
+    "game_datetime": "2026-05-25T17:35:00Z",
+    "away_label": "TB",
+    "home_label": "BAL",
+    "away_name": "Tampa Bay Rays",
+    "home_name": "Baltimore Orioles",
+    "away_score": 7,
+    "home_score": 9,
+    "venue_name": "Oriole Park at Camden Yards",
+    "away_starting_pitcher": "McClanahan, S",
+    "home_starting_pitcher": "Bradish, K",
+    "html_path": "games/2026-05-25-tb-at-bal-824838.html",
+    "title": "TB @ BAL",
+    "final_score": "TB 7 - 9 BAL"
   },
   {
     "game_pk": 823380,
