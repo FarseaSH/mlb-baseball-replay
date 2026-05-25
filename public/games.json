@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823380,
+    "official_date": "2026-05-25",
+    "game_datetime": "2026-05-25T17:35:00Z",
+    "away_label": "CHC",
+    "home_label": "PIT",
+    "away_name": "Chicago Cubs",
+    "home_name": "Pittsburgh Pirates",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "PNC Park",
+    "away_starting_pitcher": "Brown, B",
+    "home_starting_pitcher": "Mlodzinski, C",
+    "html_path": "games/2026-05-25-chc-at-pit-823380.html",
+    "title": "CHC @ PIT",
+    "final_score": "CHC 1 - 2 PIT"
+  },
+  {
     "game_pk": 824028,
     "official_date": "2026-05-24",
     "game_datetime": "2026-05-24T23:20:00Z",
