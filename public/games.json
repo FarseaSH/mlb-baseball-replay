@@ -1,5 +1,39 @@
 [
   {
+    "game_pk": 824028,
+    "official_date": "2026-05-24",
+    "game_datetime": "2026-05-24T23:20:00Z",
+    "away_label": "TEX",
+    "home_label": "LAA",
+    "away_name": "Texas Rangers",
+    "home_name": "Los Angeles Angels",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Gore, M",
+    "home_starting_pitcher": "Detmers, R",
+    "html_path": "games/2026-05-24-tex-at-laa-824028.html",
+    "title": "TEX @ LAA",
+    "final_score": "TEX 1 - 2 LAA"
+  },
+  {
+    "game_pk": 824840,
+    "official_date": "2026-05-24",
+    "game_datetime": "2026-05-24T22:05:00Z",
+    "away_label": "DET",
+    "home_label": "BAL",
+    "away_name": "Detroit Tigers",
+    "home_name": "Baltimore Orioles",
+    "away_score": 0,
+    "home_score": 0,
+    "venue_name": "Oriole Park at Camden Yards",
+    "away_starting_pitcher": "",
+    "home_starting_pitcher": "Rogers, T",
+    "html_path": "games/2026-05-24-det-at-bal-824840.html",
+    "title": "DET @ BAL",
+    "final_score": "DET 0 - 0 BAL"
+  },
+  {
     "game_pk": 824840,
     "official_date": "2026-05-24",
     "game_datetime": "2026-05-24T22:05:00Z",
@@ -32,6 +66,23 @@
     "html_path": "games/2026-05-24-col-at-az-825081.html",
     "title": "COL @ AZ",
     "final_score": "COL 1 - 9 AZ"
+  },
+  {
+    "game_pk": 824921,
+    "official_date": "2026-05-24",
+    "game_datetime": "2026-05-24T20:10:00Z",
+    "away_label": "WSH",
+    "home_label": "ATL",
+    "away_name": "Washington Nationals",
+    "home_name": "Atlanta Braves",
+    "away_score": 2,
+    "home_score": 1,
+    "venue_name": "Truist Park",
+    "away_starting_pitcher": "Griffin, F",
+    "home_starting_pitcher": "Pérez, M",
+    "html_path": "games/2026-05-24-wsh-at-atl-824921.html",
+    "title": "WSH @ ATL",
+    "final_score": "WSH 2 - 1 ATL"
   },
   {
     "game_pk": 823297,
