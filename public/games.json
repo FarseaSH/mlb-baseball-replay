@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 825005,
+    "official_date": "2026-05-25",
+    "game_datetime": "2026-05-26T01:40:00Z",
+    "away_label": "SEA",
+    "home_label": "ATH",
+    "away_name": "Seattle Mariners",
+    "home_name": "Athletics",
+    "away_score": 9,
+    "home_score": 2,
+    "venue_name": "Sutter Health Park",
+    "away_starting_pitcher": "Castillo, L",
+    "home_starting_pitcher": "Civale, A",
+    "html_path": "games/2026-05-25-sea-at-ath-825005.html",
+    "title": "SEA @ ATH",
+    "final_score": "SEA 9 - 2 ATH"
+  },
+  {
     "game_pk": 823948,
     "official_date": "2026-05-25",
     "game_datetime": "2026-05-26T01:10:00Z",
