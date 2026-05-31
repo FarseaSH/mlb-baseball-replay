@@ -51,6 +51,23 @@
     "final_score": "MIA 1 - 6 NYM"
   },
   {
+    "game_pk": 822975,
+    "official_date": "2026-05-30",
+    "game_datetime": "2026-05-30T20:10:00Z",
+    "away_label": "LAA",
+    "home_label": "TB",
+    "away_name": "Los Angeles Angels",
+    "home_name": "Tampa Bay Rays",
+    "away_score": 14,
+    "home_score": 3,
+    "venue_name": "Tropicana Field",
+    "away_starting_pitcher": "Detmers, R",
+    "home_starting_pitcher": "Rasmussen, D",
+    "html_path": "games/2026-05-30-laa-at-tb-822975.html",
+    "title": "LAA @ TB",
+    "final_score": "LAA 14 - 3 TB"
+  },
+  {
     "game_pk": 824833,
     "official_date": "2026-05-30",
     "game_datetime": "2026-05-30T20:05:00Z",
@@ -66,6 +83,23 @@
     "html_path": "games/2026-05-30-tor-at-bal-824833.html",
     "title": "TOR @ BAL",
     "final_score": "TOR 5 - 6 BAL"
+  },
+  {
+    "game_pk": 823375,
+    "official_date": "2026-05-30",
+    "game_datetime": "2026-05-30T20:05:00Z",
+    "away_label": "MIN",
+    "home_label": "PIT",
+    "away_name": "Minnesota Twins",
+    "home_name": "Pittsburgh Pirates",
+    "away_score": 9,
+    "home_score": 10,
+    "venue_name": "PNC Park",
+    "away_starting_pitcher": "Ober, B",
+    "home_starting_pitcher": "Keller, M",
+    "html_path": "games/2026-05-30-min-at-pit-823375.html",
+    "title": "MIN @ PIT",
+    "final_score": "MIN 9 - 10 PIT"
   },
   {
     "game_pk": 822893,
