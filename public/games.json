@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824269,
+    "official_date": "2026-06-06",
+    "game_datetime": "2026-06-06T17:10:00Z",
+    "away_label": "SEA",
+    "home_label": "DET",
+    "away_name": "Seattle Mariners",
+    "home_name": "Detroit Tigers",
+    "away_score": 4,
+    "home_score": 0,
+    "venue_name": "Comerica Park",
+    "away_starting_pitcher": "Miller, B",
+    "home_starting_pitcher": "Montero, K",
+    "html_path": "games/2026-06-06-sea-at-det-824269.html",
+    "title": "SEA @ DET",
+    "final_score": "SEA 4 - 0 DET"
+  },
+  {
     "game_pk": 823943,
     "official_date": "2026-06-05",
     "game_datetime": "2026-06-06T02:10:00Z",
