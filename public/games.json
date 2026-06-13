@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 822802,
+    "official_date": "2026-06-13",
+    "game_datetime": "2026-06-13T19:07:00Z",
+    "away_label": "NYY",
+    "home_label": "TOR",
+    "away_name": "New York Yankees",
+    "home_name": "Toronto Blue Jays",
+    "away_score": 3,
+    "home_score": 1,
+    "venue_name": "Rogers Centre",
+    "away_starting_pitcher": "Schlittler, C",
+    "home_starting_pitcher": "Gausman, K",
+    "html_path": "games/2026-06-13-nyy-at-tor-822802.html",
+    "title": "NYY @ TOR",
+    "final_score": "NYY 3 - 1 TOR"
+  },
+  {
     "game_pk": 823694,
     "official_date": "2026-06-13",
     "game_datetime": "2026-06-13T18:10:00Z",
