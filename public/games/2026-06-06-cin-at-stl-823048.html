@@ -71,6 +71,23 @@
             overflow-wrap: normal;
             line-height: 1.2;
         }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(4px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 <body class="min-h-screen bg-gray-50 py-8 font-sans text-gray-900">
@@ -7633,7 +7650,7 @@
                                     type="button"
                                     class="badge-gray reveal-trigger vs-reveal-pulse inline-flex rounded-full border-[1.5px] bg-white px-3 py-0.5 text-[13px] font-bold shadow-sm cursor-pointer"
                                     data-reveal-gate="31"
-                                    data-event-text="Field Error"
+                                    data-event-text="Single"
                                     data-actual-badge-variant="default"
                                 >
                                     VS
@@ -7651,7 +7668,7 @@
                         <div class="mt-1 text-[17px] leading-snug text-gray-900 ab-detail-hidden" data-ab-detail>
                             
                             
-                            <p><span class="player-name-ref">Bryan Torres</span> reaches on a throwing error by third baseman Eugenio Suárez.</p>
+                            <p><span class="player-name-ref">Bryan Torres</span> singles on a soft ground ball to third baseman Eugenio Suárez.</p>
                             
                             <p><span class="player-name-ref">José Fermín</span> to 2nd.</p>
                             
@@ -7722,7 +7739,7 @@
                     <div class="flex flex-col justify-center pt-0.5">
                         <span class="mb-0.5 text-sm font-bold text-gray-500">Pitching Substitution</span>
                         
-                        <p class="text-[17px] leading-snug">Pitching Change: <span class="player-name-ref">Tejay Antone</span> replaces Nick Lodolo <span class="text-gray-500">(95P 5.0IP 4ER 9H 3K 1BB)</span>.</p>
+                        <p class="text-[17px] leading-snug">Pitching Change: <span class="player-name-ref">Tejay Antone</span> replaces Nick Lodolo <span class="text-gray-500">(95P 5.0IP 4ER 10H 3K 1BB)</span>.</p>
                         
                         
                     </div>
@@ -10137,8 +10154,8 @@
                                     
                                 </div>
                                 <div class="min-w-0 text-[15px] font-medium leading-tight text-gray-800">
-                                    <div>1 - 3</div>
-                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">Field Error, Groundout, 1B</div>
+                                    <div>2 - 3</div>
+                                    <div class="batter-recent-tags mt-0.5 text-[12px] font-normal text-gray-500">1B, Groundout, 1B</div>
                                 </div>
                             </div>
 
@@ -10970,7 +10987,7 @@
                         <div class="mt-1 text-[17px] leading-snug text-gray-900 ab-detail-hidden" data-ab-detail>
                             
                             <p>
-                                <span class="player-name-ref">Nathaniel Lowe</span> strikes out on a foul tip.
+                                <span class="player-name-ref">Nathaniel Lowe</span> strikes out swinging.
                             </p>
                             
                             <p class="mt-3 text-[17px] text-gray-900"><span class="font-bold">2 outs</span></p>
@@ -11615,6 +11632,1077 @@
                 
             </div>
         </section>
+
+        
+        <section class="rounded-xl bg-white p-4 shadow-sm sm:p-6">
+            <div class="mb-6 flex items-center justify-center gap-4">
+                <div class="h-[1.5px] w-16 bg-gray-200"></div>
+                <span class="text-sm font-extrabold uppercase tracking-[0.25em] text-gray-500">Final</span>
+                <div class="h-[1.5px] w-16 bg-gray-200"></div>
+            </div>
+
+            <div class="mb-8 grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-4">
+                <div class="flex items-center justify-self-end gap-3 text-3xl">
+                    <span class="font-bold text-gray-500">CIN</span>
+                    <span class="font-bold text-gray-500">5</span>
+                </div>
+
+                <span class="text-center text-3xl font-light text-gray-300">-</span>
+
+                <div class="flex items-center justify-self-start gap-3 text-3xl">
+                    <span class="font-black text-gray-900">6</span>
+                    <span class="font-black text-gray-900">STL</span>
+                </div>
+            </div>
+
+            <div class="mx-auto flex w-fit max-w-full justify-center">
+                <div class="relative flex text-[14px]">
+                    <div class="relative z-10 flex w-[58px] shrink-0 flex-col bg-white shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                        <div class="flex h-8 items-center"></div>
+                        <div class="flex h-9 items-center font-semibold text-gray-900">CIN</div>
+                        <div class="flex h-9 items-center font-semibold text-gray-900">STL</div>
+                    </div>
+
+                    <div
+                        class="no-scrollbar flex-none overflow-x-visible"
+                        data-final-linescore-scroll
+                        data-inning-count="9"
+                    >
+                        <div class="flex h-8 w-max text-[13px] font-normal text-gray-400">
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">1</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">2</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">3</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">4</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">5</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">6</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">7</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">8</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">9</div>
+                            
+                        </div>
+
+                        <div class="flex h-9 w-max text-gray-900">
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">3</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">2</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                        </div>
+
+                        <div class="flex h-9 w-max text-gray-900">
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">3</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">1</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">0</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">2</div>
+                            
+                            <div class="flex w-7 shrink-0 items-center justify-center">X</div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="relative z-10 flex w-[78px] shrink-0 flex-col bg-white shadow-[-4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                        <div class="flex h-8 items-center text-[13px] font-bold text-gray-400">
+                            <div class="flex-1 text-center">R</div>
+                            <div class="flex-1 text-center">H</div>
+                            <div class="flex-1 text-center">E</div>
+                        </div>
+
+                        <div class="flex h-9 items-center text-center text-gray-900">
+                            <div class="flex-1">5</div>
+                            <div class="flex-1">9</div>
+                            <div class="flex-1">0</div>
+                        </div>
+
+                        <div class="flex h-9 items-center text-center text-gray-900">
+                            <div class="flex-1">6</div>
+                            <div class="flex-1">13</div>
+                            <div class="flex-1">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section class="rounded-xl bg-white p-6 shadow-sm">
+            <h2 class="mb-6 text-2xl font-extrabold text-gray-900">Top Performers</h2>
+            <div class="grid divide-x divide-gray-200" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+                
+                <div class="flex flex-col items-center px-2 text-center">
+                    
+                    <img src="https://midfield.mlbstatic.com/v1/people/680574/spots/120" alt="Matt McLain" class="mb-3 h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    
+                    <span class="text-[14px] font-bold leading-tight text-gray-900">McLain, M</span>
+                    
+                    <span class="mt-1 text-[12px] font-bold text-gray-500">1-3</span>
+                    
+                    
+                    <span class="mt-0.5 text-[11px] font-semibold text-gray-500">HR, BB, 2 RBI</span>
+                    
+                </div>
+                
+                <div class="flex flex-col items-center px-2 text-center">
+                    
+                    <img src="https://midfield.mlbstatic.com/v1/people/663457/spots/120" alt="Lars Nootbaar" class="mb-3 h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    
+                    <span class="text-[14px] font-bold leading-tight text-gray-900">Nootbaar</span>
+                    
+                    <span class="mt-1 text-[12px] font-bold text-gray-500">1-1</span>
+                    
+                    
+                    <span class="mt-0.5 text-[11px] font-semibold text-gray-500">HR, BB, 2 RBI</span>
+                    
+                </div>
+                
+                <div class="flex flex-col items-center px-2 text-center">
+                    
+                    <img src="https://midfield.mlbstatic.com/v1/people/665877/spots/120" alt="José Fermín" class="mb-3 h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    
+                    <span class="text-[14px] font-bold leading-tight text-gray-900">Fermín</span>
+                    
+                    <span class="mt-1 text-[12px] font-bold text-gray-500">3-4</span>
+                    
+                    
+                    <span class="mt-0.5 text-[11px] font-semibold text-gray-500">2 R, SB</span>
+                    
+                </div>
+                
+            </div>
+        </section>
+        
+
+        
+        <section class="overflow-hidden rounded-xl bg-white p-6 shadow-sm" data-boxscore-tabs>
+            <div class="mb-4 flex border-b border-gray-200">
+                
+                <button
+                    type="button"
+                    data-boxscore-tab-button
+                    data-team-key="away"
+                    class="flex-1 border-b-2 pb-3 text-center text-[15px] transition-colors border-gray-900 font-extrabold text-gray-900"
+                >
+                    CIN
+                </button>
+                
+                <button
+                    type="button"
+                    data-boxscore-tab-button
+                    data-team-key="home"
+                    class="flex-1 border-b-2 pb-3 text-center text-[15px] transition-colors border-transparent font-bold text-gray-400 hover:text-gray-600"
+                >
+                    STL
+                </button>
+                
+            </div>
+
+            
+            <div
+                data-boxscore-tab-panel
+                data-team-key="away"
+                class="animate-[fadeIn_0.3s_ease-in-out]"
+            >
+                <div class="no-scrollbar -mx-6 overflow-x-auto px-6">
+                    <table class="w-full whitespace-nowrap border-collapse text-right text-[13px]">
+                        <thead>
+                            <tr class="border-b border-gray-200 text-[11px] font-extrabold uppercase tracking-wider text-gray-400">
+                                <th class="sticky left-0 z-20 w-[148px] bg-white py-3 text-left text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Batters - CIN</th>
+                                <th class="w-9 px-2 py-3">AB</th>
+                                <th class="w-9 px-2 py-3">R</th>
+                                <th class="w-9 px-2 py-3">H</th>
+                                <th class="w-9 px-2 py-3">RBI</th>
+                                <th class="w-9 px-2 py-3">BB</th>
+                                <th class="w-9 px-2 py-3">K</th>
+                                <th class="w-12 px-2 py-3">AVG</th>
+                                <th class="w-12 pl-2 py-3">OPS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-900">
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Myers
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">CF</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.258</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.760</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    b-Benson
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">PH</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.200</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.683</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Bleday
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">DH</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">5</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.282</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.959</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Steer
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">2B</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.271</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.805</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Stewart, S
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">1B</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">5</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.257</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.814</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Suárez, E
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">3B</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.209</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.623</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    Arroyo
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">2B</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.200</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.533</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Dunn
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">LF</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.306</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.799</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Marte, N
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">RF</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.167</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.417</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    McLain, M
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">SS</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.200</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.636</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Higgins, P
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">C</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.250</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.588</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    a-Lowe, N
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">PH</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.241</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.824</td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr class="border-t border-gray-100">
+                                <td class="sticky left-0 z-20 bg-white py-4 text-left font-extrabold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Totals</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">35</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">5</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">9</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">4</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">4</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
+                                <td class="px-2 py-4"></td>
+                                <td class="pl-2 py-4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                
+                <div class="mt-4 flex flex-col gap-5 text-[14px] leading-relaxed text-gray-500">
+                    
+                    <div class="flex flex-col gap-1 text-[13px] text-gray-500 mb-1 border-b border-gray-100 pb-4">
+                        
+                        <p>a-Struck out for Higgins, P in the 9th.</p>
+                        
+                        <p>b-Singled for Myers in the 9th.</p>
+                        
+                    </div>
+                    
+
+                    
+                    <div class="flex flex-col gap-1.5">
+                        <h3 class="mb-1 text-[15px] font-extrabold text-gray-900">Batting</h3>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">2B</span>Dunn (4, Soriano, G).</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">HR</span>McLain, M (6, 4th inning off Liberatore, 1 on, 2 out).</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">TB</span>Benson; Bleday; Dunn 4; Marte, N; McLain, M 4; Myers 2.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">RBI</span>Bleday (28); McLain, M 2 (23); Steer (24).</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">2-out RBI</span>McLain, M 2.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">Runners left in scoring position, 2 out</span>Suárez, E 2; Marte, N; Stewart, S 3.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">SF</span>Steer.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">GIDP</span>Higgins, P.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">Team RISP</span>2-for-13.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">Team LOB</span>8.</p>
+                        
+                    </div>
+                    
+                    <div class="flex flex-col gap-1.5">
+                        <h3 class="mb-1 text-[15px] font-extrabold text-gray-900">Baserunning</h3>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">SB</span>Dunn (3, 2nd base off Liberatore/Pagés, P); Myers (3, 2nd base off Liberatore/Pagés, P); Bleday (2, 2nd base off O'Brien/Crooks).</p>
+                        
+                    </div>
+                    
+                    <div class="flex flex-col gap-1.5">
+                        <h3 class="mb-1 text-[15px] font-extrabold text-gray-900">Fielding</h3>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">DP</span>2 (Suárez, E-Steer-Stewart, S; Stewart, S-Higgins, P-Stewart, S).</p>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <div class="mt-8 no-scrollbar -mx-6 overflow-x-auto px-6">
+                    <table class="w-full whitespace-nowrap border-collapse text-right text-[13px]">
+                        <thead>
+                            <tr class="border-b border-gray-200 text-[11px] font-extrabold uppercase tracking-wider text-gray-400">
+                                <th class="sticky left-0 z-20 w-[148px] bg-white py-3 text-left text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Pitchers - CIN</th>
+                                <th class="w-9 px-2 py-3">IP</th>
+                                <th class="w-9 px-2 py-3">H</th>
+                                <th class="w-9 px-2 py-3">R</th>
+                                <th class="w-9 px-2 py-3">ER</th>
+                                <th class="w-9 px-2 py-3">BB</th>
+                                <th class="w-9 px-2 py-3">K</th>
+                                <th class="w-9 px-2 py-3">HR</th>
+                                <th class="w-12 pl-2 py-3">ERA</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-900">
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    Lodolo
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">5.0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">10</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">5.51</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    Antone
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">(H, 1)</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">3.75</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    Moll
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">(L, 1-4)(BS, 3)</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">2.96</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    Santillan
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0.1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">6.56</td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr class="border-t border-gray-100">
+                                <td class="sticky left-0 z-20 bg-white py-4 text-left font-extrabold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Totals</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">8.0</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">13</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">2</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">7</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">2</td>
+                                <td class="pl-2 py-4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+            <div
+                data-boxscore-tab-panel
+                data-team-key="home"
+                class="hidden animate-[fadeIn_0.3s_ease-in-out]"
+            >
+                <div class="no-scrollbar -mx-6 overflow-x-auto px-6">
+                    <table class="w-full whitespace-nowrap border-collapse text-right text-[13px]">
+                        <thead>
+                            <tr class="border-b border-gray-200 text-[11px] font-extrabold uppercase tracking-wider text-gray-400">
+                                <th class="sticky left-0 z-20 w-[148px] bg-white py-3 text-left text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Batters - STL</th>
+                                <th class="w-9 px-2 py-3">AB</th>
+                                <th class="w-9 px-2 py-3">R</th>
+                                <th class="w-9 px-2 py-3">H</th>
+                                <th class="w-9 px-2 py-3">RBI</th>
+                                <th class="w-9 px-2 py-3">BB</th>
+                                <th class="w-9 px-2 py-3">K</th>
+                                <th class="w-12 px-2 py-3">AVG</th>
+                                <th class="w-12 pl-2 py-3">OPS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-900">
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Winn
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">SS</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">5</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.236</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.640</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Herrera
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">DH</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.259</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.790</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Walker, J
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">RF</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.301</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.921</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Velázquez, N
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">LF</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.353</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">1.009</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Burleson
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">1B</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.291</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.814</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Fermín
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">3B</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.250</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.703</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Torres, B
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">2B</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.257</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.733</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Pagés, P
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">C</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.212</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.601</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    a-Nootbaar
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">CF</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.429</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">1.500</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    Scott II
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">CF</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.196</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.532</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    b-Crooks
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">C</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">.214</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">.599</td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr class="border-t border-gray-100">
+                                <td class="sticky left-0 z-20 bg-white py-4 text-left font-extrabold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Totals</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">34</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">13</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">2</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">7</td>
+                                <td class="px-2 py-4"></td>
+                                <td class="pl-2 py-4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                
+                <div class="mt-4 flex flex-col gap-5 text-[14px] leading-relaxed text-gray-500">
+                    
+                    <div class="flex flex-col gap-1 text-[13px] text-gray-500 mb-1 border-b border-gray-100 pb-4">
+                        
+                        <p>a-Intentionally walked for Pagés, P in the 6th.</p>
+                        
+                        <p>b-Grounded into a double play for Scott II in the 6th.</p>
+                        
+                    </div>
+                    
+
+                    
+                    <div class="flex flex-col gap-1.5">
+                        <h3 class="mb-1 text-[15px] font-extrabold text-gray-900">Batting</h3>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">HR</span>Walker, J (16, 5th inning off Lodolo, 0 on, 1 out); Nootbaar (1, 8th inning off Moll, 1 on, 1 out).</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">TB</span>Burleson; Fermín 3; Herrera; Nootbaar 4; Scott II; Torres, B 2; Walker, J 5; Winn 2.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">RBI</span>Nootbaar 2 (3); Scott II (9); Walker, J (46); Winn 2 (24).</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">Runners left in scoring position, 2 out</span>Winn 2; Torres, B.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">SAC</span>Torres, B.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">GIDP</span>Crooks; Herrera.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">Team RISP</span>4-for-10.</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">Team LOB</span>7.</p>
+                        
+                    </div>
+                    
+                    <div class="flex flex-col gap-1.5">
+                        <h3 class="mb-1 text-[15px] font-extrabold text-gray-900">Baserunning</h3>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">SB</span>Walker, J (10, 2nd base off Lodolo/Higgins, P); Fermín (2, 3rd base off Antone/Higgins, P); Torres, B (1, 2nd base off Antone/Higgins, P).</p>
+                        
+                    </div>
+                    
+                    <div class="flex flex-col gap-1.5">
+                        <h3 class="mb-1 text-[15px] font-extrabold text-gray-900">Fielding</h3>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">E</span>Burleson (5, fielding).</p>
+                        
+                        <p><span class="mr-1.5 font-bold text-gray-900">DP</span>(Torres, B-Burleson).</p>
+                        
+                    </div>
+                    
+                </div>
+                
+
+                <div class="mt-8 no-scrollbar -mx-6 overflow-x-auto px-6">
+                    <table class="w-full whitespace-nowrap border-collapse text-right text-[13px]">
+                        <thead>
+                            <tr class="border-b border-gray-200 text-[11px] font-extrabold uppercase tracking-wider text-gray-400">
+                                <th class="sticky left-0 z-20 w-[148px] bg-white py-3 text-left text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Pitchers - STL</th>
+                                <th class="w-9 px-2 py-3">IP</th>
+                                <th class="w-9 px-2 py-3">H</th>
+                                <th class="w-9 px-2 py-3">R</th>
+                                <th class="w-9 px-2 py-3">ER</th>
+                                <th class="w-9 px-2 py-3">BB</th>
+                                <th class="w-9 px-2 py-3">K</th>
+                                <th class="w-9 px-2 py-3">HR</th>
+                                <th class="w-12 pl-2 py-3">ERA</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-900">
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    Liberatore
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4.1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">5</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">4.48</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    Graceffo
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">1.67</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    Stanek
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">4.97</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    Soriano, G
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">(W, 3-0)</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">2.81</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    O'Brien
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">(S, 16)</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">3.81</td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr class="border-t border-gray-100">
+                                <td class="sticky left-0 z-20 bg-white py-4 text-left font-extrabold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Totals</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">9.0</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">9</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">5</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">3</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">4</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">1</td>
+                                <td class="pl-2 py-4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+
+            
+            <div class="mt-8 border-t border-gray-100 pt-6">
+                
+                <div class="mb-5 flex flex-col gap-1.5 text-[13px] leading-relaxed text-gray-500">
+                    <h3 class="mb-1 text-[15px] font-extrabold text-gray-900">Pitching Notes</h3>
+                    
+                    <p>Lodolo pitched to 2 batters in the 6th inning.</p>
+                    
+                </div>
+                
+
+                
+                <div class="flex flex-col gap-1.5 text-[13px] leading-relaxed text-gray-500">
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">IBB</span>Nootbaar (by Antone).</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Pitch timer violations</span>Antone (pitcher); Soriano, G (pitcher).</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">ABS Challenge</span>Stewart, S 3 (Strike-Overturned to Ball, Strike-Overturned to Ball, Strike-Overturned to Ball); Crooks (Ball-Overturned to Strike).</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Pitches-strikes</span>Lodolo 95-70; Antone 20-15; Moll 19-14; Santillan 6-3; Liberatore 84-47; Graceffo 24-13; Stanek 6-5; Soriano, G 12-8; O'Brien 23-13.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Groundouts-flyouts</span>Lodolo 6-3; Antone 2-0; Moll 1-1; Santillan 0-0; Liberatore 4-3; Graceffo 2-1; Stanek 2-0; Soriano, G 1-1; O'Brien 1-0.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Batters faced</span>Lodolo 25; Antone 6; Moll 5; Santillan 1; Liberatore 21; Graceffo 6; Stanek 3; Soriano, G 4; O'Brien 6.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Inherited runners-scored</span>Antone 2-0; Moll 1-0; Graceffo 2-0.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Umpires</span>HP: Ben May. 1B: John Tumpane. 2B: Brennan Miller. 3B: Chris Conroy.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Weather</span>85 degrees, Partly Cloudy.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Wind</span>9 mph, R To L.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">First pitch</span>1:15 PM.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">T</span>2:53.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Att</span>26,904.</p>
+                    
+                    
+                    
+                    <p><span class="mr-1.5 font-bold text-gray-900">Venue</span>Busch Stadium.</p>
+                    
+                    
+                    
+                    <p class="mt-2 font-bold text-gray-900">June 6, 2026</p>
+                    
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+        
     </div>
     <script>
         (() => {
@@ -11691,6 +12779,67 @@
                     revealTrigger(trigger);
                 });
             });
+
+            const initFinalLinescoreScroll = () => {
+                document.querySelectorAll("[data-final-linescore-scroll]").forEach((container) => {
+                    const inningCount = Number.parseInt(container.dataset.inningCount || "", 10);
+                    if (!Number.isFinite(inningCount) || inningCount <= 9) {
+                        container.scrollLeft = 0;
+                        return;
+                    }
+                    container.scrollLeft = Math.max(0, container.scrollWidth - container.clientWidth);
+                });
+            };
+
+            const initBoxscoreTabs = () => {
+                document.querySelectorAll("[data-boxscore-tabs]").forEach((section) => {
+                    const buttons = Array.from(section.querySelectorAll("[data-boxscore-tab-button]"));
+                    const panels = Array.from(section.querySelectorAll("[data-boxscore-tab-panel]"));
+                    if (!buttons.length || !panels.length) {
+                        return;
+                    }
+
+                    const setActiveTeam = (teamKey) => {
+                        buttons.forEach((button) => {
+                            const isActive = button.dataset.teamKey === teamKey;
+                            button.classList.toggle("border-gray-900", isActive);
+                            button.classList.toggle("font-extrabold", isActive);
+                            button.classList.toggle("text-gray-900", isActive);
+                            button.classList.toggle("border-transparent", !isActive);
+                            button.classList.toggle("font-bold", !isActive);
+                            button.classList.toggle("text-gray-400", !isActive);
+                        });
+
+                        panels.forEach((panel) => {
+                            const isActive = panel.dataset.teamKey === teamKey;
+                            panel.classList.toggle("hidden", !isActive);
+                            panel.classList.toggle("block", isActive);
+                        });
+                    };
+
+                    buttons.forEach((button) => {
+                        button.addEventListener("click", () => {
+                            setActiveTeam(button.dataset.teamKey || "");
+                        });
+                    });
+
+                    setActiveTeam(buttons[0].dataset.teamKey || "");
+                });
+            };
+
+            if (document.readyState === "complete") {
+                requestAnimationFrame(() => {
+                    initFinalLinescoreScroll();
+                    initBoxscoreTabs();
+                });
+            } else {
+                window.addEventListener("load", () => {
+                    requestAnimationFrame(() => {
+                        initFinalLinescoreScroll();
+                        initBoxscoreTabs();
+                    });
+                }, { once: true });
+            }
 
             document.addEventListener("keydown", (event) => {
                 if (event.key !== "Enter" || event.altKey || event.ctrlKey || event.metaKey) {
