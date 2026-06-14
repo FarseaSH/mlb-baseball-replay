@@ -34,6 +34,23 @@
     "final_score": "COL 5 - 7 ATH"
   },
   {
+    "game_pk": 823213,
+    "official_date": "2026-06-13",
+    "game_datetime": "2026-06-14T02:05:00Z",
+    "away_label": "CHC",
+    "home_label": "SF",
+    "away_name": "Chicago Cubs",
+    "home_name": "San Francisco Giants",
+    "away_score": 6,
+    "home_score": 1,
+    "venue_name": "Oracle Park",
+    "away_starting_pitcher": "Brown, B",
+    "home_starting_pitcher": "McDonald, T",
+    "html_path": "games/2026-06-13-chc-at-sf-823213.html",
+    "title": "CHC @ SF",
+    "final_score": "CHC 6 - 1 SF"
+  },
+  {
     "game_pk": 824100,
     "official_date": "2026-06-13",
     "game_datetime": "2026-06-13T23:10:00Z",
