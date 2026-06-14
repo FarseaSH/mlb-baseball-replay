@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824100,
+    "official_date": "2026-06-13",
+    "game_datetime": "2026-06-13T23:10:00Z",
+    "away_label": "HOU",
+    "home_label": "KC",
+    "away_name": "Houston Astros",
+    "home_name": "Kansas City Royals",
+    "away_score": 8,
+    "home_score": 7,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Burrows, M",
+    "home_starting_pitcher": "Cameron, N",
+    "html_path": "games/2026-06-13-hou-at-kc-824100.html",
+    "title": "HOU @ KC",
+    "final_score": "HOU 8 - 7 KC"
+  },
+  {
     "game_pk": 823776,
     "official_date": "2026-06-13",
     "game_datetime": "2026-06-13T23:10:00Z",
