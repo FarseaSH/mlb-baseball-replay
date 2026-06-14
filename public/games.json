@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824021,
+    "official_date": "2026-06-14",
+    "game_datetime": "2026-06-14T20:07:00Z",
+    "away_label": "TB",
+    "home_label": "LAA",
+    "away_name": "Tampa Bay Rays",
+    "home_name": "Los Angeles Angels",
+    "away_score": 8,
+    "home_score": 3,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Legumina, C",
+    "home_starting_pitcher": "Rodriguez, G",
+    "html_path": "games/2026-06-14-tb-at-laa-824021.html",
+    "title": "TB @ LAA",
+    "final_score": "TB 8 - 3 LAA"
+  },
+  {
     "game_pk": 823212,
     "official_date": "2026-06-14",
     "game_datetime": "2026-06-14T19:10:00Z",
