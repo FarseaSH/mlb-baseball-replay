@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824751,
+    "official_date": "2026-06-14",
+    "game_datetime": "2026-06-14T23:20:00Z",
+    "away_label": "TEX",
+    "home_label": "BOS",
+    "away_name": "Texas Rangers",
+    "home_name": "Boston Red Sox",
+    "away_score": 6,
+    "home_score": 4,
+    "venue_name": "Fenway Park",
+    "away_starting_pitcher": "Eovaldi, N",
+    "home_starting_pitcher": "Early, C",
+    "html_path": "games/2026-06-14-tex-at-bos-824751.html",
+    "title": "TEX @ BOS",
+    "final_score": "TEX 6 - 4 BOS"
+  },
+  {
     "game_pk": 824021,
     "official_date": "2026-06-14",
     "game_datetime": "2026-06-14T20:07:00Z",
