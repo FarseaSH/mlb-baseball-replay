@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824098,
+    "official_date": "2026-06-18",
+    "game_datetime": "2026-06-18T23:40:00Z",
+    "away_label": "STL",
+    "home_label": "KC",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "Kansas City Royals",
+    "away_score": 6,
+    "home_score": 14,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Liberatore, M",
+    "home_starting_pitcher": "Cameron, N",
+    "html_path": "games/2026-06-18-stl-at-kc-824098.html",
+    "title": "STL @ KC",
+    "final_score": "STL 6 - 14 KC"
+  },
+  {
     "game_pk": 823533,
     "official_date": "2026-06-18",
     "game_datetime": "2026-06-18T23:05:00Z",
