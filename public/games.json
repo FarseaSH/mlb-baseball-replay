@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824989,
+    "official_date": "2026-06-18",
+    "game_datetime": "2026-06-19T01:40:00Z",
+    "away_label": "LAA",
+    "home_label": "ATH",
+    "away_name": "Los Angeles Angels",
+    "home_name": "Athletics",
+    "away_score": 0,
+    "home_score": 5,
+    "venue_name": "Sutter Health Park",
+    "away_starting_pitcher": "Johnson, R",
+    "home_starting_pitcher": "Jump, G",
+    "html_path": "games/2026-06-18-laa-at-ath-824989.html",
+    "title": "LAA @ ATH",
+    "final_score": "LAA 0 - 5 ATH"
+  },
+  {
     "game_pk": 824098,
     "official_date": "2026-06-18",
     "game_datetime": "2026-06-18T23:40:00Z",
