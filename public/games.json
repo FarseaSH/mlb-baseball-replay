@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823532,
+    "official_date": "2026-06-20",
+    "game_datetime": "2026-06-20T17:35:00Z",
+    "away_label": "CIN",
+    "home_label": "NYY",
+    "away_name": "Cincinnati Reds",
+    "home_name": "New York Yankees",
+    "away_score": 10,
+    "home_score": 2,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Abbott, A",
+    "home_starting_pitcher": "Warren, W",
+    "html_path": "games/2026-06-20-cin-at-nyy-823532.html",
+    "title": "CIN @ NYY",
+    "final_score": "CIN 10 - 2 NYY"
+  },
+  {
     "game_pk": 824263,
     "official_date": "2026-06-20",
     "game_datetime": "2026-06-20T17:10:00Z",
