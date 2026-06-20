@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824909,
+    "official_date": "2026-06-20",
+    "game_datetime": "2026-06-20T20:10:00Z",
+    "away_label": "MIL",
+    "home_label": "ATL",
+    "away_name": "Milwaukee Brewers",
+    "home_name": "Atlanta Braves",
+    "away_score": 3,
+    "home_score": 4,
+    "venue_name": "Truist Park",
+    "away_starting_pitcher": "Harrison, K",
+    "home_starting_pitcher": "Sale, C",
+    "html_path": "games/2026-06-20-mil-at-atl-824909.html",
+    "title": "MIL @ ATL",
+    "final_score": "MIL 3 - 4 ATL"
+  },
+  {
     "game_pk": 824665,
     "official_date": "2026-06-20",
     "game_datetime": "2026-06-20T18:20:00Z",
