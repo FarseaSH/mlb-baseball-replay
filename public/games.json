@@ -85,6 +85,23 @@
     "final_score": "MIL 9 - 4 ATL"
   },
   {
+    "game_pk": 823531,
+    "official_date": "2026-06-21",
+    "game_datetime": "2026-06-21T17:35:00Z",
+    "away_label": "CIN",
+    "home_label": "NYY",
+    "away_name": "Cincinnati Reds",
+    "home_name": "New York Yankees",
+    "away_score": 4,
+    "home_score": 1,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Burns, C",
+    "home_starting_pitcher": "Rodríguez, E",
+    "html_path": "games/2026-06-21-cin-at-nyy-823531.html",
+    "title": "CIN @ NYY",
+    "final_score": "CIN 4 - 1 NYY"
+  },
+  {
     "game_pk": 825068,
     "official_date": "2026-06-20",
     "game_datetime": "2026-06-21T02:10:00Z",
