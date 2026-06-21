@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 825068,
+    "official_date": "2026-06-20",
+    "game_datetime": "2026-06-21T02:10:00Z",
+    "away_label": "MIN",
+    "home_label": "AZ",
+    "away_name": "Minnesota Twins",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 16,
+    "home_score": 8,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "Bradley, T",
+    "home_starting_pitcher": "Gallen, Z",
+    "html_path": "games/2026-06-20-min-at-az-825068.html",
+    "title": "MIN @ AZ",
+    "final_score": "MIN 16 - 8 AZ"
+  },
+  {
     "game_pk": 823937,
     "official_date": "2026-06-20",
     "game_datetime": "2026-06-21T02:10:00Z",
