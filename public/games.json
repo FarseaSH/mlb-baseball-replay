@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824180,
+    "official_date": "2026-06-20",
+    "game_datetime": "2026-06-20T23:15:00Z",
+    "away_label": "CLE",
+    "home_label": "HOU",
+    "away_name": "Cleveland Guardians",
+    "home_name": "Houston Astros",
+    "away_score": 8,
+    "home_score": 1,
+    "venue_name": "Daikin Park",
+    "away_starting_pitcher": "Cantillo, J",
+    "home_starting_pitcher": "Arrighetti, S",
+    "html_path": "games/2026-06-20-cle-at-hou-824180.html",
+    "title": "CLE @ HOU",
+    "final_score": "CLE 8 - 1 HOU"
+  },
+  {
     "game_pk": 824909,
     "official_date": "2026-06-20",
     "game_datetime": "2026-06-20T20:10:00Z",
