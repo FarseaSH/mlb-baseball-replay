@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823288,
+    "official_date": "2026-06-22",
+    "game_datetime": "2026-06-23T02:10:00Z",
+    "away_label": "ATL",
+    "home_label": "SD",
+    "away_name": "Atlanta Braves",
+    "home_name": "San Diego Padres",
+    "away_score": 0,
+    "home_score": 1,
+    "venue_name": "Petco Park",
+    "away_starting_pitcher": "Holmes, G",
+    "home_starting_pitcher": "King, M",
+    "html_path": "games/2026-06-22-atl-at-sd-823288.html",
+    "title": "ATL @ SD",
+    "final_score": "ATL 0 - 1 SD"
+  },
+  {
     "game_pk": 824016,
     "official_date": "2026-06-22",
     "game_datetime": "2026-06-23T01:38:00Z",
