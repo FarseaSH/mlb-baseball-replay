@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824018,
+    "official_date": "2026-06-24",
+    "game_datetime": "2026-06-24T20:07:00Z",
+    "away_label": "BAL",
+    "home_label": "LAA",
+    "away_name": "Baltimore Orioles",
+    "home_name": "Los Angeles Angels",
+    "away_score": 6,
+    "home_score": 7,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Gibson, T",
+    "home_starting_pitcher": "Soriano, J",
+    "html_path": "games/2026-06-24-bal-at-laa-824018.html",
+    "title": "BAL @ LAA",
+    "final_score": "BAL 6 - 7 LAA"
+  },
+  {
     "game_pk": 824341,
     "official_date": "2026-06-24",
     "game_datetime": "2026-06-24T19:10:00Z",
