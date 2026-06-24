@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824584,
+    "official_date": "2026-06-23",
+    "game_datetime": "2026-06-23T23:40:00Z",
+    "away_label": "CLE",
+    "home_label": "CWS",
+    "away_name": "Cleveland Guardians",
+    "home_name": "Chicago White Sox",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "Rate Field",
+    "away_starting_pitcher": "Messick, P",
+    "home_starting_pitcher": "Burke, S",
+    "html_path": "games/2026-06-23-cle-at-cws-824584.html",
+    "title": "CLE @ CWS",
+    "final_score": "CLE 1 - 2 CWS"
+  },
+  {
     "game_pk": 824501,
     "official_date": "2026-06-23",
     "game_datetime": "2026-06-23T23:10:00Z",
