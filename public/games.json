@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823208,
+    "official_date": "2026-06-24",
+    "game_datetime": "2026-06-25T01:45:00Z",
+    "away_label": "ATH",
+    "home_label": "SF",
+    "away_name": "Athletics",
+    "home_name": "San Francisco Giants",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "Oracle Park",
+    "away_starting_pitcher": "Jump, G",
+    "home_starting_pitcher": "Mahle, T",
+    "html_path": "games/2026-06-24-ath-at-sf-823208.html",
+    "title": "ATH @ SF",
+    "final_score": "ATH 1 - 2 SF"
+  },
+  {
     "game_pk": 823284,
     "official_date": "2026-06-24",
     "game_datetime": "2026-06-25T00:40:00Z",
