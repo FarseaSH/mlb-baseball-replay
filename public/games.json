@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824258,
+    "official_date": "2026-06-25",
+    "game_datetime": "2026-06-25T22:40:00Z",
+    "away_label": "HOU",
+    "home_label": "DET",
+    "away_name": "Houston Astros",
+    "home_name": "Detroit Tigers",
+    "away_score": 2,
+    "home_score": 1,
+    "venue_name": "Comerica Park",
+    "away_starting_pitcher": "Imai, T",
+    "home_starting_pitcher": "Melton, T",
+    "html_path": "games/2026-06-25-hou-at-det-824258.html",
+    "title": "HOU @ DET",
+    "final_score": "HOU 2 - 1 DET"
+  },
+  {
     "game_pk": 823209,
     "official_date": "2026-06-25",
     "game_datetime": "2026-06-25T19:45:00Z",
