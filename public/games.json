@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823206,
+    "official_date": "2026-06-26",
+    "game_datetime": "2026-06-27T02:15:00Z",
+    "away_label": "ATL",
+    "home_label": "SF",
+    "away_name": "Atlanta Braves",
+    "home_name": "San Francisco Giants",
+    "away_score": 3,
+    "home_score": 1,
+    "venue_name": "Oracle Park",
+    "away_starting_pitcher": "López, R",
+    "home_starting_pitcher": "McDonald, T",
+    "html_path": "games/2026-06-26-atl-at-sf-823206.html",
+    "title": "ATL @ SF",
+    "final_score": "ATL 3 - 1 SF"
+  },
+  {
     "game_pk": 823285,
     "official_date": "2026-06-26",
     "game_datetime": "2026-06-27T01:45:00Z",
