@@ -17,6 +17,23 @@
     "final_score": "MIA 1 - 2 STL"
   },
   {
+    "game_pk": 824580,
+    "official_date": "2026-06-28",
+    "game_datetime": "2026-06-28T18:10:00Z",
+    "away_label": "KC",
+    "home_label": "CWS",
+    "away_name": "Kansas City Royals",
+    "home_name": "Chicago White Sox",
+    "away_score": 5,
+    "home_score": 4,
+    "venue_name": "Rate Field",
+    "away_starting_pitcher": "Avila, L",
+    "home_starting_pitcher": "Kay, A",
+    "html_path": "games/2026-06-28-kc-at-cws-824580.html",
+    "title": "KC @ CWS",
+    "final_score": "KC 5 - 4 CWS"
+  },
+  {
     "game_pk": 823686,
     "official_date": "2026-06-28",
     "game_datetime": "2026-06-28T18:10:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-06-28-col-at-min-823686.html",
     "title": "COL @ MIN",
     "final_score": "COL 2 - 3 MIN"
+  },
+  {
+    "game_pk": 824422,
+    "official_date": "2026-06-28",
+    "game_datetime": "2026-06-28T17:40:00Z",
+    "away_label": "SEA",
+    "home_label": "CLE",
+    "away_name": "Seattle Mariners",
+    "home_name": "Cleveland Guardians",
+    "away_score": 5,
+    "home_score": 6,
+    "venue_name": "Progressive Field",
+    "away_starting_pitcher": "Hancock, E",
+    "home_starting_pitcher": "Williams, G",
+    "html_path": "games/2026-06-28-sea-at-cle-824422.html",
+    "title": "SEA @ CLE",
+    "final_score": "SEA 5 - 6 CLE"
   },
   {
     "game_pk": 823608,
