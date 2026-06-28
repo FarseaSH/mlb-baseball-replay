@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824015,
+    "official_date": "2026-06-27",
+    "game_datetime": "2026-06-28T01:38:00Z",
+    "away_label": "ATH",
+    "home_label": "LAA",
+    "away_name": "Athletics",
+    "home_name": "Los Angeles Angels",
+    "away_score": 2,
+    "home_score": 5,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Perkins, J",
+    "home_starting_pitcher": "Detmers, R",
+    "html_path": "games/2026-06-27-ath-at-laa-824015.html",
+    "title": "ATH @ LAA",
+    "final_score": "ATH 2 - 5 LAA"
+  },
+  {
     "game_pk": 823207,
     "official_date": "2026-06-27",
     "game_datetime": "2026-06-28T01:05:00Z",
