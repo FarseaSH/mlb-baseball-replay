@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824744,
+    "official_date": "2026-06-28",
+    "game_datetime": "2026-06-28T23:20:00Z",
+    "away_label": "NYY",
+    "home_label": "BOS",
+    "away_name": "New York Yankees",
+    "home_name": "Boston Red Sox",
+    "away_score": 4,
+    "home_score": 5,
+    "venue_name": "Fenway Park",
+    "away_starting_pitcher": "Rodón, C",
+    "home_starting_pitcher": "Gray, S",
+    "html_path": "games/2026-06-28-nyy-at-bos-824744.html",
+    "title": "NYY @ BOS",
+    "final_score": "NYY 4 - 5 BOS"
+  },
+  {
     "game_pk": 823281,
     "official_date": "2026-06-28",
     "game_datetime": "2026-06-28T20:10:00Z",
