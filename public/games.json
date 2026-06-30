@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824176,
+    "official_date": "2026-06-29",
+    "game_datetime": "2026-06-30T00:10:00Z",
+    "away_label": "MIN",
+    "home_label": "HOU",
+    "away_name": "Minnesota Twins",
+    "home_name": "Houston Astros",
+    "away_score": 5,
+    "home_score": 4,
+    "venue_name": "Daikin Park",
+    "away_starting_pitcher": "Matthews, Z",
+    "home_starting_pitcher": "Lambert, P",
+    "html_path": "games/2026-06-29-min-at-hou-824176.html",
+    "title": "MIN @ HOU",
+    "final_score": "MIN 5 - 4 HOU"
+  },
+  {
     "game_pk": 823771,
     "official_date": "2026-06-29",
     "game_datetime": "2026-06-29T23:40:00Z",
