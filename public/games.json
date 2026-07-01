@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824419,
+    "official_date": "2026-07-01",
+    "game_datetime": "2026-07-01T17:10:00Z",
+    "away_label": "TEX",
+    "home_label": "CLE",
+    "away_name": "Texas Rangers",
+    "home_name": "Cleveland Guardians",
+    "away_score": 4,
+    "home_score": 9,
+    "venue_name": "Progressive Field",
+    "away_starting_pitcher": "Gore, M",
+    "home_starting_pitcher": "Cantillo, J",
+    "html_path": "games/2026-07-01-tex-at-cle-824419.html",
+    "title": "TEX @ CLE",
+    "final_score": "TEX 4 - 9 CLE"
+  },
+  {
     "game_pk": 824818,
     "official_date": "2026-07-01",
     "game_datetime": "2026-07-01T16:35:00Z",
