@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824335,
+    "official_date": "2026-07-02",
+    "game_datetime": "2026-07-02T19:10:00Z",
+    "away_label": "MIA",
+    "home_label": "COL",
+    "away_name": "Miami Marlins",
+    "home_name": "Colorado Rockies",
+    "away_score": 4,
+    "home_score": 14,
+    "venue_name": "Coors Field",
+    "away_starting_pitcher": "Gusto, R",
+    "home_starting_pitcher": "Lorenzen, M",
+    "html_path": "games/2026-07-02-mia-at-col-824335.html",
+    "title": "MIA @ COL",
+    "final_score": "MIA 4 - 14 COL"
+  },
+  {
     "game_pk": 823765,
     "official_date": "2026-07-02",
     "game_datetime": "2026-07-02T18:10:00Z",
