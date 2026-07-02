@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823765,
+    "official_date": "2026-07-02",
+    "game_datetime": "2026-07-02T18:10:00Z",
+    "away_label": "CIN",
+    "home_label": "MIL",
+    "away_name": "Cincinnati Reds",
+    "home_name": "Milwaukee Brewers",
+    "away_score": 7,
+    "home_score": 2,
+    "venue_name": "American Family Field",
+    "away_starting_pitcher": "Burns, C",
+    "home_starting_pitcher": "Misiorowski, J",
+    "html_path": "games/2026-07-02-cin-at-mil-823765.html",
+    "title": "CIN @ MIL",
+    "final_score": "CIN 7 - 2 MIL"
+  },
+  {
     "game_pk": 823442,
     "official_date": "2026-07-02",
     "game_datetime": "2026-07-02T16:35:00Z",
