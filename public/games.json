@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824093,
+    "official_date": "2026-07-02",
+    "game_datetime": "2026-07-02T23:40:00Z",
+    "away_label": "TB",
+    "home_label": "KC",
+    "away_name": "Tampa Bay Rays",
+    "home_name": "Kansas City Royals",
+    "away_score": 5,
+    "home_score": 2,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Seymour, I",
+    "home_starting_pitcher": "Kolek, S",
+    "html_path": "games/2026-07-02-tb-at-kc-824093.html",
+    "title": "TB @ KC",
+    "final_score": "TB 5 - 2 KC"
+  },
+  {
     "game_pk": 824416,
     "official_date": "2026-07-02",
     "game_datetime": "2026-07-02T22:40:00Z",
