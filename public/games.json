@@ -17,6 +17,23 @@
     "final_score": "TB 5 - 2 KC"
   },
   {
+    "game_pk": 824906,
+    "official_date": "2026-07-02",
+    "game_datetime": "2026-07-02T23:15:00Z",
+    "away_label": "STL",
+    "home_label": "ATL",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "Atlanta Braves",
+    "away_score": 11,
+    "home_score": 5,
+    "venue_name": "Truist Park",
+    "away_starting_pitcher": "May, D",
+    "home_starting_pitcher": "Waldrep, H",
+    "html_path": "games/2026-07-02-stl-at-atl-824906.html",
+    "title": "STL @ ATL",
+    "final_score": "STL 11 - 5 ATL"
+  },
+  {
     "game_pk": 824416,
     "official_date": "2026-07-02",
     "game_datetime": "2026-07-02T22:40:00Z",
