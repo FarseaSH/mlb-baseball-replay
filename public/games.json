@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824416,
+    "official_date": "2026-07-02",
+    "game_datetime": "2026-07-02T22:40:00Z",
+    "away_label": "CWS",
+    "home_label": "CLE",
+    "away_name": "Chicago White Sox",
+    "home_name": "Cleveland Guardians",
+    "away_score": 5,
+    "home_score": 6,
+    "venue_name": "Progressive Field",
+    "away_starting_pitcher": "Martin, D",
+    "home_starting_pitcher": "Cecconi, S",
+    "html_path": "games/2026-07-02-cws-at-cle-824416.html",
+    "title": "CWS @ CLE",
+    "final_score": "CWS 5 - 6 CLE"
+  },
+  {
     "game_pk": 824335,
     "official_date": "2026-07-02",
     "game_datetime": "2026-07-02T19:10:00Z",
