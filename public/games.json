@@ -34,6 +34,23 @@
     "final_score": "TOR 2 - 0 SEA"
   },
   {
+    "game_pk": 825062,
+    "official_date": "2026-07-03",
+    "game_datetime": "2026-07-04T01:45:00Z",
+    "away_label": "MIL",
+    "home_label": "AZ",
+    "away_name": "Milwaukee Brewers",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 7,
+    "home_score": 4,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "Harrison, K",
+    "home_starting_pitcher": "Cabrera, J",
+    "html_path": "games/2026-07-03-mil-at-az-825062.html",
+    "title": "MIL @ AZ",
+    "final_score": "MIL 7 - 4 AZ"
+  },
+  {
     "game_pk": 824982,
     "official_date": "2026-07-03",
     "game_datetime": "2026-07-04T01:40:00Z",
