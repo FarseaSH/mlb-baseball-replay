@@ -1,5 +1,39 @@
 [
   {
+    "game_pk": 824091,
+    "official_date": "2026-07-05",
+    "game_datetime": "2026-07-05T19:00:00Z",
+    "away_label": "PHI",
+    "home_label": "KC",
+    "away_name": "Philadelphia Phillies",
+    "home_name": "Kansas City Royals",
+    "away_score": 2,
+    "home_score": 5,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Nola, A",
+    "home_starting_pitcher": "Avila, L",
+    "html_path": "games/2026-07-05-phi-at-kc-824091.html",
+    "title": "PHI @ KC",
+    "final_score": "PHI 2 - 5 KC"
+  },
+  {
+    "game_pk": 824656,
+    "official_date": "2026-07-05",
+    "game_datetime": "2026-07-05T18:30:00Z",
+    "away_label": "STL",
+    "home_label": "CHC",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "Chicago Cubs",
+    "away_score": 4,
+    "home_score": 6,
+    "venue_name": "Wrigley Field",
+    "away_starting_pitcher": "Liberatore, M",
+    "home_starting_pitcher": "Assad, J",
+    "html_path": "games/2026-07-05-stl-at-chc-824656.html",
+    "title": "STL @ CHC",
+    "final_score": "STL 4 - 6 CHC"
+  },
+  {
     "game_pk": 823525,
     "official_date": "2026-07-05",
     "game_datetime": "2026-07-05T17:35:00Z",
@@ -49,6 +83,23 @@
     "html_path": "games/2026-07-05-pit-at-wsh-822715.html",
     "title": "PIT @ WSH",
     "final_score": "PIT 11 - 5 WSH"
+  },
+  {
+    "game_pk": 824902,
+    "official_date": "2026-07-05",
+    "game_datetime": "2026-07-05T16:30:00Z",
+    "away_label": "NYM",
+    "home_label": "ATL",
+    "away_name": "New York Mets",
+    "home_name": "Atlanta Braves",
+    "away_score": 10,
+    "home_score": 9,
+    "venue_name": "Truist Park",
+    "away_starting_pitcher": "McLean, N",
+    "home_starting_pitcher": "Pérez, M",
+    "html_path": "games/2026-07-05-nym-at-atl-824902.html",
+    "title": "NYM @ ATL",
+    "final_score": "NYM 10 - 9 ATL"
   },
   {
     "game_pk": 823932,
