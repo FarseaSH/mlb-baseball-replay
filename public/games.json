@@ -17,6 +17,23 @@
     "final_score": "MIL 3 - 4 AZ"
   },
   {
+    "game_pk": 824012,
+    "official_date": "2026-07-04",
+    "game_datetime": "2026-07-05T01:38:00Z",
+    "away_label": "BOS",
+    "home_label": "LAA",
+    "away_name": "Boston Red Sox",
+    "home_name": "Los Angeles Angels",
+    "away_score": 8,
+    "home_score": 1,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Gray, S",
+    "home_starting_pitcher": "Aldegheri, S",
+    "html_path": "games/2026-07-04-bos-at-laa-824012.html",
+    "title": "BOS @ LAA",
+    "final_score": "BOS 8 - 1 LAA"
+  },
+  {
     "game_pk": 824334,
     "official_date": "2026-07-04",
     "game_datetime": "2026-07-05T00:10:00Z",
