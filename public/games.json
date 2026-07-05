@@ -68,6 +68,23 @@
     "final_score": "STL 4 - 6 CHC"
   },
   {
+    "game_pk": 824413,
+    "official_date": "2026-07-05",
+    "game_datetime": "2026-07-05T18:00:00Z",
+    "away_label": "CWS",
+    "home_label": "CLE",
+    "away_name": "Chicago White Sox",
+    "home_name": "Cleveland Guardians",
+    "away_score": 7,
+    "home_score": 6,
+    "venue_name": "Progressive Field",
+    "away_starting_pitcher": "Murphy, C",
+    "home_starting_pitcher": "Bibee, T",
+    "html_path": "games/2026-07-05-cws-at-cle-824413.html",
+    "title": "CWS @ CLE",
+    "final_score": "CWS 7 - 6 CLE"
+  },
+  {
     "game_pk": 823525,
     "official_date": "2026-07-05",
     "game_datetime": "2026-07-05T17:35:00Z",
