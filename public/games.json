@@ -1,5 +1,39 @@
 [
   {
+    "game_pk": 823687,
+    "official_date": "2026-07-07",
+    "game_datetime": "2026-07-07T23:40:00Z",
+    "away_label": "CLE",
+    "home_label": "MIN",
+    "away_name": "Cleveland Guardians",
+    "home_name": "Minnesota Twins",
+    "away_score": 1,
+    "home_score": 3,
+    "venue_name": "Target Field",
+    "away_starting_pitcher": "Cantillo, J",
+    "home_starting_pitcher": "Bradley, T",
+    "html_path": "games/2026-07-07-cle-at-min-823687.html",
+    "title": "CLE @ MIN",
+    "final_score": "CLE 1 - 3 MIN"
+  },
+  {
+    "game_pk": 822713,
+    "official_date": "2026-07-07",
+    "game_datetime": "2026-07-07T22:45:00Z",
+    "away_label": "HOU",
+    "home_label": "WSH",
+    "away_name": "Houston Astros",
+    "home_name": "Washington Nationals",
+    "away_score": 6,
+    "home_score": 3,
+    "venue_name": "Nationals Park",
+    "away_starting_pitcher": "Imai, T",
+    "home_starting_pitcher": "Alvarez, A",
+    "html_path": "games/2026-07-07-hou-at-wsh-822713.html",
+    "title": "HOU @ WSH",
+    "final_score": "HOU 6 - 3 WSH"
+  },
+  {
     "game_pk": 824254,
     "official_date": "2026-07-07",
     "game_datetime": "2026-07-07T22:40:00Z",
@@ -15,6 +49,23 @@
     "html_path": "games/2026-07-07-ath-at-det-824254.html",
     "title": "ATH @ DET",
     "final_score": "ATH 2 - 6 DET"
+  },
+  {
+    "game_pk": 823847,
+    "official_date": "2026-07-07",
+    "game_datetime": "2026-07-07T22:40:00Z",
+    "away_label": "SEA",
+    "home_label": "MIA",
+    "away_name": "Seattle Mariners",
+    "home_name": "Miami Marlins",
+    "away_score": 5,
+    "home_score": 6,
+    "venue_name": "loanDepot park",
+    "away_starting_pitcher": "Woo, B",
+    "home_starting_pitcher": "Meyer, M",
+    "html_path": "games/2026-07-07-sea-at-mia-823847.html",
+    "title": "SEA @ MIA",
+    "final_score": "SEA 5 - 6 MIA"
   },
   {
     "game_pk": 823361,
