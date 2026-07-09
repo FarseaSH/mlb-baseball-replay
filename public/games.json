@@ -1,5 +1,39 @@
 [
   {
+    "game_pk": 822710,
+    "official_date": "2026-07-08",
+    "game_datetime": "2026-07-08T22:45:00Z",
+    "away_label": "HOU",
+    "home_label": "WSH",
+    "away_name": "Houston Astros",
+    "home_name": "Washington Nationals",
+    "away_score": 2,
+    "home_score": 8,
+    "venue_name": "Nationals Park",
+    "away_starting_pitcher": "Arrighetti, S",
+    "home_starting_pitcher": "Griffin, F",
+    "html_path": "games/2026-07-08-hou-at-wsh-822710.html",
+    "title": "HOU @ WSH",
+    "final_score": "HOU 2 - 8 WSH"
+  },
+  {
+    "game_pk": 824253,
+    "official_date": "2026-07-08",
+    "game_datetime": "2026-07-08T22:40:00Z",
+    "away_label": "ATH",
+    "home_label": "DET",
+    "away_name": "Athletics",
+    "home_name": "Detroit Tigers",
+    "away_score": 1,
+    "home_score": 6,
+    "venue_name": "Comerica Park",
+    "away_starting_pitcher": "Springs, J",
+    "home_starting_pitcher": "Melton, T",
+    "html_path": "games/2026-07-08-ath-at-det-824253.html",
+    "title": "ATH @ DET",
+    "final_score": "ATH 1 - 6 DET"
+  },
+  {
     "game_pk": 823848,
     "official_date": "2026-07-08",
     "game_datetime": "2026-07-08T22:40:00Z",
@@ -49,6 +83,23 @@
     "html_path": "games/2026-07-08-nyy-at-tb-822957.html",
     "title": "NYY @ TB",
     "final_score": "NYY 0 - 3 TB"
+  },
+  {
+    "game_pk": 824815,
+    "official_date": "2026-07-08",
+    "game_datetime": "2026-07-08T22:35:00Z",
+    "away_label": "CHC",
+    "home_label": "BAL",
+    "away_name": "Chicago Cubs",
+    "home_name": "Baltimore Orioles",
+    "away_score": 9,
+    "home_score": 7,
+    "venue_name": "Oriole Park at Camden Yards",
+    "away_starting_pitcher": "Rea, C",
+    "home_starting_pitcher": "Kremer, D",
+    "html_path": "games/2026-07-08-chc-at-bal-824815.html",
+    "title": "CHC @ BAL",
+    "final_score": "CHC 9 - 7 BAL"
   },
   {
     "game_pk": 823202,
