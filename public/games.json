@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824577,
+    "official_date": "2026-07-09",
+    "game_datetime": "2026-07-09T18:10:00Z",
+    "away_label": "BOS",
+    "home_label": "CWS",
+    "away_name": "Boston Red Sox",
+    "home_name": "Chicago White Sox",
+    "away_score": 2,
+    "home_score": 1,
+    "venue_name": "Rate Field",
+    "away_starting_pitcher": "Sandoval, P",
+    "home_starting_pitcher": "Kay, A",
+    "html_path": "games/2026-07-09-bos-at-cws-824577.html",
+    "title": "BOS @ CWS",
+    "final_score": "BOS 2 - 1 CWS"
+  },
+  {
     "game_pk": 823683,
     "official_date": "2026-07-09",
     "game_datetime": "2026-07-09T17:40:00Z",
