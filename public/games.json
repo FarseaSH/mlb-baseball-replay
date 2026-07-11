@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824576,
+    "official_date": "2026-07-11",
+    "game_datetime": "2026-07-11T18:10:00Z",
+    "away_label": "ATH",
+    "home_label": "CWS",
+    "away_name": "Athletics",
+    "home_name": "Chicago White Sox",
+    "away_score": 0,
+    "home_score": 1,
+    "venue_name": "Rate Field",
+    "away_starting_pitcher": "Jump, G",
+    "home_starting_pitcher": "Hudson, B",
+    "html_path": "games/2026-07-11-ath-at-cws-824576.html",
+    "title": "ATH @ CWS",
+    "final_score": "ATH 0 - 1 CWS"
+  },
+  {
     "game_pk": 823357,
     "official_date": "2026-07-11",
     "game_datetime": "2026-07-11T16:05:00Z",
