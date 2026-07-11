@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824575,
+    "official_date": "2026-07-10",
+    "game_datetime": "2026-07-10T23:40:00Z",
+    "away_label": "ATH",
+    "home_label": "CWS",
+    "away_name": "Athletics",
+    "home_name": "Chicago White Sox",
+    "away_score": 1,
+    "home_score": 14,
+    "venue_name": "Rate Field",
+    "away_starting_pitcher": "Lopez, J",
+    "home_starting_pitcher": "Burke, S",
+    "html_path": "games/2026-07-10-ath-at-cws-824575.html",
+    "title": "ATH @ CWS",
+    "final_score": "ATH 1 - 14 CWS"
+  },
+  {
     "game_pk": 824493,
     "official_date": "2026-07-10",
     "game_datetime": "2026-07-10T23:10:00Z",
