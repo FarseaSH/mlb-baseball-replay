@@ -17,6 +17,23 @@
     "final_score": "STL 3 - 5 AZ"
   },
   {
+    "game_pk": 824899,
+    "official_date": "2026-07-18",
+    "game_datetime": "2026-07-18T20:10:00Z",
+    "away_label": "TEX",
+    "home_label": "ATL",
+    "away_name": "Texas Rangers",
+    "home_name": "Atlanta Braves",
+    "away_score": 7,
+    "home_score": 6,
+    "venue_name": "Truist Park",
+    "away_starting_pitcher": "Gore, M",
+    "home_starting_pitcher": "Murphy, O",
+    "html_path": "games/2026-07-18-tex-at-atl-824899.html",
+    "title": "TEX @ ATL",
+    "final_score": "TEX 7 - 6 ATL"
+  },
+  {
     "game_pk": 824088,
     "official_date": "2026-07-18",
     "game_datetime": "2026-07-18T20:10:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-07-18-sd-at-kc-824088.html",
     "title": "SD @ KC",
     "final_score": "SD 1 - 6 KC"
+  },
+  {
+    "game_pk": 823763,
+    "official_date": "2026-07-18",
+    "game_datetime": "2026-07-18T20:10:00Z",
+    "away_label": "MIA",
+    "home_label": "MIL",
+    "away_name": "Miami Marlins",
+    "home_name": "Milwaukee Brewers",
+    "away_score": 6,
+    "home_score": 8,
+    "venue_name": "American Family Field",
+    "away_starting_pitcher": "Meyer, M",
+    "home_starting_pitcher": "Drohan, S",
+    "html_path": "games/2026-07-18-mia-at-mil-823763.html",
+    "title": "MIA @ MIL",
+    "final_score": "MIA 6 - 8 MIL"
   },
   {
     "game_pk": 824331,
