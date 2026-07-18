@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824331,
+    "official_date": "2026-07-18",
+    "game_datetime": "2026-07-18T19:10:00Z",
+    "away_label": "CIN",
+    "home_label": "COL",
+    "away_name": "Cincinnati Reds",
+    "home_name": "Colorado Rockies",
+    "away_score": 3,
+    "home_score": 10,
+    "venue_name": "Coors Field",
+    "away_starting_pitcher": "Lowder, R",
+    "home_starting_pitcher": "Sugano, T",
+    "html_path": "games/2026-07-18-cin-at-col-824331.html",
+    "title": "CIN @ COL",
+    "final_score": "CIN 3 - 10 COL"
+  },
+  {
     "game_pk": 824657,
     "official_date": "2026-07-18",
     "game_datetime": "2026-07-18T18:20:00Z",
