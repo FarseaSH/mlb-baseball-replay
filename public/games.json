@@ -1,5 +1,39 @@
 [
   {
+    "game_pk": 825059,
+    "official_date": "2026-07-18",
+    "game_datetime": "2026-07-18T20:10:00Z",
+    "away_label": "STL",
+    "home_label": "AZ",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 3,
+    "home_score": 5,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "May, D",
+    "home_starting_pitcher": "Pfaadt, B",
+    "html_path": "games/2026-07-18-stl-at-az-825059.html",
+    "title": "STL @ AZ",
+    "final_score": "STL 3 - 5 AZ"
+  },
+  {
+    "game_pk": 824088,
+    "official_date": "2026-07-18",
+    "game_datetime": "2026-07-18T20:10:00Z",
+    "away_label": "SD",
+    "home_label": "KC",
+    "away_name": "San Diego Padres",
+    "home_name": "Kansas City Royals",
+    "away_score": 1,
+    "home_score": 6,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Canning, G",
+    "home_starting_pitcher": "Dobnak, R",
+    "html_path": "games/2026-07-18-sd-at-kc-824088.html",
+    "title": "SD @ KC",
+    "final_score": "SD 1 - 6 KC"
+  },
+  {
     "game_pk": 824331,
     "official_date": "2026-07-18",
     "game_datetime": "2026-07-18T19:10:00Z",
@@ -32,6 +66,23 @@
     "html_path": "games/2026-07-18-cws-at-tor-822790.html",
     "title": "CWS @ TOR",
     "final_score": "CWS 0 - 1 TOR"
+  },
+  {
+    "game_pk": 823441,
+    "official_date": "2026-07-18",
+    "game_datetime": "2026-07-18T19:05:00Z",
+    "away_label": "NYM",
+    "home_label": "PHI",
+    "away_name": "New York Mets",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 1,
+    "home_score": 6,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Manaea, S",
+    "home_starting_pitcher": "Luzardo, J",
+    "html_path": "games/2026-07-18-nym-at-phi-823441.html",
+    "title": "NYM @ PHI",
+    "final_score": "NYM 1 - 6 PHI"
   },
   {
     "game_pk": 824657,
