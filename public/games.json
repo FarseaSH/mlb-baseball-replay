@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824739,
+    "official_date": "2026-07-19",
+    "game_datetime": "2026-07-19T17:35:00Z",
+    "away_label": "TB",
+    "home_label": "BOS",
+    "away_name": "Tampa Bay Rays",
+    "home_name": "Boston Red Sox",
+    "away_score": 1,
+    "home_score": 6,
+    "venue_name": "Fenway Park",
+    "away_starting_pitcher": "McClanahan, S",
+    "home_starting_pitcher": "Gray, S",
+    "html_path": "games/2026-07-19-tb-at-bos-824739.html",
+    "title": "TB @ BOS",
+    "final_score": "TB 1 - 6 BOS"
+  },
+  {
     "game_pk": 823523,
     "official_date": "2026-07-19",
     "game_datetime": "2026-07-19T16:35:00Z",
@@ -7,14 +24,14 @@
     "home_label": "NYY",
     "away_name": "Los Angeles Dodgers",
     "home_name": "New York Yankees",
-    "away_score": 4,
-    "home_score": 1,
+    "away_score": 8,
+    "home_score": 2,
     "venue_name": "Yankee Stadium",
     "away_starting_pitcher": "Yamamoto, Y",
     "home_starting_pitcher": "Schlittler, C",
     "html_path": "games/2026-07-19-lad-at-nyy-823523.html",
     "title": "LAD @ NYY",
-    "final_score": "LAD 4 - 1 NYY"
+    "final_score": "LAD 8 - 2 NYY"
   },
   {
     "game_pk": 822786,
@@ -270,23 +287,6 @@
     "html_path": "games/2026-07-18-min-at-chc-824657.html",
     "title": "MIN @ CHC",
     "final_score": "MIN 2 - 6 CHC"
-  },
-  {
-    "game_pk": 824414,
-    "official_date": "2026-07-18",
-    "game_datetime": "2026-07-18T17:10:00Z",
-    "away_label": "PIT",
-    "home_label": "CLE",
-    "away_name": "Pittsburgh Pirates",
-    "home_name": "Cleveland Guardians",
-    "away_score": 7,
-    "home_score": 1,
-    "venue_name": "Progressive Field",
-    "away_starting_pitcher": "Jones, J",
-    "home_starting_pitcher": "Williams, G",
-    "html_path": "games/2026-07-18-pit-at-cle-824414.html",
-    "title": "PIT @ CLE",
-    "final_score": "PIT 7 - 1 CLE"
   },
   {
     "game_pk": 824414,
@@ -1086,23 +1086,6 @@
     "html_path": "games/2026-07-11-laa-at-min-823682.html",
     "title": "LAA @ MIN",
     "final_score": "LAA 3 - 5 MIN"
-  },
-  {
-    "game_pk": 823357,
-    "official_date": "2026-07-11",
-    "game_datetime": "2026-07-11T16:05:00Z",
-    "away_label": "MIL",
-    "home_label": "PIT",
-    "away_name": "Milwaukee Brewers",
-    "home_name": "Pittsburgh Pirates",
-    "away_score": 6,
-    "home_score": 7,
-    "venue_name": "PNC Park",
-    "away_starting_pitcher": "Sproat, B",
-    "home_starting_pitcher": "Ashcraft, B",
-    "html_path": "games/2026-07-11-mil-at-pit-823357.html",
-    "title": "MIL @ PIT",
-    "final_score": "MIL 6 - 7 PIT"
   },
   {
     "game_pk": 823357,
