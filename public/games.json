@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824083,
+    "official_date": "2026-07-22",
+    "game_datetime": "2026-07-22T18:10:00Z",
+    "away_label": "SF",
+    "home_label": "KC",
+    "away_name": "San Francisco Giants",
+    "home_name": "Kansas City Royals",
+    "away_score": 4,
+    "home_score": 5,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Roupp, L",
+    "home_starting_pitcher": "Lugo, S",
+    "html_path": "games/2026-07-22-sf-at-kc-824083.html",
+    "title": "SF @ KC",
+    "final_score": "SF 4 - 5 KC"
+  },
+  {
     "game_pk": 824735,
     "official_date": "2026-07-22",
     "game_datetime": "2026-07-22T17:35:00Z",
@@ -15,6 +32,23 @@
     "html_path": "games/2026-07-22-bal-at-bos-824735.html",
     "title": "BAL @ BOS",
     "final_score": "BAL 3 - 6 BOS"
+  },
+  {
+    "game_pk": 823518,
+    "official_date": "2026-07-22",
+    "game_datetime": "2026-07-22T17:05:00Z",
+    "away_label": "PIT",
+    "home_label": "NYY",
+    "away_name": "Pittsburgh Pirates",
+    "home_name": "New York Yankees",
+    "away_score": 5,
+    "home_score": 3,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Keller, M",
+    "home_starting_pitcher": "Cole, G",
+    "html_path": "games/2026-07-22-pit-at-nyy-823518.html",
+    "title": "PIT @ NYY",
+    "final_score": "PIT 5 - 3 NYY"
   },
   {
     "game_pk": 825056,
