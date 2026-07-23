@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824406,
+    "official_date": "2026-07-23",
+    "game_datetime": "2026-07-23T17:10:00Z",
+    "away_label": "MIN",
+    "home_label": "CLE",
+    "away_name": "Minnesota Twins",
+    "home_name": "Cleveland Guardians",
+    "away_score": 3,
+    "home_score": 1,
+    "venue_name": "Progressive Field",
+    "away_starting_pitcher": "Bradley, T",
+    "home_starting_pitcher": "Williams, G",
+    "html_path": "games/2026-07-23-min-at-cle-824406.html",
+    "title": "MIN @ CLE",
+    "final_score": "MIN 3 - 1 CLE"
+  },
+  {
     "game_pk": 824893,
     "official_date": "2026-07-23",
     "game_datetime": "2026-07-23T16:15:00Z",
