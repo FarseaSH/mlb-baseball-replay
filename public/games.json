@@ -17,6 +17,23 @@
     "final_score": "TOR 6 - 0 BOS"
   },
   {
+    "game_pk": 823841,
+    "official_date": "2026-07-25",
+    "game_datetime": "2026-07-25T20:10:00Z",
+    "away_label": "SD",
+    "home_label": "MIA",
+    "away_name": "San Diego Padres",
+    "home_name": "Miami Marlins",
+    "away_score": 7,
+    "home_score": 2,
+    "venue_name": "loanDepot park",
+    "away_starting_pitcher": "Vásquez, R",
+    "home_starting_pitcher": "Pérez, E",
+    "html_path": "games/2026-07-25-sd-at-mia-823841.html",
+    "title": "SD @ MIA",
+    "final_score": "SD 7 - 2 MIA"
+  },
+  {
     "game_pk": 823197,
     "official_date": "2026-07-25",
     "game_datetime": "2026-07-25T20:05:00Z",
