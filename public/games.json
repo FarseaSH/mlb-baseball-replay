@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823843,
+    "official_date": "2026-07-24",
+    "game_datetime": "2026-07-24T23:10:00Z",
+    "away_label": "SD",
+    "home_label": "MIA",
+    "away_name": "San Diego Padres",
+    "home_name": "Miami Marlins",
+    "away_score": 4,
+    "home_score": 2,
+    "venue_name": "loanDepot park",
+    "away_starting_pitcher": "Márquez, G",
+    "home_starting_pitcher": "Gusto, R",
+    "html_path": "games/2026-07-24-sd-at-mia-823843.html",
+    "title": "SD @ MIA",
+    "final_score": "SD 4 - 2 MIA"
+  },
+  {
     "game_pk": 823601,
     "official_date": "2026-07-24",
     "game_datetime": "2026-07-24T23:10:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-07-24-cle-at-tb-822952.html",
     "title": "CLE @ TB",
     "final_score": "CLE 3 - 11 TB"
+  },
+  {
+    "game_pk": 824812,
+    "official_date": "2026-07-24",
+    "game_datetime": "2026-07-24T23:05:00Z",
+    "away_label": "ATL",
+    "home_label": "BAL",
+    "away_name": "Atlanta Braves",
+    "home_name": "Baltimore Orioles",
+    "away_score": 7,
+    "home_score": 6,
+    "venue_name": "Oriole Park at Camden Yards",
+    "away_starting_pitcher": "Holmes, G",
+    "home_starting_pitcher": "Rogers, T",
+    "html_path": "games/2026-07-24-atl-at-bal-824812.html",
+    "title": "ATL @ BAL",
+    "final_score": "ATL 7 - 6 BAL"
   },
   {
     "game_pk": 823434,
