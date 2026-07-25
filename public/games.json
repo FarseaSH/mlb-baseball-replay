@@ -1,5 +1,39 @@
 [
   {
+    "game_pk": 823434,
+    "official_date": "2026-07-24",
+    "game_datetime": "2026-07-24T22:45:00Z",
+    "away_label": "NYY",
+    "home_label": "PHI",
+    "away_name": "New York Yankees",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 1,
+    "home_score": 0,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Schlittler, C",
+    "home_starting_pitcher": "Luzardo, J",
+    "html_path": "games/2026-07-24-nyy-at-phi-823434.html",
+    "title": "NYY @ PHI",
+    "final_score": "NYY 1 - 0 PHI"
+  },
+  {
+    "game_pk": 822707,
+    "official_date": "2026-07-24",
+    "game_datetime": "2026-07-24T22:45:00Z",
+    "away_label": "AZ",
+    "home_label": "WSH",
+    "away_name": "Arizona Diamondbacks",
+    "home_name": "Washington Nationals",
+    "away_score": 3,
+    "home_score": 2,
+    "venue_name": "Nationals Park",
+    "away_starting_pitcher": "Rodriguez, E",
+    "home_starting_pitcher": "Palmquist, C",
+    "html_path": "games/2026-07-24-az-at-wsh-822707.html",
+    "title": "AZ @ WSH",
+    "final_score": "AZ 3 - 2 WSH"
+  },
+  {
     "game_pk": 824248,
     "official_date": "2026-07-24",
     "game_datetime": "2026-07-24T22:40:00Z",
@@ -15,6 +49,23 @@
     "html_path": "games/2026-07-24-kc-at-det-824248.html",
     "title": "KC @ DET",
     "final_score": "KC 1 - 2 DET"
+  },
+  {
+    "game_pk": 823352,
+    "official_date": "2026-07-24",
+    "game_datetime": "2026-07-24T22:40:00Z",
+    "away_label": "CHC",
+    "home_label": "PIT",
+    "away_name": "Chicago Cubs",
+    "home_name": "Pittsburgh Pirates",
+    "away_score": 3,
+    "home_score": 2,
+    "venue_name": "PNC Park",
+    "away_starting_pitcher": "Boyd, M",
+    "home_starting_pitcher": "Jones, J",
+    "html_path": "games/2026-07-24-chc-at-pit-823352.html",
+    "title": "CHC @ PIT",
+    "final_score": "CHC 3 - 2 PIT"
   },
   {
     "game_pk": 823759,
