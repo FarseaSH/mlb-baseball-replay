@@ -17,6 +17,23 @@
     "final_score": "CLE 0 - 3 TB"
   },
   {
+    "game_pk": 823435,
+    "official_date": "2026-07-25",
+    "game_datetime": "2026-07-25T22:05:00Z",
+    "away_label": "NYY",
+    "home_label": "PHI",
+    "away_name": "New York Yankees",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 3,
+    "home_score": 1,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Weathers, R",
+    "home_starting_pitcher": "Mayza, T",
+    "html_path": "games/2026-07-25-nyy-at-phi-823435.html",
+    "title": "NYY @ PHI",
+    "final_score": "NYY 3 - 1 PHI"
+  },
+  {
     "game_pk": 824734,
     "official_date": "2026-07-25",
     "game_datetime": "2026-07-25T20:10:00Z",
