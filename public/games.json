@@ -34,6 +34,23 @@
     "final_score": "BOS 4 - 2 ATH"
   },
   {
+    "game_pk": 824001,
+    "official_date": "2026-07-27",
+    "game_datetime": "2026-07-28T01:38:00Z",
+    "away_label": "HOU",
+    "home_label": "LAA",
+    "away_name": "Houston Astros",
+    "home_name": "Los Angeles Angels",
+    "away_score": 6,
+    "home_score": 4,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Imai, T",
+    "home_starting_pitcher": "Ureña, W",
+    "html_path": "games/2026-07-27-hou-at-laa-824001.html",
+    "title": "HOU @ LAA",
+    "final_score": "HOU 6 - 4 LAA"
+  },
+  {
     "game_pk": 823025,
     "official_date": "2026-07-27",
     "game_datetime": "2026-07-27T23:45:00Z",
