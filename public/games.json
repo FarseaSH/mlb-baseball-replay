@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824570,
+    "official_date": "2026-07-27",
+    "game_datetime": "2026-07-27T23:40:00Z",
+    "away_label": "NYY",
+    "home_label": "CWS",
+    "away_name": "New York Yankees",
+    "home_name": "Chicago White Sox",
+    "away_score": 9,
+    "home_score": 5,
+    "venue_name": "Rate Field",
+    "away_starting_pitcher": "Fried, M",
+    "home_starting_pitcher": "Schultz, N",
+    "html_path": "games/2026-07-27-nyy-at-cws-824570.html",
+    "title": "NYY @ CWS",
+    "final_score": "NYY 9 - 5 CWS"
+  },
+  {
     "game_pk": 823597,
     "official_date": "2026-07-27",
     "game_datetime": "2026-07-27T23:10:00Z",
