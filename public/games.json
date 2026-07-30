@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 822947,
+    "official_date": "2026-07-29",
+    "game_datetime": "2026-07-29T22:40:00Z",
+    "away_label": "TEX",
+    "home_label": "TB",
+    "away_name": "Texas Rangers",
+    "home_name": "Tampa Bay Rays",
+    "away_score": 0,
+    "home_score": 3,
+    "venue_name": "Tropicana Field",
+    "away_starting_pitcher": "Gore, M",
+    "home_starting_pitcher": "Legumina, C",
+    "html_path": "games/2026-07-29-tex-at-tb-822947.html",
+    "title": "TEX @ TB",
+    "final_score": "TEX 0 - 3 TB"
+  },
+  {
     "game_pk": 823273,
     "official_date": "2026-07-29",
     "game_datetime": "2026-07-29T20:10:00Z",
