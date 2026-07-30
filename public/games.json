@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 822946,
+    "official_date": "2026-07-30",
+    "game_datetime": "2026-07-30T16:10:00Z",
+    "away_label": "TEX",
+    "home_label": "TB",
+    "away_name": "Texas Rangers",
+    "home_name": "Tampa Bay Rays",
+    "away_score": 2,
+    "home_score": 3,
+    "venue_name": "Tropicana Field",
+    "away_starting_pitcher": "Winn, C",
+    "home_starting_pitcher": "McClanahan, S",
+    "html_path": "games/2026-07-30-tex-at-tb-822946.html",
+    "title": "TEX @ TB",
+    "final_score": "TEX 2 - 3 TB"
+  },
+  {
     "game_pk": 823924,
     "official_date": "2026-07-29",
     "game_datetime": "2026-07-30T02:10:00Z",
@@ -3092,22 +3109,5 @@
     "html_path": "games/2026-07-17-tb-at-bos-824766.html",
     "title": "TB @ BOS",
     "final_score": "TB 0 - 10 BOS"
-  },
-  {
-    "game_pk": 823440,
-    "official_date": "2026-07-16",
-    "game_datetime": "2026-07-16T22:10:00Z",
-    "away_label": "NYM",
-    "home_label": "PHI",
-    "away_name": "New York Mets",
-    "home_name": "Philadelphia Phillies",
-    "away_score": 4,
-    "home_score": 1,
-    "venue_name": "Citizens Bank Park",
-    "away_starting_pitcher": "Scott, C",
-    "home_starting_pitcher": "Nola, A",
-    "html_path": "games/2026-07-16-nym-at-phi-823440.html",
-    "title": "NYM @ PHI",
-    "final_score": "NYM 4 - 1 PHI"
   }
 ]
