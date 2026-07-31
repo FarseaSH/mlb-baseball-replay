@@ -17,6 +17,23 @@
     "final_score": "BOS 5 - 4 ATH"
   },
   {
+    "game_pk": 823271,
+    "official_date": "2026-07-30",
+    "game_datetime": "2026-07-31T01:40:00Z",
+    "away_label": "SF",
+    "home_label": "SD",
+    "away_name": "San Francisco Giants",
+    "home_name": "San Diego Padres",
+    "away_score": 4,
+    "home_score": 1,
+    "venue_name": "Petco Park",
+    "away_starting_pitcher": "Ray, R",
+    "home_starting_pitcher": "Sears, J",
+    "html_path": "games/2026-07-30-sf-at-sd-823271.html",
+    "title": "SF @ SD",
+    "final_score": "SF 4 - 1 SD"
+  },
+  {
     "game_pk": 824894,
     "official_date": "2026-07-30",
     "game_datetime": "2026-07-30T23:15:00Z",
