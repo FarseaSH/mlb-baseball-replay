@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824164,
+    "official_date": "2026-07-31",
+    "game_datetime": "2026-08-01T00:15:00Z",
+    "away_label": "TEX",
+    "home_label": "HOU",
+    "away_name": "Texas Rangers",
+    "home_name": "Houston Astros",
+    "away_score": 2,
+    "home_score": 11,
+    "venue_name": "Daikin Park",
+    "away_starting_pitcher": "Eovaldi, N",
+    "home_starting_pitcher": "Brown, H",
+    "html_path": "games/2026-07-31-tex-at-hou-824164.html",
+    "title": "TEX @ HOU",
+    "final_score": "TEX 2 - 11 HOU"
+  },
+  {
     "game_pk": 824892,
     "official_date": "2026-07-31",
     "game_datetime": "2026-07-31T23:15:00Z",
