@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 822944,
+    "official_date": "2026-08-01",
+    "game_datetime": "2026-08-01T20:10:00Z",
+    "away_label": "CWS",
+    "home_label": "TB",
+    "away_name": "Chicago White Sox",
+    "home_name": "Tampa Bay Rays",
+    "away_score": 0,
+    "home_score": 1,
+    "venue_name": "Tropicana Field",
+    "away_starting_pitcher": "Hicks, J",
+    "home_starting_pitcher": "Rasmussen, D",
+    "html_path": "games/2026-08-01-cws-at-tb-822944.html",
+    "title": "CWS @ TB",
+    "final_score": "CWS 0 - 1 TB"
+  },
+  {
     "game_pk": 822781,
     "official_date": "2026-08-01",
     "game_datetime": "2026-08-01T19:07:00Z",
