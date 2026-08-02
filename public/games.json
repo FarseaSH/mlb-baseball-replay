@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824890,
+    "official_date": "2026-08-01",
+    "game_datetime": "2026-08-01T23:15:00Z",
+    "away_label": "WSH",
+    "home_label": "ATL",
+    "away_name": "Washington Nationals",
+    "home_name": "Atlanta Braves",
+    "away_score": 3,
+    "home_score": 8,
+    "venue_name": "Truist Park",
+    "away_starting_pitcher": "Mikolas, M",
+    "home_starting_pitcher": "Pérez, M",
+    "html_path": "games/2026-08-01-wsh-at-atl-824890.html",
+    "title": "WSH @ ATL",
+    "final_score": "WSH 3 - 8 ATL"
+  },
+  {
     "game_pk": 823594,
     "official_date": "2026-08-01",
     "game_datetime": "2026-08-01T20:10:00Z",
