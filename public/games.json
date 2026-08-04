@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 825095,
+    "official_date": "2026-08-03",
+    "game_datetime": "2026-08-04T01:40:00Z",
+    "away_label": "SD",
+    "home_label": "AZ",
+    "away_name": "San Diego Padres",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 1,
+    "home_score": 5,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "King, M",
+    "home_starting_pitcher": "Pfaadt, B",
+    "html_path": "games/2026-08-03-sd-at-az-825095.html",
+    "title": "SD @ AZ",
+    "final_score": "SD 1 - 5 AZ"
+  },
+  {
     "game_pk": 824324,
     "official_date": "2026-08-03",
     "game_datetime": "2026-08-04T00:40:00Z",
