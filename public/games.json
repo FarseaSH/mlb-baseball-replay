@@ -68,6 +68,23 @@
     "final_score": "CWS 0 - 4 BOS"
   },
   {
+    "game_pk": 823516,
+    "official_date": "2026-08-05",
+    "game_datetime": "2026-08-05T23:05:00Z",
+    "away_label": "STL",
+    "home_label": "NYY",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "New York Yankees",
+    "away_score": 3,
+    "home_score": 1,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Pallante, A",
+    "home_starting_pitcher": "Warren, W",
+    "html_path": "games/2026-08-05-stl-at-nyy-823516.html",
+    "title": "STL @ NYY",
+    "final_score": "STL 3 - 1 NYY"
+  },
+  {
     "game_pk": 824482,
     "official_date": "2026-08-05",
     "game_datetime": "2026-08-05T22:40:00Z",
