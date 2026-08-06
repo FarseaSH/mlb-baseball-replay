@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823105,
+    "official_date": "2026-08-06",
+    "game_datetime": "2026-08-06T20:10:00Z",
+    "away_label": "DET",
+    "home_label": "SEA",
+    "away_name": "Detroit Tigers",
+    "home_name": "Seattle Mariners",
+    "away_score": 11,
+    "home_score": 0,
+    "venue_name": "T-Mobile Park",
+    "away_starting_pitcher": "Valdez, F",
+    "home_starting_pitcher": "Miller, B",
+    "html_path": "games/2026-08-06-det-at-sea-823105.html",
+    "title": "DET @ SEA",
+    "final_score": "DET 11 - 0 SEA"
+  },
+  {
     "game_pk": 824664,
     "official_date": "2026-08-06",
     "game_datetime": "2026-08-06T18:20:00Z",
