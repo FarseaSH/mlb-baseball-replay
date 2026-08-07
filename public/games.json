@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823430,
+    "official_date": "2026-08-06",
+    "game_datetime": "2026-08-06T22:05:00Z",
+    "away_label": "WSH",
+    "home_label": "PHI",
+    "away_name": "Washington Nationals",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 3,
+    "home_score": 7,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Mikolas, M",
+    "home_starting_pitcher": "Sánchez, C",
+    "html_path": "games/2026-08-06-wsh-at-phi-823430.html",
+    "title": "WSH @ PHI",
+    "final_score": "WSH 3 - 7 PHI"
+  },
+  {
     "game_pk": 823105,
     "official_date": "2026-08-06",
     "game_datetime": "2026-08-06T20:10:00Z",
