@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823191,
+    "official_date": "2026-08-07",
+    "game_datetime": "2026-08-08T02:15:00Z",
+    "away_label": "DET",
+    "home_label": "SF",
+    "away_name": "Detroit Tigers",
+    "home_name": "San Francisco Giants",
+    "away_score": 2,
+    "home_score": 5,
+    "venue_name": "Oracle Park",
+    "away_starting_pitcher": "Montero, K",
+    "home_starting_pitcher": "Brubaker, J",
+    "html_path": "games/2026-08-07-det-at-sf-823191.html",
+    "title": "DET @ SF",
+    "final_score": "DET 2 - 5 SF"
+  },
+  {
     "game_pk": 823103,
     "official_date": "2026-08-07",
     "game_datetime": "2026-08-08T01:45:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-08-07-lad-at-az-825051.html",
     "title": "LAD @ AZ",
     "final_score": "LAD 3 - 4 AZ"
+  },
+  {
+    "game_pk": 823266,
+    "official_date": "2026-08-07",
+    "game_datetime": "2026-08-08T01:40:00Z",
+    "away_label": "HOU",
+    "home_label": "SD",
+    "away_name": "Houston Astros",
+    "home_name": "San Diego Padres",
+    "away_score": 6,
+    "home_score": 3,
+    "venue_name": "Petco Park",
+    "away_starting_pitcher": "Blanco, R",
+    "home_starting_pitcher": "Ray, R",
+    "html_path": "games/2026-08-07-hou-at-sd-823266.html",
+    "title": "HOU @ SD",
+    "final_score": "HOU 6 - 3 SD"
   },
   {
     "game_pk": 823024,
