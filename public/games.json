@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823834,
+    "official_date": "2026-08-08",
+    "game_datetime": "2026-08-08T20:10:00Z",
+    "away_label": "LAA",
+    "home_label": "MIA",
+    "away_name": "Los Angeles Angels",
+    "home_name": "Miami Marlins",
+    "away_score": 0,
+    "home_score": 7,
+    "venue_name": "loanDepot park",
+    "away_starting_pitcher": "Ureña, W",
+    "home_starting_pitcher": "Alcantara, S",
+    "html_path": "games/2026-08-08-laa-at-mia-823834.html",
+    "title": "LAA @ MIA",
+    "final_score": "LAA 0 - 7 MIA"
+  },
+  {
     "game_pk": 823514,
     "official_date": "2026-08-08",
     "game_datetime": "2026-08-08T19:05:00Z",
