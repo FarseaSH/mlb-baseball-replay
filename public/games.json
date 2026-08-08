@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824726,
+    "official_date": "2026-08-08",
+    "game_datetime": "2026-08-08T20:10:00Z",
+    "away_label": "ATH",
+    "home_label": "BOS",
+    "away_name": "Athletics",
+    "home_name": "Boston Red Sox",
+    "away_score": 7,
+    "home_score": 3,
+    "venue_name": "Fenway Park",
+    "away_starting_pitcher": "Jump, G",
+    "home_starting_pitcher": "Bennett, J",
+    "html_path": "games/2026-08-08-ath-at-bos-824726.html",
+    "title": "ATH @ BOS",
+    "final_score": "ATH 7 - 3 BOS"
+  },
+  {
     "game_pk": 823834,
     "official_date": "2026-08-08",
     "game_datetime": "2026-08-08T20:10:00Z",
