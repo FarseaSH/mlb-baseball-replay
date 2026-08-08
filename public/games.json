@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823514,
+    "official_date": "2026-08-08",
+    "game_datetime": "2026-08-08T19:05:00Z",
+    "away_label": "ATL",
+    "home_label": "NYY",
+    "away_name": "Atlanta Braves",
+    "home_name": "New York Yankees",
+    "away_score": 4,
+    "home_score": 5,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Sale, C",
+    "home_starting_pitcher": "Cole, G",
+    "html_path": "games/2026-08-08-atl-at-nyy-823514.html",
+    "title": "ATL @ NYY",
+    "final_score": "ATL 4 - 5 NYY"
+  },
+  {
     "game_pk": 823191,
     "official_date": "2026-08-07",
     "game_datetime": "2026-08-08T02:15:00Z",
