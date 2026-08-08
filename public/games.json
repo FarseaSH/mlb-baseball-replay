@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 822863,
+    "official_date": "2026-08-07",
+    "game_datetime": "2026-08-08T00:15:00Z",
+    "away_label": "BAL",
+    "home_label": "TEX",
+    "away_name": "Baltimore Orioles",
+    "home_name": "Texas Rangers",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "Globe Life Field",
+    "away_starting_pitcher": "Baz, S",
+    "home_starting_pitcher": "Eovaldi, N",
+    "html_path": "games/2026-08-07-bal-at-tex-822863.html",
+    "title": "BAL @ TEX",
+    "final_score": "BAL 1 - 2 TEX"
+  },
+  {
     "game_pk": 824566,
     "official_date": "2026-08-07",
     "game_datetime": "2026-08-07T23:40:00Z",
@@ -15,6 +32,23 @@
     "html_path": "games/2026-08-07-cle-at-cws-824566.html",
     "title": "CLE @ CWS",
     "final_score": "CLE 8 - 2 CWS"
+  },
+  {
+    "game_pk": 823750,
+    "official_date": "2026-08-07",
+    "game_datetime": "2026-08-07T23:40:00Z",
+    "away_label": "MIN",
+    "home_label": "MIL",
+    "away_name": "Minnesota Twins",
+    "home_name": "Milwaukee Brewers",
+    "away_score": 8,
+    "home_score": 6,
+    "venue_name": "American Family Field",
+    "away_starting_pitcher": "Matthews, Z",
+    "home_starting_pitcher": "Drohan, S",
+    "html_path": "games/2026-08-07-min-at-mil-823750.html",
+    "title": "MIN @ MIL",
+    "final_score": "MIN 8 - 6 MIL"
   },
   {
     "game_pk": 824727,
@@ -49,6 +83,23 @@
     "html_path": "games/2026-08-07-laa-at-mia-823836.html",
     "title": "LAA @ MIA",
     "final_score": "LAA 4 - 3 MIA"
+  },
+  {
+    "game_pk": 822699,
+    "official_date": "2026-08-07",
+    "game_datetime": "2026-08-07T22:45:00Z",
+    "away_label": "CIN",
+    "home_label": "WSH",
+    "away_name": "Cincinnati Reds",
+    "home_name": "Washington Nationals",
+    "away_score": 3,
+    "home_score": 5,
+    "venue_name": "Nationals Park",
+    "away_starting_pitcher": "Petty, C",
+    "home_starting_pitcher": "Cavalli, C",
+    "html_path": "games/2026-08-07-cin-at-wsh-822699.html",
+    "title": "CIN @ WSH",
+    "final_score": "CIN 3 - 5 WSH"
   },
   {
     "game_pk": 823349,
