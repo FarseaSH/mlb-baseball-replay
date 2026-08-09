@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 825049,
+    "official_date": "2026-08-08",
+    "game_datetime": "2026-08-09T00:10:00Z",
+    "away_label": "LAD",
+    "home_label": "AZ",
+    "away_name": "Los Angeles Dodgers",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 2,
+    "home_score": 1,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "Yamamoto, Y",
+    "home_starting_pitcher": "Pfaadt, B",
+    "html_path": "games/2026-08-08-lad-at-az-825049.html",
+    "title": "LAD @ AZ",
+    "final_score": "LAD 2 - 1 AZ"
+  },
+  {
     "game_pk": 824565,
     "official_date": "2026-08-08",
     "game_datetime": "2026-08-08T23:15:00Z",
