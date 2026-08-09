@@ -1,5 +1,39 @@
 [
   {
+    "game_pk": 823020,
+    "official_date": "2026-08-09",
+    "game_datetime": "2026-08-09T18:15:00Z",
+    "away_label": "COL",
+    "home_label": "STL",
+    "away_name": "Colorado Rockies",
+    "home_name": "St. Louis Cardinals",
+    "away_score": 4,
+    "home_score": 7,
+    "venue_name": "Busch Stadium",
+    "away_starting_pitcher": "Lorenzen, M",
+    "home_starting_pitcher": "McGreevy, M",
+    "html_path": "games/2026-08-09-col-at-stl-823020.html",
+    "title": "COL @ STL",
+    "final_score": "COL 4 - 7 STL"
+  },
+  {
+    "game_pk": 824078,
+    "official_date": "2026-08-09",
+    "game_datetime": "2026-08-09T18:10:00Z",
+    "away_label": "CHC",
+    "home_label": "KC",
+    "away_name": "Chicago Cubs",
+    "home_name": "Kansas City Royals",
+    "away_score": 10,
+    "home_score": 2,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Boyd, M",
+    "home_starting_pitcher": "Dobnak, R",
+    "html_path": "games/2026-08-09-chc-at-kc-824078.html",
+    "title": "CHC @ KC",
+    "final_score": "CHC 10 - 2 KC"
+  },
+  {
     "game_pk": 823835,
     "official_date": "2026-08-09",
     "game_datetime": "2026-08-09T17:40:00Z",
@@ -49,6 +83,23 @@
     "html_path": "games/2026-08-09-atl-at-nyy-823513.html",
     "title": "ATL @ NYY",
     "final_score": "ATL 2 - 1 NYY"
+  },
+  {
+    "game_pk": 823425,
+    "official_date": "2026-08-09",
+    "game_datetime": "2026-08-09T17:35:00Z",
+    "away_label": "TOR",
+    "home_label": "PHI",
+    "away_name": "Toronto Blue Jays",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 6,
+    "home_score": 7,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Bieber, S",
+    "home_starting_pitcher": "Luzardo, J",
+    "html_path": "games/2026-08-09-tor-at-phi-823425.html",
+    "title": "TOR @ PHI",
+    "final_score": "TOR 6 - 7 PHI"
   },
   {
     "game_pk": 823345,
