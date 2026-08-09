@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823348,
+    "official_date": "2026-08-08",
+    "game_datetime": "2026-08-08T22:40:00Z",
+    "away_label": "NYM",
+    "home_label": "PIT",
+    "away_name": "New York Mets",
+    "home_name": "Pittsburgh Pirates",
+    "away_score": 0,
+    "home_score": 9,
+    "venue_name": "PNC Park",
+    "away_starting_pitcher": "Stock, R",
+    "home_starting_pitcher": "Chandler, B",
+    "html_path": "games/2026-08-08-nym-at-pit-823348.html",
+    "title": "NYM @ PIT",
+    "final_score": "NYM 0 - 9 PIT"
+  },
+  {
     "game_pk": 824726,
     "official_date": "2026-08-08",
     "game_datetime": "2026-08-08T20:10:00Z",
