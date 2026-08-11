@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823265,
+    "official_date": "2026-08-10",
+    "game_datetime": "2026-08-11T01:40:00Z",
+    "away_label": "MIL",
+    "home_label": "SD",
+    "away_name": "Milwaukee Brewers",
+    "home_name": "San Diego Padres",
+    "away_score": 2,
+    "home_score": 3,
+    "venue_name": "Petco Park",
+    "away_starting_pitcher": "Henderson, L",
+    "home_starting_pitcher": "Mize, C",
+    "html_path": "games/2026-08-10-mil-at-sd-823265.html",
+    "title": "MIL @ SD",
+    "final_score": "MIL 2 - 3 SD"
+  },
+  {
     "game_pk": 823018,
     "official_date": "2026-08-10",
     "game_datetime": "2026-08-10T23:45:00Z",
