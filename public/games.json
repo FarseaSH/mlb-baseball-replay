@@ -17,6 +17,23 @@
     "final_score": "HOU 2 - 1 SF"
   },
   {
+    "game_pk": 825047,
+    "official_date": "2026-08-12",
+    "game_datetime": "2026-08-12T19:40:00Z",
+    "away_label": "COL",
+    "home_label": "AZ",
+    "away_name": "Colorado Rockies",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 6,
+    "home_score": 4,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "Feltner, R",
+    "home_starting_pitcher": "Kelly, M",
+    "html_path": "games/2026-08-12-col-at-az-825047.html",
+    "title": "COL @ AZ",
+    "final_score": "COL 6 - 4 AZ"
+  },
+  {
     "game_pk": 824967,
     "official_date": "2026-08-12",
     "game_datetime": "2026-08-12T19:05:00Z",
