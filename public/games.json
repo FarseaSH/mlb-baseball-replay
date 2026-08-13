@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 822696,
+    "official_date": "2026-08-13",
+    "game_datetime": "2026-08-13T20:05:00Z",
+    "away_label": "CHC",
+    "home_label": "WSH",
+    "away_name": "Chicago Cubs",
+    "home_name": "Washington Nationals",
+    "away_score": 0,
+    "home_score": 7,
+    "venue_name": "Nationals Park",
+    "away_starting_pitcher": "Gausman, K",
+    "home_starting_pitcher": "Cavalli, C",
+    "html_path": "games/2026-08-13-chc-at-wsh-822696.html",
+    "title": "CHC @ WSH",
+    "final_score": "CHC 0 - 7 WSH"
+  },
+  {
     "game_pk": 822776,
     "official_date": "2026-08-13",
     "game_datetime": "2026-08-13T19:07:00Z",
