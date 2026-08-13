@@ -18,6 +18,16 @@
             display: none;
         }
 
+        .game-page-background {
+            background-color: #f9fafb;
+        }
+
+        @media (min-width: 768px) {
+            .game-page-background {
+                background-color: #f5f5f5;
+            }
+        }
+
         .badge-blue {
             border-color: #005a9c;
             color: #005a9c;
@@ -114,7 +124,12 @@
             display: block;
         }
         .ab-pitch-sequence {
+            --ab-pitch-sequence-row-height: 16px;
+            --ab-pitch-sequence-history-height: 96px;
+            --ab-pitch-sequence-full-history-height: 116px;
             position: relative;
+            display: grid;
+            row-gap: 4px;
             margin-right: -3px;
             padding-left: 14px;
             color: #64748b;
@@ -131,12 +146,15 @@
         }
         .ab-pitch-sequence-history {
             display: grid;
-            max-height: calc(5.8em + 12px);
+            max-height: var(--ab-pitch-sequence-history-height);
             gap: 4px;
             overflow-y: auto;
             overscroll-behavior: contain;
             -ms-overflow-style: none;
             scrollbar-width: none;
+        }
+        .ab-pitch-sequence-history--full {
+            max-height: var(--ab-pitch-sequence-full-history-height);
         }
         .ab-pitch-sequence-history::-webkit-scrollbar {
             display: none;
@@ -145,10 +163,8 @@
             display: grid;
             grid-template-columns: 4.5em 5.8em 1em minmax(0, 1fr) 0.9em;
             align-items: baseline;
+            height: var(--ab-pitch-sequence-row-height);
             white-space: nowrap;
-        }
-        .ab-pitch-sequence-row--final {
-            margin-bottom: 3px;
         }
         .ab-pitch-sequence-separator {
             text-align: center;
@@ -517,6 +533,11 @@
             .ab-pitch-sequence {
                 font-size: 10px;
             }
+            .ab-pitch-sequence {
+                --ab-pitch-sequence-row-height: 15px;
+                --ab-pitch-sequence-history-height: 91px;
+                --ab-pitch-sequence-full-history-height: 110px;
+            }
         }
         @media (prefers-reduced-motion: reduce) {
             .vs-reveal-pulse,
@@ -557,7 +578,7 @@
         }
     </style>
 </head>
-<body class="min-h-screen bg-gray-50 py-8 font-sans text-gray-900">
+<body class="game-page-background min-h-screen py-8 font-sans text-gray-900">
     <div class="mx-auto flex max-w-md flex-col gap-8">
         <div class="rounded-xl bg-white p-6 shadow-sm">
             <div class="flex items-center justify-center rounded-lg bg-gray-200 py-3 shadow-sm">
@@ -608,7 +629,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">1</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Grisham</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/663757" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Grisham</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">CF</span>
@@ -618,7 +641,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">2</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Rice</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/700250" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Rice</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">1B</span>
@@ -628,7 +653,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">3</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Domínguez</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/691176" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Domínguez</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">RF</span>
@@ -638,7 +665,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">4</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Goldschmidt</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/502671" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Goldschmidt</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">DH</span>
@@ -648,7 +677,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">5</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Jones</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/682987" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Jones</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">LF</span>
@@ -658,7 +689,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">6</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Chisholm Jr.</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/665862" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Chisholm Jr.</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">2B</span>
@@ -668,7 +701,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">7</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Volpe</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/683011" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Volpe</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">SS</span>
@@ -678,7 +713,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">8</span>
-                                <span class="text-[14px] font-semibold text-gray-800">McMahon</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/641857" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">McMahon</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">3B</span>
@@ -688,7 +725,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">9</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Wells</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/669224" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Wells</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">C</span>
@@ -705,7 +744,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">1</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Meidroth</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/805367" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Meidroth</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">2B</span>
@@ -715,7 +756,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">2</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Murakami</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/808959" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Murakami</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">1B</span>
@@ -725,7 +768,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">3</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Vargas</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/678246" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Vargas</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">DH</span>
@@ -735,7 +780,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">4</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Grichuk</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/545341" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Grichuk</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">LF</span>
@@ -745,7 +792,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">5</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Montgomery</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/695657" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Montgomery</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">3B</span>
@@ -755,7 +804,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">6</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Pereira</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/677592" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Pereira</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">CF</span>
@@ -765,7 +816,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">7</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Montgomery</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/695731" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Montgomery</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">RF</span>
@@ -775,7 +828,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">8</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Acuña</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/682668" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Acuña</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">SS</span>
@@ -785,7 +840,9 @@
                         <li class="flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <span class="w-2 text-sm font-medium text-gray-400">9</span>
-                                <span class="text-[14px] font-semibold text-gray-800">Quero</span>
+                                
+                                <a href="https://baseballsavant.mlb.com/savant-player/700337" target="_blank" rel="noopener noreferrer" class="text-[14px] font-semibold text-gray-800 no-underline">Quero</a>
+                                
                             </div>
                             
                             <span class="text-[11px] font-bold text-gray-500">C</span>
@@ -972,8 +1029,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#2 (1-0), 92.2 miles per hour, Four-seam FB, Swinging Strike">
                                             <span class="ab-detail-number">#2 (1-0)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">92.2</span><span>mph</span></span>
@@ -993,6 +1051,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -1186,8 +1245,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 76.5 miles per hour, Knuckle Curve, Ball">
                                             <span class="ab-detail-number">#6 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">76.5</span><span>mph</span></span>
@@ -1196,7 +1256,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 75.4 miles per hour, Knuckle Curve, Ball">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -1239,6 +1299,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -1432,8 +1493,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 90.4 miles per hour, Cutter, Swinging Strike">
                                             <span class="ab-detail-number">#6 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">90.4</span><span>mph</span></span>
@@ -1442,7 +1504,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.6 miles per hour, Sinker, Ball">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -1485,6 +1547,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -1674,8 +1737,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (1-2), 96.3 miles per hour, Four-seam FB, Swinging Strike">
                                             <span class="ab-detail-number">#4 (1-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">96.3</span><span>mph</span></span>
@@ -1711,6 +1775,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -2677,8 +2742,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (3-2), 94.6 miles per hour, Sinker, Called Strike">
                                             <span class="ab-detail-number">#7 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.6</span><span>mph</span></span>
@@ -2687,7 +2753,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history" data-pitch-sequence-history-scroll data-visible-pitch-rows="5" tabindex="0" aria-label="Earlier pitches; initially showing the most recent pitches; scroll up for the first pitches">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 85.6 miles per hour, Changeup, Foul">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -2738,6 +2804,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -3449,8 +3516,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (2-2), 91.2 miles per hour, Cutter, Swinging Strike">
                                             <span class="ab-detail-number">#6 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">91.2</span><span>mph</span></span>
@@ -3459,7 +3527,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.6 miles per hour, Four-seam FB, Foul">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -3502,6 +3570,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -3683,8 +3752,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 95.6 miles per hour, Four-seam FB, Called Strike">
                                             <span class="ab-detail-number">#3 (0-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.6</span><span>mph</span></span>
@@ -3712,6 +3782,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -3895,8 +3966,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (1-2), 80.5 miles per hour, Knuckle Curve, Swinging Strike">
                                             <span class="ab-detail-number">#4 (1-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.5</span><span>mph</span></span>
@@ -3932,6 +4004,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -4137,8 +4210,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 87.7 miles per hour, Slider, Called Strike">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.7</span><span>mph</span></span>
@@ -4182,6 +4256,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -4875,8 +4950,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 86.0 miles per hour, Slider, Foul Tip">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">86.0</span><span>mph</span></span>
@@ -4920,6 +4996,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -5105,8 +5182,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 89.5 miles per hour, Cutter, Swinging Strike">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">89.5</span><span>mph</span></span>
@@ -5150,6 +5228,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -5840,8 +5919,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (3-1), 94.0 miles per hour, Sinker, Ball">
                                             <span class="ab-detail-number">#5 (3-1)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.0</span><span>mph</span></span>
@@ -5885,6 +5965,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -6078,8 +6159,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (3-2), 95.5 miles per hour, Four-seam FB, Swinging Strike">
                                             <span class="ab-detail-number">#7 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.5</span><span>mph</span></span>
@@ -6088,7 +6170,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history" data-pitch-sequence-history-scroll data-visible-pitch-rows="5" tabindex="0" aria-label="Earlier pitches; initially showing the most recent pitches; scroll up for the first pitches">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 81.5 miles per hour, Sweeper, Ball">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -6139,6 +6221,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -6598,8 +6681,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 86.3 miles per hour, Slider, Swinging Strike">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">86.3</span><span>mph</span></span>
@@ -6643,6 +6727,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -6826,8 +6911,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (0-2), 95.7 miles per hour, Four-seam FB, Foul Tip">
                                             <span class="ab-detail-number">#4 (0-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.7</span><span>mph</span></span>
@@ -6863,6 +6949,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -7372,8 +7459,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 94.8 miles per hour, Sinker, Ball">
                                             <span class="ab-detail-number">#6 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.8</span><span>mph</span></span>
@@ -7382,7 +7470,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 94.4 miles per hour, Four-seam FB, Ball">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -7425,6 +7513,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -7610,8 +7699,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 78.5 miles per hour, Knuckle Curve, Called Strike">
                                             <span class="ab-detail-number">#3 (0-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">78.5</span><span>mph</span></span>
@@ -7639,6 +7729,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -7854,8 +7945,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (3-2), 82.4 miles per hour, Sweeper, Ball In Dirt">
                                             <span class="ab-detail-number">#7 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">82.4</span><span>mph</span></span>
@@ -7864,7 +7956,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball In Dirt" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history" data-pitch-sequence-history-scroll data-visible-pitch-rows="5" tabindex="0" aria-label="Earlier pitches; initially showing the most recent pitches; scroll up for the first pitches">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 78.1 miles per hour, Sweeper, Ball">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -7915,6 +8007,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -10405,8 +10498,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (3-2), 83.4 miles per hour, Sweeper, Ball">
                                             <span class="ab-detail-number">#7 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">83.4</span><span>mph</span></span>
@@ -10415,7 +10509,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history" data-pitch-sequence-history-scroll data-visible-pitch-rows="5" tabindex="0" aria-label="Earlier pitches; initially showing the most recent pitches; scroll up for the first pitches">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.1 miles per hour, Sweeper, Swinging Strike">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -10466,6 +10560,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -13246,14 +13341,18 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#1 (0-0), 83.3 miles per hour, Slurve, Called Strike">
-                                            <span class="ab-detail-number">#1 (0-0)</span>
-                                            <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">83.3</span><span>mph</span></span>
-                                            <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
-                                            <span>Slurve</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                        
+                                        <div class="ab-pitch-sequence-history ab-pitch-sequence-history--full">
+                                            
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 83.3 miles per hour, Slurve, Called Strike">
+                                                <span class="ab-detail-number">#1 (0-0)</span>
+                                                <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">83.3</span><span>mph</span></span>
+                                                <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
+                                                <span>Slurve</span>
+                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                            </div>
+                                            
                                         </div>
                                         
                                     </div>
@@ -13468,8 +13567,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 86.9 miles per hour, Slider, Called Strike">
                                             <span class="ab-detail-number">#6 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">86.9</span><span>mph</span></span>
@@ -13478,7 +13578,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 77.2 miles per hour, Sweeper, Foul Bunt">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -13521,6 +13621,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -14759,8 +14860,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (3-1), 93.9 miles per hour, Sinker, Ball">
                                             <span class="ab-detail-number">#5 (3-1)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.9</span><span>mph</span></span>
@@ -14804,6 +14906,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -14991,8 +15094,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 95.9 miles per hour, Four-seam FB, Swinging Strike">
                                             <span class="ab-detail-number">#3 (0-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.9</span><span>mph</span></span>
@@ -15020,6 +15124,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -15789,8 +15894,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (3-1), 94.5 miles per hour, Four-seam FB, Ball">
                                             <span class="ab-detail-number">#5 (3-1)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.5</span><span>mph</span></span>
@@ -15834,6 +15940,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -16023,8 +16130,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 94.9 miles per hour, Four-seam FB, Called Strike">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.9</span><span>mph</span></span>
@@ -16068,6 +16176,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -16328,8 +16437,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 94.9 miles per hour, Four-seam FB, Swinging Strike">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.9</span><span>mph</span></span>
@@ -16373,6 +16483,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -17509,8 +17620,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (2-2), 90.6 miles per hour, Changeup, Swinging Strike">
                                             <span class="ab-detail-number">#6 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">90.6</span><span>mph</span></span>
@@ -17519,7 +17631,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 89.7 miles per hour, Changeup, Foul">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -17562,6 +17674,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -17751,8 +17864,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (1-2), 90.5 miles per hour, Slider, Swinging Strike">
                                             <span class="ab-detail-number">#4 (1-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">90.5</span><span>mph</span></span>
@@ -17788,6 +17902,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -18418,8 +18533,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#1 (0-0), 75.6 miles per hour, Curveball, Hit By Pitch">
                                             <span class="ab-detail-number">#1 (0-0)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">75.6</span><span>mph</span></span>
@@ -18427,6 +18543,7 @@
                                             <span>Curveball</span>
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--final-positive" title="Hit By Pitch" aria-hidden="true"></span>
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -19793,8 +19910,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (2-2), 93.4 miles per hour, Slider, Swinging Strike">
                                             <span class="ab-detail-number">#7 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.4</span><span>mph</span></span>
@@ -19803,7 +19921,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history" data-pitch-sequence-history-scroll data-visible-pitch-rows="5" tabindex="0" aria-label="Earlier pitches; initially showing the most recent pitches; scroll up for the first pitches">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 89.6 miles per hour, Changeup, Ball">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -19854,6 +19972,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -21335,8 +21454,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (1-2), 85.5 miles per hour, Sweeper, Swinging Strike">
                                             <span class="ab-detail-number">#4 (1-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">85.5</span><span>mph</span></span>
@@ -21372,6 +21492,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -22348,8 +22469,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 79.4 miles per hour, Splitter, Swinging Strike">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">79.4</span><span>mph</span></span>
@@ -22393,6 +22515,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -22837,8 +22960,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 80.8 miles per hour, Splitter, Swinging Strike (Blocked)">
                                             <span class="ab-detail-number">#6 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.8</span><span>mph</span></span>
@@ -22847,7 +22971,7 @@
                                             <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike (Blocked)" aria-hidden="true"></span>
                                         </div>
                                         
-                                        <div class="ab-pitch-sequence-history" tabindex="0" aria-label="Earlier pitches; scroll for more">
+                                        <div class="ab-pitch-sequence-history">
                                             
                                             <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 80.6 miles per hour, Splitter, Ball In Dirt">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
@@ -22890,6 +23014,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -23079,8 +23204,9 @@
                                 
                                 <section class="ab-visual-panel ab-visual-panel--text" aria-label="Pitch sequence">
                                     
-                                    
                                     <div class="ab-pitch-sequence">
+                                        
+                                        
                                         <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (3-0), 92.2 miles per hour, Four-seam FB, Ball">
                                             <span class="ab-detail-number">#4 (3-0)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">92.2</span><span>mph</span></span>
@@ -23116,6 +23242,7 @@
                                             </div>
                                             
                                         </div>
+                                        
                                         
                                     </div>
                                     
@@ -23310,7 +23437,11 @@
                 
                 <div class="flex flex-col items-center px-2 text-center">
                     
-                    <img src="https://midfield.mlbstatic.com/v1/people/680732/spots/120" alt="Sean Burke" class="mb-3 h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    
+                    <a href="https://baseballsavant.mlb.com/savant-player/680732" target="_blank" rel="noopener noreferrer" class="mb-3 inline-flex">
+                        <img src="https://midfield.mlbstatic.com/v1/people/680732/spots/120" alt="Sean Burke" class="h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    </a>
+                    
                     
                     <span class="text-[14px] font-bold leading-tight text-gray-900">Burke, S</span>
                     
@@ -23321,7 +23452,11 @@
                 
                 <div class="flex flex-col items-center px-2 text-center">
                     
-                    <img src="https://midfield.mlbstatic.com/v1/people/677960/spots/120" alt="Ryan Weathers" class="mb-3 h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    
+                    <a href="https://baseballsavant.mlb.com/savant-player/677960" target="_blank" rel="noopener noreferrer" class="mb-3 inline-flex">
+                        <img src="https://midfield.mlbstatic.com/v1/people/677960/spots/120" alt="Ryan Weathers" class="h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    </a>
+                    
                     
                     <span class="text-[14px] font-bold leading-tight text-gray-900">Weathers</span>
                     
@@ -23332,7 +23467,11 @@
                 
                 <div class="flex flex-col items-center px-2 text-center">
                     
-                    <img src="https://midfield.mlbstatic.com/v1/people/545341/spots/120" alt="Randal Grichuk" class="mb-3 h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    
+                    <a href="https://baseballsavant.mlb.com/savant-player/545341" target="_blank" rel="noopener noreferrer" class="mb-3 inline-flex">
+                        <img src="https://midfield.mlbstatic.com/v1/people/545341/spots/120" alt="Randal Grichuk" class="h-[52px] w-[52px] rounded-full bg-gray-100 object-cover">
+                    </a>
+                    
                     
                     <span class="text-[14px] font-bold leading-tight text-gray-900">Grichuk</span>
                     
@@ -23354,11 +23493,12 @@
             data-is-key-anchor="0"
             data-boxscore-tabs
         >
-            <div class="mb-4 flex border-b border-gray-200">
+            <div class="mb-4 flex border-b border-gray-200" data-boxscore-tab-list="batting">
                 
                 <button
                     type="button"
                     data-boxscore-tab-button
+                    data-tab-group="batting"
                     data-team-key="away"
                     class="flex-1 border-b-2 pb-3 text-center text-[15px] transition-colors border-gray-900 font-extrabold text-gray-900"
                 >
@@ -23368,6 +23508,7 @@
                 <button
                     type="button"
                     data-boxscore-tab-button
+                    data-tab-group="batting"
                     data-team-key="home"
                     class="flex-1 border-b-2 pb-3 text-center text-[15px] transition-colors border-transparent font-bold text-gray-400 hover:text-gray-600"
                 >
@@ -23379,6 +23520,7 @@
             
             <div
                 data-boxscore-tab-panel
+                data-tab-group="batting"
                 data-team-key="away"
                 class="animate-[fadeIn_0.3s_ease-in-out]"
             >
@@ -23401,7 +23543,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/663757" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Grisham
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">CF</span>
                                     
@@ -23418,7 +23562,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/700250" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Rice
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">1B</span>
                                     
@@ -23435,7 +23581,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/691176" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Domínguez
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">RF</span>
                                     
@@ -23452,7 +23600,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/502671" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Goldschmidt
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">DH</span>
                                     
@@ -23469,7 +23619,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/682987" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Jones, S
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">LF</span>
                                     
@@ -23486,7 +23638,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/680474" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     b-Schuemann
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">LF</span>
                                     
@@ -23503,7 +23657,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/665862" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Chisholm Jr.
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">2B</span>
                                     
@@ -23520,7 +23676,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/676609" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     1-Caballero
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">2B</span>
                                     
@@ -23537,7 +23695,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/683011" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Volpe
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">SS</span>
                                     
@@ -23554,7 +23714,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/641857" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     McMahon
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">3B</span>
                                     
@@ -23571,7 +23733,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/669224" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Wells, A
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">C</span>
                                     
@@ -23588,7 +23752,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/642708" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     a-Rosario, A
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">PH</span>
                                     
@@ -23605,7 +23771,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/645305" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Sánchez, A
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">C</span>
                                     
@@ -23689,106 +23857,11 @@
                     
                 </div>
                 
-
-                <div class="mt-8 no-scrollbar -mx-6 overflow-x-auto px-6">
-                    <table class="w-full whitespace-nowrap border-collapse text-right text-[13px]">
-                        <thead>
-                            <tr class="border-b border-gray-200 text-[11px] font-extrabold uppercase tracking-wider text-gray-400">
-                                <th class="sticky left-0 z-20 w-[148px] bg-white py-3 text-left text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Pitchers - NYY</th>
-                                <th class="w-9 px-2 py-3">IP</th>
-                                <th class="w-9 px-2 py-3">H</th>
-                                <th class="w-9 px-2 py-3">R</th>
-                                <th class="w-9 px-2 py-3">ER</th>
-                                <th class="w-9 px-2 py-3">BB</th>
-                                <th class="w-9 px-2 py-3">K</th>
-                                <th class="w-9 px-2 py-3">HR</th>
-                                <th class="w-12 pl-2 py-3">ERA</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-gray-900">
-                            
-                            <tr>
-                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
-                                    Weathers
-                                    
-                                </td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">7.0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">3.99</td>
-                            </tr>
-                            
-                            <tr>
-                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
-                                    Headrick
-                                    
-                                </td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">1.30</td>
-                            </tr>
-                            
-                            <tr>
-                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
-                                    Chivilli
-                                    
-                                </td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.1</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">0.60</td>
-                            </tr>
-                            
-                            <tr>
-                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
-                                    Cruz, F
-                                    
-                                    <span class="ml-1 text-[11px] font-medium text-gray-400">(L, 4-5)</span>
-                                    
-                                </td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.1</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
-                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
-                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">2.51</td>
-                            </tr>
-                            
-                        </tbody>
-                        <tfoot>
-                            <tr class="border-t border-gray-100">
-                                <td class="sticky left-0 z-20 bg-white py-4 text-left font-extrabold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Totals</td>
-                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">10.2</td>
-                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
-                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">2</td>
-                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">0</td>
-                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
-                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">11</td>
-                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">0</td>
-                                <td class="pl-2 py-4"></td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
             </div>
             
             <div
                 data-boxscore-tab-panel
+                data-tab-group="batting"
                 data-team-key="home"
                 class="hidden animate-[fadeIn_0.3s_ease-in-out]"
             >
@@ -23811,7 +23884,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/805367" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Meidroth
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">2B</span>
                                     
@@ -23828,7 +23903,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/808959" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Murakami
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">1B</span>
                                     
@@ -23845,7 +23922,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/678246" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Vargas, M
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">DH</span>
                                     
@@ -23862,7 +23941,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/545341" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Grichuk
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">LF</span>
                                     
@@ -23879,7 +23960,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/803011" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     a-Antonacci
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">LF</span>
                                     
@@ -23896,7 +23979,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/695657" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Montgomery, C
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">3B</span>
                                     
@@ -23913,7 +23998,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/677592" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Pereira
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">CF</span>
                                     
@@ -23930,7 +24017,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/671976" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     b-Peters
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">CF</span>
                                     
@@ -23947,7 +24036,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/695731" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Montgomery, B
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">RF</span>
                                     
@@ -23964,7 +24055,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/682668" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Acuña
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">SS</span>
                                     
@@ -23981,7 +24074,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] pl-5">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/643217" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     c-Benintendi
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">LF</span>
                                     
@@ -23998,7 +24093,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)] ">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/700337" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Quero
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">C</span>
                                     
@@ -24079,8 +24176,152 @@
                     
                 </div>
                 
+            </div>
+            
 
-                <div class="mt-8 no-scrollbar -mx-6 overflow-x-auto px-6">
+            <div class="mb-4 mt-8 flex border-b border-gray-200" data-boxscore-tab-list="pitching">
+                
+                <button
+                    type="button"
+                    data-boxscore-tab-button
+                    data-tab-group="pitching"
+                    data-team-key="away"
+                    class="flex-1 border-b-2 pb-3 text-center text-[15px] transition-colors border-gray-900 font-extrabold text-gray-900"
+                >
+                    NYY
+                </button>
+                
+                <button
+                    type="button"
+                    data-boxscore-tab-button
+                    data-tab-group="pitching"
+                    data-team-key="home"
+                    class="flex-1 border-b-2 pb-3 text-center text-[15px] transition-colors border-transparent font-bold text-gray-400 hover:text-gray-600"
+                >
+                    CWS
+                </button>
+                
+            </div>
+
+            
+            <div
+                data-boxscore-tab-panel
+                data-tab-group="pitching"
+                data-team-key="away"
+                class="animate-[fadeIn_0.3s_ease-in-out]"
+            >
+                <div class="no-scrollbar -mx-6 overflow-x-auto px-6">
+                    <table class="w-full whitespace-nowrap border-collapse text-right text-[13px]">
+                        <thead>
+                            <tr class="border-b border-gray-200 text-[11px] font-extrabold uppercase tracking-wider text-gray-400">
+                                <th class="sticky left-0 z-20 w-[148px] bg-white py-3 text-left text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Pitchers - NYY</th>
+                                <th class="w-9 px-2 py-3">IP</th>
+                                <th class="w-9 px-2 py-3">H</th>
+                                <th class="w-9 px-2 py-3">R</th>
+                                <th class="w-9 px-2 py-3">ER</th>
+                                <th class="w-9 px-2 py-3">BB</th>
+                                <th class="w-9 px-2 py-3">K</th>
+                                <th class="w-9 px-2 py-3">HR</th>
+                                <th class="w-12 pl-2 py-3">ERA</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-900">
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/677960" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
+                                    Weathers
+                                    </a>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">7.0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">4</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">3.99</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/687396" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
+                                    Headrick
+                                    </a>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">1.30</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/683409" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
+                                    Chivilli
+                                    </a>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">3</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">0.60</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/518585" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
+                                    Cruz, F
+                                    </a>
+                                    
+                                    <span class="ml-1 text-[11px] font-medium text-gray-400">(L, 4-5)</span>
+                                    
+                                </td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2</td>
+                                <td class="px-2 py-2 font-mono text-[13px] text-gray-600">0</td>
+                                <td class="pl-2 py-2 font-mono text-[13px] text-gray-600">2.51</td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr class="border-t border-gray-100">
+                                <td class="sticky left-0 z-20 bg-white py-4 text-left font-extrabold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">Totals</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">10.2</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">2</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">0</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">6</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">11</td>
+                                <td class="px-2 py-4 font-mono text-[14px] font-bold text-gray-900">0</td>
+                                <td class="pl-2 py-4"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+            <div
+                data-boxscore-tab-panel
+                data-tab-group="pitching"
+                data-team-key="home"
+                class="hidden animate-[fadeIn_0.3s_ease-in-out]"
+            >
+                <div class="no-scrollbar -mx-6 overflow-x-auto px-6">
                     <table class="w-full whitespace-nowrap border-collapse text-right text-[13px]">
                         <thead>
                             <tr class="border-b border-gray-200 text-[11px] font-extrabold uppercase tracking-wider text-gray-400">
@@ -24099,7 +24340,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/680732" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Burke, S
+                                    </a>
                                     
                                 </td>
                                 <td class="px-2 py-2 font-mono text-[13px] text-gray-600">6.0</td>
@@ -24114,7 +24357,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/656794" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Newcomb, S
+                                    </a>
                                     
                                 </td>
                                 <td class="px-2 py-2 font-mono text-[13px] text-gray-600">2.0</td>
@@ -24129,7 +24374,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/663542" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Hudson, B
+                                    </a>
                                     
                                 </td>
                                 <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.0</td>
@@ -24144,7 +24391,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/669684" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Murphy, C
+                                    </a>
                                     
                                 </td>
                                 <td class="px-2 py-2 font-mono text-[13px] text-gray-600">1.0</td>
@@ -24159,7 +24408,9 @@
                             
                             <tr>
                                 <td class="sticky left-0 z-20 bg-white py-2 text-left font-bold text-gray-900 shadow-[4px_0_8px_-4px_rgba(0,0,0,0.04)]">
+                                    <a href="https://baseballsavant.mlb.com/savant-player/622554" target="_blank" rel="noopener noreferrer" class="text-gray-900 no-underline">
                                     Domínguez
+                                    </a>
                                     
                                     <span class="ml-1 text-[11px] font-medium text-gray-400">(W, 4-3)</span>
                                     
@@ -24347,6 +24598,24 @@
                                 nextPart.classList.add("starts-new-line");
                             }
                         });
+                    });
+                });
+            };
+
+            const initPitchSequenceHistoryScroll = (root = document) => {
+                requestAnimationFrame(() => {
+                    root.querySelectorAll("[data-pitch-sequence-history-scroll]").forEach((history) => {
+                        if (history.dataset.initialScrollReady === "1" || !history.clientHeight) {
+                            return;
+                        }
+                        const rows = Array.from(history.children);
+                        const visibleRowCount = Number(history.dataset.visiblePitchRows) || 5;
+                        const firstVisibleRow = rows[Math.max(0, rows.length - visibleRowCount)];
+                        if (!firstVisibleRow || !rows[0]) {
+                            return;
+                        }
+                        history.scrollTop = firstVisibleRow.offsetTop - rows[0].offsetTop;
+                        history.dataset.initialScrollReady = "1";
                     });
                 });
             };
@@ -24554,6 +24823,7 @@
                     if (detailBlock) {
                         detailBlock.classList.remove(AB_HIDDEN_CLASS);
                         scheduleMetaTitleWrapSync(detailBlock);
+                        initPitchSequenceHistoryScroll(detailBlock);
                     }
                 }
 
@@ -24608,15 +24878,25 @@
 
             const initBoxscoreTabs = () => {
                 document.querySelectorAll("[data-boxscore-tabs]").forEach((section) => {
-                    const buttons = Array.from(section.querySelectorAll("[data-boxscore-tab-button]"));
-                    const panels = Array.from(section.querySelectorAll("[data-boxscore-tab-panel]"));
-                    if (!buttons.length || !panels.length) {
+                    const getButtons = (group) => Array.from(
+                        section.querySelectorAll(`[data-boxscore-tab-button][data-tab-group="${group}"]`),
+                    );
+                    const getPanels = (group) => Array.from(
+                        section.querySelectorAll(`[data-boxscore-tab-panel][data-tab-group="${group}"]`),
+                    );
+                    const battingButtons = getButtons("batting");
+                    const pitchingButtons = getButtons("pitching");
+                    if (!battingButtons.length || !pitchingButtons.length) {
                         return;
                     }
+                    let pitchingWasManuallySelected = false;
 
-                    const setActiveTeam = (teamKey) => {
+                    const setActiveTeam = (group, teamKey) => {
+                        const buttons = getButtons(group);
+                        const panels = getPanels(group);
                         buttons.forEach((button) => {
                             const isActive = button.dataset.teamKey === teamKey;
+                            button.setAttribute("aria-selected", isActive ? "true" : "false");
                             button.classList.toggle("border-gray-900", isActive);
                             button.classList.toggle("font-extrabold", isActive);
                             button.classList.toggle("text-gray-900", isActive);
@@ -24632,13 +24912,26 @@
                         });
                     };
 
-                    buttons.forEach((button) => {
+                    battingButtons.forEach((button) => {
                         button.addEventListener("click", () => {
-                            setActiveTeam(button.dataset.teamKey || "");
+                            const teamKey = button.dataset.teamKey || "";
+                            setActiveTeam("batting", teamKey);
+                            if (!pitchingWasManuallySelected) {
+                                setActiveTeam("pitching", teamKey);
+                            }
                         });
                     });
 
-                    setActiveTeam(buttons[0].dataset.teamKey || "");
+                    pitchingButtons.forEach((button) => {
+                        button.addEventListener("click", () => {
+                            pitchingWasManuallySelected = true;
+                            setActiveTeam("pitching", button.dataset.teamKey || "");
+                        });
+                    });
+
+                    const initialTeamKey = battingButtons[0].dataset.teamKey || "";
+                    setActiveTeam("batting", initialTeamKey);
+                    setActiveTeam("pitching", initialTeamKey);
                 });
             };
 
@@ -24648,6 +24941,7 @@
                     initBoxscoreTabs();
                     updateKeyPlayTailSpace();
                     scheduleMetaTitleWrapSync();
+                    initPitchSequenceHistoryScroll();
                 });
             } else {
                 window.addEventListener("load", () => {
@@ -24656,6 +24950,7 @@
                         initBoxscoreTabs();
                         updateKeyPlayTailSpace();
                         scheduleMetaTitleWrapSync();
+                        initPitchSequenceHistoryScroll();
                     });
                 }, { once: true });
             }
