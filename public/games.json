@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824562,
+    "official_date": "2026-08-12",
+    "game_datetime": "2026-08-12T23:40:00Z",
+    "away_label": "CIN",
+    "home_label": "CWS",
+    "away_name": "Cincinnati Reds",
+    "home_name": "Chicago White Sox",
+    "away_score": 0,
+    "home_score": 5,
+    "venue_name": "Rate Field",
+    "away_starting_pitcher": "Lowder, R",
+    "home_starting_pitcher": "Castillo, L",
+    "html_path": "games/2026-08-12-cin-at-cws-824562.html",
+    "title": "CIN @ CWS",
+    "final_score": "CIN 0 - 5 CWS"
+  },
+  {
     "game_pk": 824883,
     "official_date": "2026-08-12",
     "game_datetime": "2026-08-12T23:15:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-08-12-bos-at-tor-822779.html",
     "title": "BOS @ TOR",
     "final_score": "BOS 4 - 6 TOR"
+  },
+  {
+    "game_pk": 823511,
+    "official_date": "2026-08-12",
+    "game_datetime": "2026-08-12T23:05:00Z",
+    "away_label": "SEA",
+    "home_label": "NYY",
+    "away_name": "Seattle Mariners",
+    "home_name": "New York Yankees",
+    "away_score": 5,
+    "home_score": 10,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Miller, B",
+    "home_starting_pitcher": "Warren, W",
+    "html_path": "games/2026-08-12-sea-at-nyy-823511.html",
+    "title": "SEA @ NYY",
+    "final_score": "SEA 5 - 10 NYY"
   },
   {
     "game_pk": 822698,
