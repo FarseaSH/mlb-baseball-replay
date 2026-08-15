@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824644,
+    "official_date": "2026-08-15",
+    "game_datetime": "2026-08-15T18:20:00Z",
+    "away_label": "STL",
+    "home_label": "CHC",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "Chicago Cubs",
+    "away_score": 8,
+    "home_score": 4,
+    "venue_name": "Wrigley Field",
+    "away_starting_pitcher": "McGreevy, M",
+    "home_starting_pitcher": "Boyd, M",
+    "html_path": "games/2026-08-15-stl-at-chc-824644.html",
+    "title": "STL @ CHC",
+    "final_score": "STL 8 - 4 CHC"
+  },
+  {
     "game_pk": 824239,
     "official_date": "2026-08-15",
     "game_datetime": "2026-08-15T17:10:00Z",
