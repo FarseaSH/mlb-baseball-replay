@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824237,
+    "official_date": "2026-08-14",
+    "game_datetime": "2026-08-14T22:40:00Z",
+    "away_label": "CWS",
+    "home_label": "DET",
+    "away_name": "Chicago White Sox",
+    "home_name": "Detroit Tigers",
+    "away_score": 9,
+    "home_score": 5,
+    "venue_name": "Comerica Park",
+    "away_starting_pitcher": "Newcomb, S",
+    "home_starting_pitcher": "Jobe, J",
+    "html_path": "games/2026-08-14-cws-at-det-824237.html",
+    "title": "CWS @ DET",
+    "final_score": "CWS 9 - 5 DET"
+  },
+  {
     "game_pk": 824479,
     "official_date": "2026-08-14",
     "game_datetime": "2026-08-14T22:10:00Z",
