@@ -17,6 +17,23 @@
     "final_score": "KC 3 - 0 LAA"
   },
   {
+    "game_pk": 824965,
+    "official_date": "2026-08-16",
+    "game_datetime": "2026-08-16T20:05:00Z",
+    "away_label": "TEX",
+    "home_label": "ATH",
+    "away_name": "Texas Rangers",
+    "home_name": "Athletics",
+    "away_score": 2,
+    "home_score": 5,
+    "venue_name": "Sutter Health Park",
+    "away_starting_pitcher": "Bradford, C",
+    "home_starting_pitcher": "Lopez, J",
+    "html_path": "games/2026-08-16-tex-at-ath-824965.html",
+    "title": "TEX @ ATH",
+    "final_score": "TEX 2 - 5 ATH"
+  },
+  {
     "game_pk": 824642,
     "official_date": "2026-08-16",
     "game_datetime": "2026-08-16T19:15:00Z",
@@ -134,6 +151,23 @@
     "html_path": "games/2026-08-16-az-at-atl-824880.html",
     "title": "AZ @ ATL",
     "final_score": "AZ 3 - 5 ATL"
+  },
+  {
+    "game_pk": 823344,
+    "official_date": "2026-08-16",
+    "game_datetime": "2026-08-16T17:35:00Z",
+    "away_label": "BOS",
+    "home_label": "PIT",
+    "away_name": "Boston Red Sox",
+    "home_name": "Pittsburgh Pirates",
+    "away_score": 3,
+    "home_score": 8,
+    "venue_name": "PNC Park",
+    "away_starting_pitcher": "Sandoval, P",
+    "home_starting_pitcher": "Bachar, L",
+    "html_path": "games/2026-08-16-bos-at-pit-823344.html",
+    "title": "BOS @ PIT",
+    "final_score": "BOS 3 - 8 PIT"
   },
   {
     "game_pk": 822940,
