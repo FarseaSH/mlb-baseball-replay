@@ -161,7 +161,7 @@
         }
         .ab-pitch-sequence-row {
             display: grid;
-            grid-template-columns: 4.5em 5.8em 1em minmax(0, 1fr) 0.9em;
+            grid-template-columns: 4.5em 5.8em 1em minmax(0, 1fr) 2.15em;
             align-items: baseline;
             height: var(--ab-pitch-sequence-row-height);
             white-space: nowrap;
@@ -190,6 +190,26 @@
             border-radius: 999px;
             background: var(--pitch-result-soft);
             justify-self: start;
+        }
+        .ab-pitch-row-markers {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1.25em 0.9em;
+            align-items: center;
+            align-self: stretch;
+            background: #fff;
+        }
+        .ab-pitch-location-symbol {
+            align-self: center;
+            color: #64748b;
+            font-family: ui-sans-serif, system-ui, sans-serif;
+            font-size: 12px;
+            line-height: 1;
+            text-align: center;
+        }
+        .ab-pitch-location-symbol--corner {
+            font-weight: 700;
         }
         .ab-pitch-result-dot--ball {
             --pitch-result-solid: #2f855a;
@@ -537,6 +557,13 @@
                 --ab-pitch-sequence-row-height: 15px;
                 --ab-pitch-sequence-history-height: 91px;
                 --ab-pitch-sequence-full-history-height: 110px;
+            }
+            .ab-pitch-sequence-row {
+                overflow: hidden;
+            }
+            .ab-pitch-row-markers {
+                z-index: 2;
+                box-shadow: -7px 0 7px 3px #fff;
             }
         }
         @media (prefers-reduced-motion: reduce) {
@@ -1296,62 +1323,62 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (2-2), 96.0 miles per hour, Four-seam FB, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (2-2), 96.0 miles per hour, Four-seam FB, Swinging Strike, pitch location above right">
                                             <span class="ab-detail-number">#7 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">96.0</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Four-seam FB</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history" data-pitch-sequence-history-scroll data-visible-pitch-rows="5" tabindex="0" aria-label="Earlier pitches; initially showing the most recent pitches; scroll up for the first pitches">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.6 miles per hour, Sweeper, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.6 miles per hour, Sweeper, Called Strike, pitch location below left">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">79.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 87.1 miles per hour, Changeup, Swinging Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 87.1 miles per hour, Changeup, Swinging Strike, pitch location below left">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.1</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 87.1 miles per hour, Changeup, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 87.1 miles per hour, Changeup, Ball, pitch location below left">
                                                 <span class="ab-detail-number">#3 (0-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.1</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 94.2 miles per hour, Sinker, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 94.2 miles per hour, Sinker, Foul, pitch location middle right">
                                                 <span class="ab-detail-number">#4 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: middle right" aria-hidden="true">→</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#5 (1-2), 87.2 miles per hour, Changeup, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#5 (1-2), 87.2 miles per hour, Changeup, Ball, pitch location below left">
                                                 <span class="ab-detail-number">#5 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#6 (2-2), 81.3 miles per hour, Sweeper, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#6 (2-2), 81.3 miles per hour, Sweeper, Foul, pitch location middle right">
                                                 <span class="ab-detail-number">#6 (2-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">81.3</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: middle right" aria-hidden="true">→</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -2586,46 +2613,46 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 86.8 miles per hour, Changeup, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 86.8 miles per hour, Changeup, Swinging Strike, pitch location below left">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">86.8</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Changeup</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 80.7 miles per hour, Sweeper, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 80.7 miles per hour, Sweeper, Called Strike, pitch location above right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.7</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 80.4 miles per hour, Sweeper, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 80.4 miles per hour, Sweeper, Foul, pitch location middle right">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: middle right" aria-hidden="true">→</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 86.5 miles per hour, Changeup, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 86.5 miles per hour, Changeup, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#3 (0-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">86.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 87.5 miles per hour, Slider, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 87.5 miles per hour, Slider, Ball, pitch location below left">
                                                 <span class="ab-detail-number">#4 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Slider</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -4612,46 +4639,46 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 85.9 miles per hour, Slider, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 85.9 miles per hour, Slider, Swinging Strike, pitch location center">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">85.9</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Slider</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: center" aria-hidden="true">+</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 84.4 miles per hour, Changeup, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 84.4 miles per hour, Changeup, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">84.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 84.7 miles per hour, Changeup, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 84.7 miles per hour, Changeup, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">84.7</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 92.7 miles per hour, Sinker, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 92.7 miles per hour, Sinker, Foul, pitch location center">
                                                 <span class="ab-detail-number">#3 (2-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">92.7</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: center" aria-hidden="true">+</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 84.5 miles per hour, Changeup, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 84.5 miles per hour, Changeup, Called Strike, pitch location below left">
                                                 <span class="ab-detail-number">#4 (2-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">84.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -5624,46 +5651,46 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 88.9 miles per hour, Splitter, Called Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (2-2), 88.9 miles per hour, Splitter, Called Strike, pitch location lower left">
                                             <span class="ab-detail-number">#5 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">88.9</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Splitter</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: lower left" aria-hidden="true">↙</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.7 miles per hour, Sweeper, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.7 miles per hour, Sweeper, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">79.7</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 87.6 miles per hour, Splitter, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 87.6 miles per hour, Splitter, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 94.0 miles per hour, Four-seam FB, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 94.0 miles per hour, Four-seam FB, Foul, pitch location center">
                                                 <span class="ab-detail-number">#3 (2-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.0</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: center" aria-hidden="true">+</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 88.9 miles per hour, Splitter, Swinging Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 88.9 miles per hour, Splitter, Swinging Strike, pitch location below right">
                                                 <span class="ab-detail-number">#4 (2-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">88.9</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -6908,46 +6935,46 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (3-1), 80.2 miles per hour, Curveball, Ball">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (3-1), 80.2 miles per hour, Curveball, Ball, pitch location below right">
                                             <span class="ab-detail-number">#5 (3-1)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.2</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Curveball</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 80.5 miles per hour, Sweeper, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 80.5 miles per hour, Sweeper, Ball, pitch location above right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 88.1 miles per hour, Splitter, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 88.1 miles per hour, Splitter, Ball, pitch location below left">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">88.1</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 86.4 miles per hour, Slider, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 86.4 miles per hour, Slider, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#3 (2-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">86.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Slider</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (3-0), 84.8 miles per hour, Slider, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (3-0), 84.8 miles per hour, Slider, Called Strike, pitch location above right">
                                                 <span class="ab-detail-number">#4 (3-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">84.8</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Slider</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -7916,54 +7943,54 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 95.4 miles per hour, Four-seam FB, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 95.4 miles per hour, Four-seam FB, Swinging Strike, pitch location middle left">
                                             <span class="ab-detail-number">#6 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.4</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Four-seam FB</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: middle left" aria-hidden="true">←</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 94.2 miles per hour, Four-seam FB, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 94.2 miles per hour, Four-seam FB, Ball, pitch location above right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 94.2 miles per hour, Four-seam FB, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 94.2 miles per hour, Four-seam FB, Ball, pitch location above left">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 88.0 miles per hour, Splitter, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 88.0 miles per hour, Splitter, Called Strike, pitch location lower right">
                                                 <span class="ab-detail-number">#3 (2-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">88.0</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: lower right" aria-hidden="true">↘</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 86.4 miles per hour, Slider, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 86.4 miles per hour, Slider, Ball, pitch location above right">
                                                 <span class="ab-detail-number">#4 (2-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">86.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Slider</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#5 (3-1), 87.1 miles per hour, Splitter, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#5 (3-1), 87.1 miles per hour, Splitter, Called Strike, pitch location upper right">
                                                 <span class="ab-detail-number">#5 (3-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.1</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper right" aria-hidden="true">↗</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -8184,54 +8211,54 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 96.0 miles per hour, Four-seam FB, Called Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 96.0 miles per hour, Four-seam FB, Called Strike, pitch location lower right">
                                             <span class="ab-detail-number">#6 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">96.0</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Four-seam FB</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: lower right" aria-hidden="true">↘</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.6 miles per hour, Sinker, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.6 miles per hour, Sinker, Called Strike, pitch location center">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: center" aria-hidden="true">+</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 85.2 miles per hour, Changeup, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 85.2 miles per hour, Changeup, Ball, pitch location below left">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">85.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 85.7 miles per hour, Changeup, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 85.7 miles per hour, Changeup, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#3 (1-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">85.7</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Changeup</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 94.3 miles per hour, Sinker, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 94.3 miles per hour, Sinker, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#4 (2-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.3</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#5 (3-1), 95.0 miles per hour, Sinker, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#5 (3-1), 95.0 miles per hour, Sinker, Called Strike, pitch location upper middle">
                                                 <span class="ab-detail-number">#5 (3-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.0</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper middle" aria-hidden="true">↑</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -9966,30 +9993,30 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 85.8 miles per hour, Changeup, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 85.8 miles per hour, Changeup, Swinging Strike, pitch location below left">
                                             <span class="ab-detail-number">#3 (0-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">85.8</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Changeup</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.5 miles per hour, Sweeper, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.5 miles per hour, Sweeper, Called Strike, pitch location middle left">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">79.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: middle left" aria-hidden="true">←</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 80.8 miles per hour, Sweeper, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 80.8 miles per hour, Sweeper, Foul, pitch location upper left">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.8</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper left" aria-hidden="true">↖</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -10178,30 +10205,30 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 85.0 miles per hour, Slider, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 85.0 miles per hour, Slider, Swinging Strike, pitch location below right">
                                             <span class="ab-detail-number">#3 (0-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">85.0</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Slider</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.6 miles per hour, Sinker, Swinging Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.6 miles per hour, Sinker, Swinging Strike, pitch location lower middle">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: lower middle" aria-hidden="true">↓</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 81.3 miles per hour, Sweeper, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 81.3 miles per hour, Sweeper, Called Strike, pitch location upper left">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">81.3</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper left" aria-hidden="true">↖</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -10392,38 +10419,38 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (3-0), 93.2 miles per hour, Sinker, Ball">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (3-0), 93.2 miles per hour, Sinker, Ball, pitch location above left">
                                             <span class="ab-detail-number">#4 (3-0)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.2</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Sinker</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 94.0 miles per hour, Four-seam FB, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 94.0 miles per hour, Four-seam FB, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.0</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 81.3 miles per hour, Sweeper, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 81.3 miles per hour, Sweeper, Ball, pitch location above left">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">81.3</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 93.5 miles per hour, Sinker, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (2-0), 93.5 miles per hour, Sinker, Ball, pitch location above left">
                                                 <span class="ab-detail-number">#3 (2-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -11161,54 +11188,54 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 87.4 miles per hour, Splitter, Ball">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (3-2), 87.4 miles per hour, Splitter, Ball, pitch location below left">
                                             <span class="ab-detail-number">#6 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.4</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Splitter</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 80.5 miles per hour, Sweeper, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 80.5 miles per hour, Sweeper, Called Strike, pitch location center">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sweeper</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: center" aria-hidden="true">+</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 92.2 miles per hour, Four-seam FB, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 92.2 miles per hour, Four-seam FB, Ball, pitch location above left">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">92.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 87.1 miles per hour, Splitter, Swinging Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 87.1 miles per hour, Splitter, Swinging Strike, pitch location below right">
                                                 <span class="ab-detail-number">#3 (1-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.1</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 94.4 miles per hour, Sinker, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 94.4 miles per hour, Sinker, Ball, pitch location below left">
                                                 <span class="ab-detail-number">#4 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#5 (2-2), 81.2 miles per hour, Curveball, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#5 (2-2), 81.2 miles per hour, Curveball, Ball, pitch location below left">
                                                 <span class="ab-detail-number">#5 (2-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">81.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Curveball</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -11641,38 +11668,38 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (0-2), 83.8 miles per hour, Sweeper, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (0-2), 83.8 miles per hour, Sweeper, Swinging Strike, pitch location below left">
                                             <span class="ab-detail-number">#4 (0-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">83.8</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Sweeper</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.8 miles per hour, Four-seam FB, Swinging Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.8 miles per hour, Four-seam FB, Swinging Strike, pitch location above left">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.8</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 94.6 miles per hour, Four-seam FB, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 94.6 miles per hour, Four-seam FB, Foul, pitch location above left">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 96.0 miles per hour, Four-seam FB, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 96.0 miles per hour, Four-seam FB, Foul, pitch location lower left">
                                                 <span class="ab-detail-number">#3 (0-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">96.0</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: lower left" aria-hidden="true">↙</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -13225,38 +13252,38 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (1-2), 94.9 miles per hour, Four-seam FB, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (1-2), 94.9 miles per hour, Four-seam FB, Swinging Strike, pitch location above left">
                                             <span class="ab-detail-number">#4 (1-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.9</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Four-seam FB</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 92.4 miles per hour, Four-seam FB, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 92.4 miles per hour, Four-seam FB, Called Strike, pitch location upper middle">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">92.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper middle" aria-hidden="true">↑</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 86.3 miles per hour, Splitter, Swinging Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 86.3 miles per hour, Splitter, Swinging Strike, pitch location above right">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">86.3</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 88.6 miles per hour, Splitter, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 88.6 miles per hour, Splitter, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#3 (0-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">88.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -13697,46 +13724,46 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (3-1), 93.6 miles per hour, Sinker, Ball">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (3-1), 93.6 miles per hour, Sinker, Ball, pitch location below left">
                                             <span class="ab-detail-number">#5 (3-1)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.6</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Sinker</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.8 miles per hour, Sinker, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.8 miles per hour, Sinker, Ball, pitch location above right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.8</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 93.6 miles per hour, Four-seam FB, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 93.6 miles per hour, Four-seam FB, Foul, pitch location middle left">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: middle left" aria-hidden="true">←</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 93.6 miles per hour, Sinker, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 93.6 miles per hour, Sinker, Ball, pitch location above right">
                                                 <span class="ab-detail-number">#3 (1-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 87.8 miles per hour, Slider, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (2-1), 87.8 miles per hour, Slider, Ball, pitch location below left">
                                                 <span class="ab-detail-number">#4 (2-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.8</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Slider</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -14545,62 +14572,62 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (3-2), 94.0 miles per hour, Sinker, Ball">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (3-2), 94.0 miles per hour, Sinker, Ball, pitch location below left">
                                             <span class="ab-detail-number">#7 (3-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.0</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Sinker</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history" data-pitch-sequence-history-scroll data-visible-pitch-rows="5" tabindex="0" aria-label="Earlier pitches; initially showing the most recent pitches; scroll up for the first pitches">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.4 miles per hour, Sinker, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 93.4 miles per hour, Sinker, Ball, pitch location above left">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 93.2 miles per hour, Sinker, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 93.2 miles per hour, Sinker, Called Strike, pitch location center">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: center" aria-hidden="true">+</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 93.2 miles per hour, Sinker, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 93.2 miles per hour, Sinker, Called Strike, pitch location lower middle">
                                                 <span class="ab-detail-number">#3 (1-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: lower middle" aria-hidden="true">↓</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 85.6 miles per hour, Slider, Ball In Dirt">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 85.6 miles per hour, Slider, Ball In Dirt, pitch location below right">
                                                 <span class="ab-detail-number">#4 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">85.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Slider</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball In Dirt" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball In Dirt" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#5 (2-2), 94.7 miles per hour, Sinker, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#5 (2-2), 94.7 miles per hour, Sinker, Foul, pitch location below left">
                                                 <span class="ab-detail-number">#5 (2-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.7</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#6 (2-2), 95.2 miles per hour, Four-seam FB, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#6 (2-2), 95.2 miles per hour, Four-seam FB, Ball, pitch location above right">
                                                 <span class="ab-detail-number">#6 (2-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -15055,46 +15082,46 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (1-2), 95.1 miles per hour, Four-seam FB, Foul Tip">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#5 (1-2), 95.1 miles per hour, Four-seam FB, Foul Tip, pitch location above left">
                                             <span class="ab-detail-number">#5 (1-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.1</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Four-seam FB</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Foul Tip" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Foul Tip" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 84.2 miles per hour, Splitter, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 84.2 miles per hour, Splitter, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">84.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 84.5 miles per hour, Splitter, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 84.5 miles per hour, Splitter, Foul, pitch location below right">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">84.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 94.4 miles per hour, Four-seam FB, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 94.4 miles per hour, Four-seam FB, Foul, pitch location upper left">
                                                 <span class="ab-detail-number">#3 (1-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper left" aria-hidden="true">↖</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 94.5 miles per hour, Four-seam FB, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 94.5 miles per hour, Four-seam FB, Foul, pitch location above right">
                                                 <span class="ab-detail-number">#4 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">94.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -15344,20 +15371,20 @@
                                         
                                         <div class="ab-pitch-sequence-history ab-pitch-sequence-history--full">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 97.1 miles per hour, Four-seam FB, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 97.1 miles per hour, Four-seam FB, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">97.1</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 91.0 miles per hour, Splitter, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 91.0 miles per hour, Splitter, Ball, pitch location above right">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">91.0</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -15549,30 +15576,30 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 91.8 miles per hour, Splitter, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#3 (0-2), 91.8 miles per hour, Splitter, Swinging Strike, pitch location below left">
                                             <span class="ab-detail-number">#3 (0-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">91.8</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Splitter</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 91.5 miles per hour, Splitter, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 91.5 miles per hour, Splitter, Called Strike, pitch location center">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">91.5</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: center" aria-hidden="true">+</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 92.2 miles per hour, Splitter, Swinging Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 92.2 miles per hour, Splitter, Swinging Strike, pitch location below left">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">92.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -16087,54 +16114,54 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (2-2), 92.8 miles per hour, Sinker, Swinging Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#6 (2-2), 92.8 miles per hour, Sinker, Swinging Strike, pitch location above left">
                                             <span class="ab-detail-number">#6 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">92.8</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Sinker</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 88.3 miles per hour, Cutter, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 88.3 miles per hour, Cutter, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">88.3</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Cutter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 92.4 miles per hour, Four-seam FB, Called Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (1-0), 92.4 miles per hour, Four-seam FB, Called Strike, pitch location lower middle">
                                                 <span class="ab-detail-number">#2 (1-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">92.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: lower middle" aria-hidden="true">↓</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 80.6 miles per hour, Slurve, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 80.6 miles per hour, Slurve, Foul, pitch location below left">
                                                 <span class="ab-detail-number">#3 (1-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">80.6</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Slurve</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 93.2 miles per hour, Sinker, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 93.2 miles per hour, Sinker, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#4 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">93.2</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Sinker</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#5 (2-2), 87.9 miles per hour, Cutter, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#5 (2-2), 87.9 miles per hour, Cutter, Foul, pitch location below right">
                                                 <span class="ab-detail-number">#5 (2-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">87.9</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Cutter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -17109,38 +17136,38 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (1-2), 91.7 miles per hour, Splitter, Swinging Strike (Blocked)">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#4 (1-2), 91.7 miles per hour, Splitter, Swinging Strike (Blocked), pitch location below left">
                                             <span class="ab-detail-number">#4 (1-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">91.7</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Splitter</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike (Blocked)" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike (Blocked)" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.3 miles per hour, Curveball, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 79.3 miles per hour, Curveball, Foul, pitch location upper middle">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">79.3</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Curveball</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper middle" aria-hidden="true">↑</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 96.4 miles per hour, Four-seam FB, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 96.4 miles per hour, Four-seam FB, Foul, pitch location upper middle">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">96.4</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper middle" aria-hidden="true">↑</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 96.7 miles per hour, Four-seam FB, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (0-2), 96.7 miles per hour, Four-seam FB, Ball, pitch location above left">
                                                 <span class="ab-detail-number">#3 (0-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">96.7</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above left" aria-hidden="true">⌜</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
@@ -17337,62 +17364,62 @@
                                     <div class="ab-pitch-sequence">
                                         
                                         
-                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (2-2), 79.2 miles per hour, Curveball, Called Strike">
+                                        <div class="ab-pitch-sequence-row ab-pitch-sequence-row--final" aria-label="#7 (2-2), 79.2 miles per hour, Curveball, Called Strike, pitch location upper right">
                                             <span class="ab-detail-number">#7 (2-2)</span>
                                             <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">79.2</span><span>mph</span></span>
                                             <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                             <span>Curveball</span>
-                                            <span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span>
+                                            <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper right" aria-hidden="true">↗</span><span class="ab-pitch-result-dot ab-pitch-result-dot--called-strike" title="Called Strike" aria-hidden="true"></span></span>
                                         </div>
                                         
                                         <div class="ab-pitch-sequence-history" data-pitch-sequence-history-scroll data-visible-pitch-rows="5" tabindex="0" aria-label="Earlier pitches; initially showing the most recent pitches; scroll up for the first pitches">
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 97.1 miles per hour, Four-seam FB, Swinging Strike">
+                                            <div class="ab-pitch-sequence-row" aria-label="#1 (0-0), 97.1 miles per hour, Four-seam FB, Swinging Strike, pitch location above right">
                                                 <span class="ab-detail-number">#1 (0-0)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">97.1</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--swing-miss" title="Swinging Strike" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 91.1 miles per hour, Splitter, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#2 (0-1), 91.1 miles per hour, Splitter, Ball, pitch location below right">
                                                 <span class="ab-detail-number">#2 (0-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">91.1</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below right" aria-hidden="true">⌟</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 95.9 miles per hour, Four-seam FB, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#3 (1-1), 95.9 miles per hour, Four-seam FB, Foul, pitch location center">
                                                 <span class="ab-detail-number">#3 (1-1)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">95.9</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: center" aria-hidden="true">+</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 89.0 miles per hour, Splitter, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#4 (1-2), 89.0 miles per hour, Splitter, Foul, pitch location upper right">
                                                 <span class="ab-detail-number">#4 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">89.0</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol" title="Pitch location: upper right" aria-hidden="true">↗</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#5 (1-2), 89.9 miles per hour, Splitter, Foul">
+                                            <div class="ab-pitch-sequence-row" aria-label="#5 (1-2), 89.9 miles per hour, Splitter, Foul, pitch location below left">
                                                 <span class="ab-detail-number">#5 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">89.9</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Splitter</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: below left" aria-hidden="true">⌞</span><span class="ab-pitch-result-dot ab-pitch-result-dot--strike" title="Foul" aria-hidden="true"></span></span>
                                             </div>
                                             
-                                            <div class="ab-pitch-sequence-row" aria-label="#6 (1-2), 96.0 miles per hour, Four-seam FB, Ball">
+                                            <div class="ab-pitch-sequence-row" aria-label="#6 (1-2), 96.0 miles per hour, Four-seam FB, Ball, pitch location above right">
                                                 <span class="ab-detail-number">#6 (1-2)</span>
                                                 <span class="ab-pitch-sequence-speed"><span class="ab-detail-number ab-pitch-sequence-speed-value">96.0</span><span>mph</span></span>
                                                 <span class="ab-pitch-sequence-separator" aria-hidden="true">·</span>
                                                 <span>Four-seam FB</span>
-                                                <span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span>
+                                                <span class="ab-pitch-row-markers"><span class="ab-pitch-location-symbol ab-pitch-location-symbol--corner" title="Pitch location: above right" aria-hidden="true">⌝</span><span class="ab-pitch-result-dot ab-pitch-result-dot--ball" title="Ball" aria-hidden="true"></span></span>
                                             </div>
                                             
                                         </div>
