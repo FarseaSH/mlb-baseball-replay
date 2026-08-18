@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824077,
+    "official_date": "2026-08-17",
+    "game_datetime": "2026-08-17T23:40:00Z",
+    "away_label": "ATH",
+    "home_label": "KC",
+    "away_name": "Athletics",
+    "home_name": "Kansas City Royals",
+    "away_score": 5,
+    "home_score": 9,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Barnett, M",
+    "home_starting_pitcher": "Wacha, M",
+    "html_path": "games/2026-08-17-ath-at-kc-824077.html",
+    "title": "ATH @ KC",
+    "final_score": "ATH 5 - 9 KC"
+  },
+  {
     "game_pk": 824725,
     "official_date": "2026-08-17",
     "game_datetime": "2026-08-17T23:10:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-08-17-sd-at-nym-823589.html",
     "title": "SD @ NYM",
     "final_score": "SD 1 - 2 NYM"
+  },
+  {
+    "game_pk": 823343,
+    "official_date": "2026-08-17",
+    "game_datetime": "2026-08-17T23:05:00Z",
+    "away_label": "DET",
+    "home_label": "PIT",
+    "away_name": "Detroit Tigers",
+    "home_name": "Pittsburgh Pirates",
+    "away_score": 8,
+    "home_score": 5,
+    "venue_name": "PNC Park",
+    "away_starting_pitcher": "Valdez, F",
+    "home_starting_pitcher": "Mlodzinski, C",
+    "html_path": "games/2026-08-17-det-at-pit-823343.html",
+    "title": "DET @ PIT",
+    "final_score": "DET 8 - 5 PIT"
   },
   {
     "game_pk": 824478,
