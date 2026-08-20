@@ -17,6 +17,23 @@
     "final_score": "SF 1 - 0 CLE"
   },
   {
+    "game_pk": 822937,
+    "official_date": "2026-08-19",
+    "game_datetime": "2026-08-19T22:40:00Z",
+    "away_label": "TOR",
+    "home_label": "TB",
+    "away_name": "Toronto Blue Jays",
+    "home_name": "Tampa Bay Rays",
+    "away_score": 6,
+    "home_score": 7,
+    "venue_name": "Tropicana Field",
+    "away_starting_pitcher": "Scherzer, M",
+    "home_starting_pitcher": "Rasmussen, D",
+    "html_path": "games/2026-08-19-tor-at-tb-822937.html",
+    "title": "TOR @ TB",
+    "final_score": "TOR 6 - 7 TB"
+  },
+  {
     "game_pk": 823424,
     "official_date": "2026-08-19",
     "game_datetime": "2026-08-19T22:05:00Z",
