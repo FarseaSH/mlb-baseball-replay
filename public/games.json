@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823424,
+    "official_date": "2026-08-19",
+    "game_datetime": "2026-08-19T22:05:00Z",
+    "away_label": "MIA",
+    "home_label": "PHI",
+    "away_name": "Miami Marlins",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 1,
+    "home_score": 4,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Alcantara, S",
+    "home_starting_pitcher": "Nola, A",
+    "html_path": "games/2026-08-19-mia-at-phi-823424.html",
+    "title": "MIA @ PHI",
+    "final_score": "MIA 1 - 4 PHI"
+  },
+  {
     "game_pk": 824722,
     "official_date": "2026-08-19",
     "game_datetime": "2026-08-19T20:10:00Z",
