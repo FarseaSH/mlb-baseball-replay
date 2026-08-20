@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824155,
+    "official_date": "2026-08-19",
+    "game_datetime": "2026-08-20T00:10:00Z",
+    "away_label": "LAA",
+    "home_label": "HOU",
+    "away_name": "Los Angeles Angels",
+    "home_name": "Houston Astros",
+    "away_score": 2,
+    "home_score": 3,
+    "venue_name": "Daikin Park",
+    "away_starting_pitcher": "Ureña, W",
+    "home_starting_pitcher": "Pecko, E",
+    "html_path": "games/2026-08-19-laa-at-hou-824155.html",
+    "title": "LAA @ HOU",
+    "final_score": "LAA 2 - 3 HOU"
+  },
+  {
     "game_pk": 822860,
     "official_date": "2026-08-19",
     "game_datetime": "2026-08-20T00:05:00Z",
