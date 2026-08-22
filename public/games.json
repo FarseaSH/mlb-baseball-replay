@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 825045,
+    "official_date": "2026-08-21",
+    "game_datetime": "2026-08-22T01:40:00Z",
+    "away_label": "CIN",
+    "home_label": "AZ",
+    "away_name": "Cincinnati Reds",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 0,
+    "home_score": 9,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "Lodolo, N",
+    "home_starting_pitcher": "Rodriguez, E",
+    "html_path": "games/2026-08-21-cin-at-az-825045.html",
+    "title": "CIN @ AZ",
+    "final_score": "CIN 0 - 9 AZ"
+  },
+  {
     "game_pk": 823262,
     "official_date": "2026-08-21",
     "game_datetime": "2026-08-22T01:40:00Z",
