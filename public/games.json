@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824152,
+    "official_date": "2026-08-21",
+    "game_datetime": "2026-08-22T00:10:00Z",
+    "away_label": "ATH",
+    "home_label": "HOU",
+    "away_name": "Athletics",
+    "home_name": "Houston Astros",
+    "away_score": 0,
+    "home_score": 4,
+    "venue_name": "Daikin Park",
+    "away_starting_pitcher": "Ginn, J",
+    "home_starting_pitcher": "Wesneski, H",
+    "html_path": "games/2026-08-21-ath-at-hou-824152.html",
+    "title": "ATH @ HOU",
+    "final_score": "ATH 0 - 4 HOU"
+  },
+  {
     "game_pk": 824072,
     "official_date": "2026-08-21",
     "game_datetime": "2026-08-22T00:10:00Z",
