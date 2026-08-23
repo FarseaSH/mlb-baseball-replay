@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824720,
+    "official_date": "2026-08-23",
+    "game_datetime": "2026-08-23T19:15:00Z",
+    "away_label": "SF",
+    "home_label": "BOS",
+    "away_name": "San Francisco Giants",
+    "home_name": "Boston Red Sox",
+    "away_score": 4,
+    "home_score": 5,
+    "venue_name": "Fenway Park",
+    "away_starting_pitcher": "Wilkinson, M",
+    "home_starting_pitcher": "Bennett, J",
+    "html_path": "games/2026-08-23-sf-at-bos-824720.html",
+    "title": "SF @ BOS",
+    "final_score": "SF 4 - 5 BOS"
+  },
+  {
     "game_pk": 822856,
     "official_date": "2026-08-23",
     "game_datetime": "2026-08-23T18:35:00Z",
