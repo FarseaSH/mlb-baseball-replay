@@ -23203,6 +23203,9 @@
                 });
             };
 
+            // 投球行已经随正文写入 DOM，无需等待图片等页面资源加载完成。
+            initPitchSequenceHistoryScroll();
+
             const updateKeyPlayTailSpace = () => {
                 const viewportHeight = window.visualViewport?.height || window.innerHeight;
                 document.querySelectorAll(".key-play-awaiting-reveal:not(.play-hidden)").forEach((item) => {
