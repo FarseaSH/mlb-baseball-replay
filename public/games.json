@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823422,
+    "official_date": "2026-08-22",
+    "game_datetime": "2026-08-22T22:05:00Z",
+    "away_label": "STL",
+    "home_label": "PHI",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 3,
+    "home_score": 12,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Mathews, Q",
+    "home_starting_pitcher": "Painter, A",
+    "html_path": "games/2026-08-22-stl-at-phi-823422.html",
+    "title": "STL @ PHI",
+    "final_score": "STL 3 - 12 PHI"
+  },
+  {
     "game_pk": 823831,
     "official_date": "2026-08-22",
     "game_datetime": "2026-08-22T20:10:00Z",
