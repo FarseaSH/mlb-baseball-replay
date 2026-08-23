@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824558,
+    "official_date": "2026-08-23",
+    "game_datetime": "2026-08-23T18:10:00Z",
+    "away_label": "NYM",
+    "home_label": "CWS",
+    "away_name": "New York Mets",
+    "home_name": "Chicago White Sox",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "Rate Field",
+    "away_starting_pitcher": "McLean, N",
+    "home_starting_pitcher": "Newcomb, S",
+    "html_path": "games/2026-08-23-nym-at-cws-824558.html",
+    "title": "NYM @ CWS",
+    "final_score": "NYM 1 - 2 CWS"
+  },
+  {
     "game_pk": 823827,
     "official_date": "2026-08-23",
     "game_datetime": "2026-08-23T17:40:00Z",
