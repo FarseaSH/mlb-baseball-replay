@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823745,
+    "official_date": "2026-08-23",
+    "game_datetime": "2026-08-23T23:10:00Z",
+    "away_label": "ATL",
+    "home_label": "MIL",
+    "away_name": "Atlanta Braves",
+    "home_name": "Milwaukee Brewers",
+    "away_score": 4,
+    "home_score": 2,
+    "venue_name": "Journey Bank Ballpark",
+    "away_starting_pitcher": "Mahle, T",
+    "home_starting_pitcher": "Drohan, S",
+    "html_path": "games/2026-08-23-atl-at-mil-823745.html",
+    "title": "ATL @ MIL",
+    "final_score": "ATL 4 - 2 MIL"
+  },
+  {
     "game_pk": 825043,
     "official_date": "2026-08-23",
     "game_datetime": "2026-08-23T20:15:00Z",
