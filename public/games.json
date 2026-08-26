@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 825039,
+    "official_date": "2026-08-26",
+    "game_datetime": "2026-08-26T19:40:00Z",
+    "away_label": "CHC",
+    "home_label": "AZ",
+    "away_name": "Chicago Cubs",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 0,
+    "home_score": 2,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "Boyd, M",
+    "home_starting_pitcher": "Rodriguez, E",
+    "html_path": "games/2026-08-26-chc-at-az-825039.html",
+    "title": "CHC @ AZ",
+    "final_score": "CHC 0 - 2 AZ"
+  },
+  {
     "game_pk": 824234,
     "official_date": "2026-08-26",
     "game_datetime": "2026-08-26T17:10:00Z",
