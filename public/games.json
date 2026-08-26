@@ -85,6 +85,23 @@
     "final_score": "PHI 1 - 4 SEA"
   },
   {
+    "game_pk": 823989,
+    "official_date": "2026-08-25",
+    "game_datetime": "2026-08-26T01:38:00Z",
+    "away_label": "CLE",
+    "home_label": "LAA",
+    "away_name": "Cleveland Guardians",
+    "home_name": "Los Angeles Angels",
+    "away_score": 8,
+    "home_score": 6,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Williams, G",
+    "home_starting_pitcher": "Ureña, W",
+    "html_path": "games/2026-08-25-cle-at-laa-823989.html",
+    "title": "CLE @ LAA",
+    "final_score": "CLE 8 - 6 LAA"
+  },
+  {
     "game_pk": 823016,
     "official_date": "2026-08-25",
     "game_datetime": "2026-08-25T23:45:00Z",
