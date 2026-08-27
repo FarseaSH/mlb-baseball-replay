@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823825,
+    "official_date": "2026-08-26",
+    "game_datetime": "2026-08-26T22:40:00Z",
+    "away_label": "BOS",
+    "home_label": "MIA",
+    "away_name": "Boston Red Sox",
+    "home_name": "Miami Marlins",
+    "away_score": 0,
+    "home_score": 4,
+    "venue_name": "loanDepot park",
+    "away_starting_pitcher": "Gray, S",
+    "home_starting_pitcher": "Gusto, R",
+    "html_path": "games/2026-08-26-bos-at-mia-823825.html",
+    "title": "BOS @ MIA",
+    "final_score": "BOS 0 - 4 MIA"
+  },
+  {
     "game_pk": 823255,
     "official_date": "2026-08-26",
     "game_datetime": "2026-08-26T20:10:00Z",
