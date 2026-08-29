@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824874,
+    "official_date": "2026-08-29",
+    "game_datetime": "2026-08-29T20:10:00Z",
+    "away_label": "COL",
+    "home_label": "ATL",
+    "away_name": "Colorado Rockies",
+    "home_name": "Atlanta Braves",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "Truist Park",
+    "away_starting_pitcher": "Agnos, Z",
+    "home_starting_pitcher": "Pérez, M",
+    "html_path": "games/2026-08-29-col-at-atl-824874.html",
+    "title": "COL @ ATL",
+    "final_score": "COL 1 - 2 ATL"
+  },
+  {
     "game_pk": 824392,
     "official_date": "2026-08-29",
     "game_datetime": "2026-08-29T20:10:00Z",
