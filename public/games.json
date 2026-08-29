@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823178,
+    "official_date": "2026-08-28",
+    "game_datetime": "2026-08-29T02:15:00Z",
+    "away_label": "AZ",
+    "home_label": "SF",
+    "away_name": "Arizona Diamondbacks",
+    "home_name": "San Francisco Giants",
+    "away_score": 10,
+    "home_score": 6,
+    "venue_name": "Oracle Park",
+    "away_starting_pitcher": "Drake, K",
+    "home_starting_pitcher": "Tidwell, B",
+    "html_path": "games/2026-08-28-az-at-sf-823178.html",
+    "title": "AZ @ SF",
+    "final_score": "AZ 10 - 6 SF"
+  },
+  {
     "game_pk": 824960,
     "official_date": "2026-08-28",
     "game_datetime": "2026-08-29T01:40:00Z",
