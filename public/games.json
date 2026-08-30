@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823741,
+    "official_date": "2026-08-29",
+    "game_datetime": "2026-08-29T23:15:00Z",
+    "away_label": "TEX",
+    "home_label": "MIL",
+    "away_name": "Texas Rangers",
+    "home_name": "Milwaukee Brewers",
+    "away_score": 3,
+    "home_score": 5,
+    "venue_name": "American Family Field",
+    "away_starting_pitcher": "Quantrill, C",
+    "home_starting_pitcher": "Drohan, S",
+    "html_path": "games/2026-08-29-tex-at-mil-823741.html",
+    "title": "TEX @ MIL",
+    "final_score": "TEX 3 - 5 MIL"
+  },
+  {
     "game_pk": 824874,
     "official_date": "2026-08-29",
     "game_datetime": "2026-08-29T20:10:00Z",
