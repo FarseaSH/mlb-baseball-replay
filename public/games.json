@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823986,
+    "official_date": "2026-08-29",
+    "game_datetime": "2026-08-30T02:07:00Z",
+    "away_label": "PHI",
+    "home_label": "LAA",
+    "away_name": "Philadelphia Phillies",
+    "home_name": "Los Angeles Angels",
+    "away_score": 4,
+    "home_score": 2,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Sánchez, C",
+    "home_starting_pitcher": "Johnson, R",
+    "html_path": "games/2026-08-29-phi-at-laa-823986.html",
+    "title": "PHI @ LAA",
+    "final_score": "PHI 4 - 2 LAA"
+  },
+  {
     "game_pk": 824961,
     "official_date": "2026-08-29",
     "game_datetime": "2026-08-30T02:05:00Z",
