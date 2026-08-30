@@ -17,6 +17,23 @@
     "final_score": "PIT 5 - 4 STL"
   },
   {
+    "game_pk": 823740,
+    "official_date": "2026-08-30",
+    "game_datetime": "2026-08-30T18:10:00Z",
+    "away_label": "TEX",
+    "home_label": "MIL",
+    "away_name": "Texas Rangers",
+    "home_name": "Milwaukee Brewers",
+    "away_score": 7,
+    "home_score": 4,
+    "venue_name": "American Family Field",
+    "away_starting_pitcher": "Rocker, K",
+    "home_starting_pitcher": "May, D",
+    "html_path": "games/2026-08-30-tex-at-mil-823740.html",
+    "title": "TEX @ MIL",
+    "final_score": "TEX 7 - 4 MIL"
+  },
+  {
     "game_pk": 823662,
     "official_date": "2026-08-30",
     "game_datetime": "2026-08-30T18:10:00Z",
