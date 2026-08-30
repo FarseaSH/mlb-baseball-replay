@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823010,
+    "official_date": "2026-08-30",
+    "game_datetime": "2026-08-30T18:15:00Z",
+    "away_label": "PIT",
+    "home_label": "STL",
+    "away_name": "Pittsburgh Pirates",
+    "home_name": "St. Louis Cardinals",
+    "away_score": 5,
+    "home_score": 4,
+    "venue_name": "Busch Stadium",
+    "away_starting_pitcher": "Ashcraft, B",
+    "home_starting_pitcher": "Liberatore, M",
+    "html_path": "games/2026-08-30-pit-at-stl-823010.html",
+    "title": "PIT @ STL",
+    "final_score": "PIT 5 - 4 STL"
+  },
+  {
     "game_pk": 823662,
     "official_date": "2026-08-30",
     "game_datetime": "2026-08-30T18:10:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-08-30-kc-at-cle-824393.html",
     "title": "KC @ CLE",
     "final_score": "KC 1 - 11 CLE"
+  },
+  {
+    "game_pk": 822933,
+    "official_date": "2026-08-30",
+    "game_datetime": "2026-08-30T17:40:00Z",
+    "away_label": "SD",
+    "home_label": "TB",
+    "away_name": "San Diego Padres",
+    "home_name": "Tampa Bay Rays",
+    "away_score": 4,
+    "home_score": 5,
+    "venue_name": "Tropicana Field",
+    "away_starting_pitcher": "Ray, R",
+    "home_starting_pitcher": "Rasmussen, D",
+    "html_path": "games/2026-08-30-sd-at-tb-822933.html",
+    "title": "SD @ TB",
+    "final_score": "SD 4 - 5 TB"
   },
   {
     "game_pk": 822766,
