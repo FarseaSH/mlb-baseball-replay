@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824149,
+    "official_date": "2026-08-31",
+    "game_datetime": "2026-09-01T00:10:00Z",
+    "away_label": "CWS",
+    "home_label": "HOU",
+    "away_name": "Chicago White Sox",
+    "home_name": "Houston Astros",
+    "away_score": 3,
+    "home_score": 6,
+    "venue_name": "Daikin Park",
+    "away_starting_pitcher": "Kay, A",
+    "home_starting_pitcher": "Lambert, P",
+    "html_path": "games/2026-08-31-cws-at-hou-824149.html",
+    "title": "CWS @ HOU",
+    "final_score": "CWS 3 - 6 HOU"
+  },
+  {
     "game_pk": 822855,
     "official_date": "2026-08-31",
     "game_datetime": "2026-09-01T00:05:00Z",
