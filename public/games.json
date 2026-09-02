@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824717,
+    "official_date": "2026-09-02",
+    "game_datetime": "2026-09-02T20:10:00Z",
+    "away_label": "SEA",
+    "home_label": "BOS",
+    "away_name": "Seattle Mariners",
+    "home_name": "Boston Red Sox",
+    "away_score": 8,
+    "home_score": 3,
+    "venue_name": "Fenway Park",
+    "away_starting_pitcher": "Miller, B",
+    "home_starting_pitcher": "Sandoval, P",
+    "html_path": "games/2026-09-02-sea-at-bos-824717.html",
+    "title": "SEA @ BOS",
+    "final_score": "SEA 8 - 3 BOS"
+  },
+  {
     "game_pk": 825037,
     "official_date": "2026-09-02",
     "game_datetime": "2026-09-02T19:40:00Z",
@@ -15,6 +32,23 @@
     "html_path": "games/2026-09-02-phi-at-az-825037.html",
     "title": "PHI @ AZ",
     "final_score": "PHI 0 - 1 AZ"
+  },
+  {
+    "game_pk": 824312,
+    "official_date": "2026-09-02",
+    "game_datetime": "2026-09-02T19:10:00Z",
+    "away_label": "BAL",
+    "home_label": "COL",
+    "away_name": "Baltimore Orioles",
+    "home_name": "Colorado Rockies",
+    "away_score": 5,
+    "home_score": 6,
+    "venue_name": "Coors Field",
+    "away_starting_pitcher": "Rogers, T",
+    "home_starting_pitcher": "Sugano, T",
+    "html_path": "games/2026-09-02-bal-at-col-824312.html",
+    "title": "BAL @ COL",
+    "final_score": "BAL 5 - 6 COL"
   },
   {
     "game_pk": 822851,
