@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823906,
+    "official_date": "2026-09-02",
+    "game_datetime": "2026-09-03T02:10:00Z",
+    "away_label": "STL",
+    "home_label": "LAD",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "Los Angeles Dodgers",
+    "away_score": 8,
+    "home_score": 6,
+    "venue_name": "UNIQLO Field at Dodger Stadium",
+    "away_starting_pitcher": "Mautz, B",
+    "home_starting_pitcher": "Yamamoto, Y",
+    "html_path": "games/2026-09-02-stl-at-lad-823906.html",
+    "title": "STL @ LAD",
+    "final_score": "STL 8 - 6 LAD"
+  },
+  {
     "game_pk": 823983,
     "official_date": "2026-09-02",
     "game_datetime": "2026-09-03T01:38:00Z",
