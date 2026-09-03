@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823983,
+    "official_date": "2026-09-02",
+    "game_datetime": "2026-09-03T01:38:00Z",
+    "away_label": "NYY",
+    "home_label": "LAA",
+    "away_name": "New York Yankees",
+    "home_name": "Los Angeles Angels",
+    "away_score": 6,
+    "home_score": 3,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Schlittler, C",
+    "home_starting_pitcher": "Detmers, R",
+    "html_path": "games/2026-09-02-nyy-at-laa-823983.html",
+    "title": "NYY @ LAA",
+    "final_score": "NYY 6 - 3 LAA"
+  },
+  {
     "game_pk": 824147,
     "official_date": "2026-09-02",
     "game_datetime": "2026-09-03T00:10:00Z",
