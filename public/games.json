@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824632,
+    "official_date": "2026-09-03",
+    "game_datetime": "2026-09-03T23:15:00Z",
+    "away_label": "MIL",
+    "home_label": "CHC",
+    "away_name": "Milwaukee Brewers",
+    "home_name": "Chicago Cubs",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "Wrigley Field",
+    "away_starting_pitcher": "Henderson, L",
+    "home_starting_pitcher": "Gausman, K",
+    "html_path": "games/2026-09-03-mil-at-chc-824632.html",
+    "title": "MIL @ CHC",
+    "final_score": "MIL 1 - 2 CHC"
+  },
+  {
     "game_pk": 824144,
     "official_date": "2026-09-03",
     "game_datetime": "2026-09-03T18:10:00Z",
