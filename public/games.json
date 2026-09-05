@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823823,
+    "official_date": "2026-09-05",
+    "game_datetime": "2026-09-05T20:10:00Z",
+    "away_label": "CHC",
+    "home_label": "MIA",
+    "away_name": "Chicago Cubs",
+    "home_name": "Miami Marlins",
+    "away_score": 6,
+    "home_score": 5,
+    "venue_name": "loanDepot park",
+    "away_starting_pitcher": "Assad, J",
+    "home_starting_pitcher": "Gusto, R",
+    "html_path": "games/2026-09-05-chc-at-mia-823823.html",
+    "title": "CHC @ MIA",
+    "final_score": "CHC 6 - 5 MIA"
+  },
+  {
     "game_pk": 823577,
     "official_date": "2026-09-05",
     "game_datetime": "2026-09-05T20:10:00Z",
