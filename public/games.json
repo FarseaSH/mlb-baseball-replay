@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824311,
+    "official_date": "2026-09-04",
+    "game_datetime": "2026-09-05T00:40:00Z",
+    "away_label": "STL",
+    "home_label": "COL",
+    "away_name": "St. Louis Cardinals",
+    "home_name": "Colorado Rockies",
+    "away_score": 7,
+    "home_score": 6,
+    "venue_name": "Coors Field",
+    "away_starting_pitcher": "Pallante, A",
+    "home_starting_pitcher": "Feltner, R",
+    "html_path": "games/2026-09-04-stl-at-col-824311.html",
+    "title": "STL @ COL",
+    "final_score": "STL 7 - 6 COL"
+  },
+  {
     "game_pk": 824146,
     "official_date": "2026-09-04",
     "game_datetime": "2026-09-05T00:10:00Z",
