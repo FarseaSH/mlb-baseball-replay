@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823335,
+    "official_date": "2026-09-05",
+    "game_datetime": "2026-09-05T22:40:00Z",
+    "away_label": "LAA",
+    "home_label": "PIT",
+    "away_name": "Los Angeles Angels",
+    "home_name": "Pittsburgh Pirates",
+    "away_score": 6,
+    "home_score": 1,
+    "venue_name": "PNC Park",
+    "away_starting_pitcher": "Kikuchi, Y",
+    "home_starting_pitcher": "Ashcraft, B",
+    "html_path": "games/2026-09-05-laa-at-pit-823335.html",
+    "title": "LAA @ PIT",
+    "final_score": "LAA 6 - 1 PIT"
+  },
+  {
     "game_pk": 824389,
     "official_date": "2026-09-05",
     "game_datetime": "2026-09-05T22:10:00Z",
