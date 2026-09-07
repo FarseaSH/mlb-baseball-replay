@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824229,
+    "official_date": "2026-09-07",
+    "game_datetime": "2026-09-07T19:10:00Z",
+    "away_label": "MIN",
+    "home_label": "DET",
+    "away_name": "Minnesota Twins",
+    "home_name": "Detroit Tigers",
+    "away_score": 4,
+    "home_score": 5,
+    "venue_name": "Comerica Park",
+    "away_starting_pitcher": "Ryan, J",
+    "home_starting_pitcher": "Melton, T",
+    "html_path": "games/2026-09-07-min-at-det-824229.html",
+    "title": "MIN @ DET",
+    "final_score": "MIN 4 - 5 DET"
+  },
+  {
     "game_pk": 824062,
     "official_date": "2026-09-07",
     "game_datetime": "2026-09-07T18:10:00Z",
