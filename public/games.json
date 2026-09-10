@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823413,
+    "official_date": "2026-09-10",
+    "game_datetime": "2026-09-10T17:05:00Z",
+    "away_label": "HOU",
+    "home_label": "PHI",
+    "away_name": "Houston Astros",
+    "home_name": "Philadelphia Phillies",
+    "away_score": 2,
+    "home_score": 1,
+    "venue_name": "Citizens Bank Park",
+    "away_starting_pitcher": "Javier, C",
+    "home_starting_pitcher": "Wheeler, Z",
+    "html_path": "games/2026-09-10-hou-at-phi-823413.html",
+    "title": "HOU @ PHI",
+    "final_score": "HOU 2 - 1 PHI"
+  },
+  {
     "game_pk": 824872,
     "official_date": "2026-09-10",
     "game_datetime": "2026-09-10T16:15:00Z",
