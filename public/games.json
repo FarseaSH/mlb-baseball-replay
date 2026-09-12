@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824630,
+    "official_date": "2026-09-12",
+    "game_datetime": "2026-09-12T18:20:00Z",
+    "away_label": "PIT",
+    "home_label": "CHC",
+    "away_name": "Pittsburgh Pirates",
+    "home_name": "Chicago Cubs",
+    "away_score": 3,
+    "home_score": 4,
+    "venue_name": "Wrigley Field",
+    "away_starting_pitcher": "Skenes, P",
+    "home_starting_pitcher": "Holmes, C",
+    "html_path": "games/2026-09-12-pit-at-chc-824630.html",
+    "title": "PIT @ CHC",
+    "final_score": "PIT 3 - 4 CHC"
+  },
+  {
     "game_pk": 823496,
     "official_date": "2026-09-12",
     "game_datetime": "2026-09-12T17:35:00Z",
