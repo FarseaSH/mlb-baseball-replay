@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 825033,
+    "official_date": "2026-09-13",
+    "game_datetime": "2026-09-13T20:10:00Z",
+    "away_label": "TEX",
+    "home_label": "AZ",
+    "away_name": "Texas Rangers",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 7,
+    "home_score": 6,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "Quantrill, C",
+    "home_starting_pitcher": "Rodriguez, E",
+    "html_path": "games/2026-09-13-tex-at-az-825033.html",
+    "title": "TEX @ AZ",
+    "final_score": "TEX 7 - 6 AZ"
+  },
+  {
     "game_pk": 824628,
     "official_date": "2026-09-13",
     "game_datetime": "2026-09-13T18:20:00Z",
