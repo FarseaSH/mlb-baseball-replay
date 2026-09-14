@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823171,
+    "official_date": "2026-09-13",
+    "game_datetime": "2026-09-13T23:20:00Z",
+    "away_label": "SD",
+    "home_label": "SF",
+    "away_name": "San Diego Padres",
+    "home_name": "San Francisco Giants",
+    "away_score": 6,
+    "home_score": 4,
+    "venue_name": "Oracle Park",
+    "away_starting_pitcher": "Pivetta, N",
+    "home_starting_pitcher": "Webb, L",
+    "html_path": "games/2026-09-13-sd-at-sf-823171.html",
+    "title": "SD @ SF",
+    "final_score": "SD 6 - 4 SF"
+  },
+  {
     "game_pk": 825033,
     "official_date": "2026-09-13",
     "game_datetime": "2026-09-13T20:10:00Z",
