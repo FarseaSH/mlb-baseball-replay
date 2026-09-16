@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823980,
+    "official_date": "2026-09-15",
+    "game_datetime": "2026-09-16T01:38:00Z",
+    "away_label": "SEA",
+    "home_label": "LAA",
+    "away_name": "Seattle Mariners",
+    "home_name": "Los Angeles Angels",
+    "away_score": 1,
+    "home_score": 2,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Gilbert, L",
+    "home_starting_pitcher": "Johnson, R",
+    "html_path": "games/2026-09-15-sea-at-laa-823980.html",
+    "title": "SEA @ LAA",
+    "final_score": "SEA 1 - 2 LAA"
+  },
+  {
     "game_pk": 824307,
     "official_date": "2026-09-15",
     "game_datetime": "2026-09-16T00:40:00Z",
