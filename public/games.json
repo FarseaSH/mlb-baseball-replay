@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824305,
+    "official_date": "2026-09-17",
+    "game_datetime": "2026-09-17T19:10:00Z",
+    "away_label": "SD",
+    "home_label": "COL",
+    "away_name": "San Diego Padres",
+    "home_name": "Colorado Rockies",
+    "away_score": 9,
+    "home_score": 2,
+    "venue_name": "Coors Field",
+    "away_starting_pitcher": "King, M",
+    "home_starting_pitcher": "Gordon, T",
+    "html_path": "games/2026-09-17-sd-at-col-824305.html",
+    "title": "SD @ COL",
+    "final_score": "SD 9 - 2 COL"
+  },
+  {
     "game_pk": 822924,
     "official_date": "2026-09-17",
     "game_datetime": "2026-09-17T17:10:00Z",
