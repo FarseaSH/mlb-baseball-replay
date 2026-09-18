@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823978,
+    "official_date": "2026-09-17",
+    "game_datetime": "2026-09-18T01:38:00Z",
+    "away_label": "MIN",
+    "home_label": "LAA",
+    "away_name": "Minnesota Twins",
+    "home_name": "Los Angeles Angels",
+    "away_score": 4,
+    "home_score": 5,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Bradley, T",
+    "home_starting_pitcher": "Ureña, W",
+    "html_path": "games/2026-09-17-min-at-laa-823978.html",
+    "title": "MIN @ LAA",
+    "final_score": "MIN 4 - 5 LAA"
+  },
+  {
     "game_pk": 822845,
     "official_date": "2026-09-17",
     "game_datetime": "2026-09-18T00:05:00Z",
