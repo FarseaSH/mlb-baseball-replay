@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 825028,
+    "official_date": "2026-09-20",
+    "game_datetime": "2026-09-20T20:10:00Z",
+    "away_label": "NYY",
+    "home_label": "AZ",
+    "away_name": "New York Yankees",
+    "home_name": "Arizona Diamondbacks",
+    "away_score": 4,
+    "home_score": 8,
+    "venue_name": "Chase Field",
+    "away_starting_pitcher": "Warren, W",
+    "home_starting_pitcher": "Burnes, C",
+    "html_path": "games/2026-09-20-nyy-at-az-825028.html",
+    "title": "NYY @ AZ",
+    "final_score": "NYY 4 - 8 AZ"
+  },
+  {
     "game_pk": 823896,
     "official_date": "2026-09-20",
     "game_datetime": "2026-09-20T20:10:00Z",
@@ -32,6 +49,23 @@
     "html_path": "games/2026-09-20-mia-at-sd-823247.html",
     "title": "MIA @ SD",
     "final_score": "MIA 3 - 7 SD"
+  },
+  {
+    "game_pk": 823975,
+    "official_date": "2026-09-20",
+    "game_datetime": "2026-09-20T20:07:00Z",
+    "away_label": "MIN",
+    "home_label": "LAA",
+    "away_name": "Minnesota Twins",
+    "home_name": "Los Angeles Angels",
+    "away_score": 8,
+    "home_score": 0,
+    "venue_name": "Angel Stadium",
+    "away_starting_pitcher": "Kremer, D",
+    "home_starting_pitcher": "Johnson, R",
+    "html_path": "games/2026-09-20-min-at-laa-823975.html",
+    "title": "MIN @ LAA",
+    "final_score": "MIN 8 - 0 LAA"
   },
   {
     "game_pk": 824300,
