@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 824789,
+    "official_date": "2026-09-20",
+    "game_datetime": "2026-09-20T23:20:00Z",
+    "away_label": "MIL",
+    "home_label": "BAL",
+    "away_name": "Milwaukee Brewers",
+    "home_name": "Baltimore Orioles",
+    "away_score": 3,
+    "home_score": 0,
+    "venue_name": "Oriole Park at Camden Yards",
+    "away_starting_pitcher": "Misiorowski, J",
+    "home_starting_pitcher": "Young, B",
+    "html_path": "games/2026-09-20-mil-at-bal-824789.html",
+    "title": "MIL @ BAL",
+    "final_score": "MIL 3 - 0 BAL"
+  },
+  {
     "game_pk": 825028,
     "official_date": "2026-09-20",
     "game_datetime": "2026-09-20T20:10:00Z",
