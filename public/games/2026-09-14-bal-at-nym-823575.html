@@ -550,7 +550,23 @@
             bottom: max(20px, env(safe-area-inset-bottom));
             z-index: 900;
             transform: translateX(-50%);
+            opacity: 1;
+            visibility: visible;
             font-family: ui-sans-serif, system-ui, sans-serif;
+            transition:
+                opacity 220ms ease,
+                transform 220ms ease,
+                visibility 0s linear 0s;
+        }
+        .ab-navigator.is-past-game-end {
+            transform: translate(-50%, 12px);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition:
+                opacity 220ms ease,
+                transform 220ms ease,
+                visibility 0s linear 220ms;
         }
         .ab-navigator-status {
             color: inherit;
@@ -643,20 +659,6 @@
                 0 12px 28px rgba(0, 90, 156, 0.27),
                 0 2px 6px rgba(0, 90, 156, 0.16);
         }
-        .ab-navigator[data-state="final"] .ab-navigator-controls {
-            opacity: 0.48;
-            box-shadow: 0 5px 14px rgba(15, 23, 42, 0.08);
-        }
-        .ab-navigator[data-state="final"] .ab-navigator-mode {
-            border-color: #cbd5e1;
-            background: #e2e8f0;
-            color: #64748b;
-        }
-        .ab-navigator[data-state="final"] .ab-navigator-main {
-            border-color: rgba(255, 255, 255, 0.18);
-            background: #64748b;
-            box-shadow: none;
-        }
         .ab-navigator-main.is-revealing {
             animation: abNavigatorReveal 420ms ease-out;
         }
@@ -675,6 +677,7 @@
             }
         }
         @media (prefers-reduced-motion: reduce) {
+            .ab-navigator,
             .ab-navigator button,
             .ab-navigator-main.is-revealing {
                 transition: none;
@@ -13228,8 +13231,45 @@
                 </div>
                 
                 <div
-                    class="timeline-item play-hidden key-play-awaiting-reveal"
+                    class="timeline-item play-hidden"
                     data-item-id="98"
+                    data-gate-id="24"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">6</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,1 1,9 11,9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,9 1,1 11,1" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 1 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
+                    class="timeline-item play-hidden key-play-awaiting-reveal"
+                    data-item-id="99"
                     data-gate-id="25"
                     data-is-key-anchor="1"
                 >
@@ -13451,7 +13491,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="99"
+                    data-item-id="100"
                     data-gate-id="25"
                     data-is-key-anchor="0"
                 >
@@ -13488,7 +13528,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="100"
+                    data-item-id="101"
                     data-gate-id="25"
                     data-is-key-anchor="0"
                 >
@@ -13700,7 +13740,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="101"
+                    data-item-id="102"
                     data-gate-id="25"
                     data-is-key-anchor="0"
                 >
@@ -13737,7 +13777,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="102"
+                    data-item-id="103"
                     data-gate-id="25"
                     data-is-key-anchor="0"
                 >
@@ -13977,7 +14017,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="103"
+                    data-item-id="104"
                     data-gate-id="25"
                     data-is-key-anchor="0"
                 >
@@ -14014,7 +14054,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="104"
+                    data-item-id="105"
                     data-gate-id="25"
                     data-is-key-anchor="0"
                 >
@@ -14041,8 +14081,45 @@
                 </div>
                 
                 <div
+                    class="timeline-item play-hidden"
+                    data-item-id="106"
+                    data-gate-id="25"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">7</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,1 1,9 11,9" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,9 1,1 11,1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 1 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="105"
+                    data-item-id="107"
                     data-gate-id="26"
                     data-is-key-anchor="1"
                 >
@@ -14262,7 +14339,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="106"
+                    data-item-id="108"
                     data-gate-id="26"
                     data-is-key-anchor="0"
                 >
@@ -14299,7 +14376,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="107"
+                    data-item-id="109"
                     data-gate-id="27"
                     data-is-key-anchor="1"
                 >
@@ -14499,7 +14576,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="108"
+                    data-item-id="110"
                     data-gate-id="27"
                     data-is-key-anchor="0"
                 >
@@ -14536,7 +14613,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="109"
+                    data-item-id="111"
                     data-gate-id="28"
                     data-is-key-anchor="1"
                 >
@@ -14724,7 +14801,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="110"
+                    data-item-id="112"
                     data-gate-id="28"
                     data-is-key-anchor="0"
                 >
@@ -14761,7 +14838,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="111"
+                    data-item-id="113"
                     data-gate-id="28"
                     data-is-key-anchor="0"
                 >
@@ -14788,8 +14865,45 @@
                 </div>
                 
                 <div
+                    class="timeline-item play-hidden"
+                    data-item-id="114"
+                    data-gate-id="28"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">7</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,1 1,9 11,9" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,9 1,1 11,1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="currentColor" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-700 bg-gray-700"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-700 bg-gray-700"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 1 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="112"
+                    data-item-id="115"
                     data-gate-id="29"
                     data-is-key-anchor="1"
                 >
@@ -15023,7 +15137,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="113"
+                    data-item-id="116"
                     data-gate-id="29"
                     data-is-key-anchor="0"
                 >
@@ -15060,7 +15174,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="114"
+                    data-item-id="117"
                     data-gate-id="29"
                     data-is-key-anchor="0"
                 >
@@ -15087,8 +15201,45 @@
                 </div>
                 
                 <div
+                    class="timeline-item play-hidden"
+                    data-item-id="118"
+                    data-gate-id="29"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">7</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,1 1,9 11,9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,9 1,1 11,1" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 1 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="115"
+                    data-item-id="119"
                     data-gate-id="30"
                     data-is-key-anchor="1"
                 >
@@ -15306,7 +15457,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="116"
+                    data-item-id="120"
                     data-gate-id="30"
                     data-is-key-anchor="0"
                 >
@@ -15343,7 +15494,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="117"
+                    data-item-id="121"
                     data-gate-id="31"
                     data-is-key-anchor="1"
                 >
@@ -15543,7 +15694,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="118"
+                    data-item-id="122"
                     data-gate-id="31"
                     data-is-key-anchor="0"
                 >
@@ -15580,7 +15731,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="119"
+                    data-item-id="123"
                     data-gate-id="31"
                     data-is-key-anchor="0"
                 >
@@ -15608,7 +15759,44 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="120"
+                    data-item-id="124"
+                    data-gate-id="31"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">7</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,1 1,9 11,9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,9 1,1 11,1" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-700 bg-gray-700"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-700 bg-gray-700"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 1 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
+                    class="timeline-item play-hidden"
+                    data-item-id="125"
                     data-gate-id="31"
                     data-is-key-anchor="0"
                 >
@@ -15844,7 +16032,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="121"
+                    data-item-id="126"
                     data-gate-id="31"
                     data-is-key-anchor="0"
                 >
@@ -15881,7 +16069,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="122"
+                    data-item-id="127"
                     data-gate-id="31"
                     data-is-key-anchor="0"
                 >
@@ -15908,8 +16096,45 @@
                 </div>
                 
                 <div
+                    class="timeline-item play-hidden"
+                    data-item-id="128"
+                    data-gate-id="31"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">8</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,1 1,9 11,9" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,9 1,1 11,1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 1 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="123"
+                    data-item-id="129"
                     data-gate-id="32"
                     data-is-key-anchor="1"
                 >
@@ -16123,7 +16348,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="124"
+                    data-item-id="130"
                     data-gate-id="32"
                     data-is-key-anchor="0"
                 >
@@ -16160,7 +16385,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="125"
+                    data-item-id="131"
                     data-gate-id="33"
                     data-is-key-anchor="1"
                 >
@@ -16360,7 +16585,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="126"
+                    data-item-id="132"
                     data-gate-id="33"
                     data-is-key-anchor="0"
                 >
@@ -16397,7 +16622,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="127"
+                    data-item-id="133"
                     data-gate-id="34"
                     data-is-key-anchor="1"
                 >
@@ -16616,7 +16841,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="128"
+                    data-item-id="134"
                     data-gate-id="34"
                     data-is-key-anchor="0"
                 >
@@ -16653,7 +16878,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="129"
+                    data-item-id="135"
                     data-gate-id="34"
                     data-is-key-anchor="0"
                 >
@@ -16863,7 +17088,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="130"
+                    data-item-id="136"
                     data-gate-id="34"
                     data-is-key-anchor="0"
                 >
@@ -16900,7 +17125,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="131"
+                    data-item-id="137"
                     data-gate-id="34"
                     data-is-key-anchor="0"
                 >
@@ -17134,7 +17359,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="132"
+                    data-item-id="138"
                     data-gate-id="34"
                     data-is-key-anchor="0"
                 >
@@ -17171,7 +17396,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="133"
+                    data-item-id="139"
                     data-gate-id="34"
                     data-is-key-anchor="0"
                 >
@@ -17198,8 +17423,45 @@
                 </div>
                 
                 <div
+                    class="timeline-item play-hidden"
+                    data-item-id="140"
+                    data-gate-id="34"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">8</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,1 1,9 11,9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,9 1,1 11,1" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 2 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="134"
+                    data-item-id="141"
                     data-gate-id="35"
                     data-is-key-anchor="1"
                 >
@@ -17415,7 +17677,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="135"
+                    data-item-id="142"
                     data-gate-id="35"
                     data-is-key-anchor="0"
                 >
@@ -17452,7 +17714,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="136"
+                    data-item-id="143"
                     data-gate-id="35"
                     data-is-key-anchor="0"
                 >
@@ -17479,8 +17741,45 @@
                 </div>
                 
                 <div
+                    class="timeline-item play-hidden"
+                    data-item-id="144"
+                    data-gate-id="35"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">8</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,1 1,9 11,9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,9 1,1 11,1" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="currentColor" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 2 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="137"
+                    data-item-id="145"
                     data-gate-id="36"
                     data-is-key-anchor="1"
                 >
@@ -17728,7 +18027,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="138"
+                    data-item-id="146"
                     data-gate-id="36"
                     data-is-key-anchor="0"
                 >
@@ -17765,7 +18064,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="139"
+                    data-item-id="147"
                     data-gate-id="37"
                     data-is-key-anchor="1"
                 >
@@ -17979,7 +18278,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="140"
+                    data-item-id="148"
                     data-gate-id="37"
                     data-is-key-anchor="0"
                 >
@@ -18016,7 +18315,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="141"
+                    data-item-id="149"
                     data-gate-id="38"
                     data-is-key-anchor="1"
                 >
@@ -18248,7 +18547,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="142"
+                    data-item-id="150"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -18285,7 +18584,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="143"
+                    data-item-id="151"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -18313,7 +18612,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="144"
+                    data-item-id="152"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -18341,7 +18640,44 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="145"
+                    data-item-id="153"
+                    data-gate-id="38"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">9</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,1 1,9 11,9" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,9 1,1 11,1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 2 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
+                    class="timeline-item play-hidden"
+                    data-item-id="154"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -18547,7 +18883,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="146"
+                    data-item-id="155"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -18584,7 +18920,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="147"
+                    data-item-id="156"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -18800,7 +19136,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="148"
+                    data-item-id="157"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -18837,7 +19173,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="149"
+                    data-item-id="158"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -19054,7 +19390,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="150"
+                    data-item-id="159"
                     data-gate-id="38"
                     data-is-key-anchor="0"
                 >
@@ -19091,7 +19427,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="151"
+                    data-item-id="160"
                     data-gate-id="39"
                     data-is-key-anchor="1"
                 >
@@ -19327,7 +19663,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="152"
+                    data-item-id="161"
                     data-gate-id="39"
                     data-is-key-anchor="0"
                 >
@@ -19364,7 +19700,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="153"
+                    data-item-id="162"
                     data-gate-id="40"
                     data-is-key-anchor="1"
                 >
@@ -19584,7 +19920,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="154"
+                    data-item-id="163"
                     data-gate-id="40"
                     data-is-key-anchor="0"
                 >
@@ -19621,7 +19957,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="155"
+                    data-item-id="164"
                     data-gate-id="40"
                     data-is-key-anchor="0"
                 >
@@ -19648,8 +19984,45 @@
                 </div>
                 
                 <div
+                    class="timeline-item play-hidden"
+                    data-item-id="165"
+                    data-gate-id="40"
+                    data-is-key-anchor="0"
+                >
+                
+                <div class="mx-auto flex w-fit items-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 shadow-sm">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-[13px] font-extrabold text-gray-700">9</span>
+                        <div class="flex flex-col gap-[3px]">
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-400">
+                                <polygon points="6,1 1,9 11,9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                            <svg width="9" height="7" viewBox="0 0 12 10" class="text-gray-700">
+                                <polygon points="6,9 1,1 11,1" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <svg width="20" viewBox="0 0 24 17.25" class="text-black">
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(5.25, 7.25) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(12, 0.75) rotate(-315)"></rect>
+                        <rect fill="transparent" stroke-width="1.5" stroke="currentColor" width="6" height="6" transform="translate(18.75, 7.25) rotate(-315)"></rect>
+                    </svg>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <div class="flex items-center gap-1">
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                        <div class="h-2 w-2 rounded-full border border-gray-400"></div>
+                    </div>
+                    <div class="h-3 w-px bg-gray-300"></div>
+                    <span class="text-xs font-bold tracking-wider text-gray-700">BAL 2 - 1 NYM</span>
+                </div>
+                
+                </div>
+                
+                <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="156"
+                    data-item-id="166"
                     data-gate-id="41"
                     data-is-key-anchor="1"
                 >
@@ -19871,7 +20244,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="157"
+                    data-item-id="167"
                     data-gate-id="41"
                     data-is-key-anchor="0"
                 >
@@ -19908,7 +20281,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="158"
+                    data-item-id="168"
                     data-gate-id="42"
                     data-is-key-anchor="1"
                 >
@@ -20130,7 +20503,7 @@
                 
                 <div
                     class="timeline-item play-hidden"
-                    data-item-id="159"
+                    data-item-id="169"
                     data-gate-id="42"
                     data-is-key-anchor="0"
                 >
@@ -20167,7 +20540,7 @@
                 
                 <div
                     class="timeline-item play-hidden key-play-awaiting-reveal"
-                    data-item-id="160"
+                    data-item-id="170"
                     data-gate-id="43"
                     data-is-key-anchor="1"
                 >
@@ -21503,6 +21876,7 @@
                 type="button"
                 data-ab-navigator-mode
                 aria-label="Switch to key AB fast-forward mode"
+                aria-keyshortcuts="ArrowLeft"
                 aria-pressed="false"
                 title="Switch mode"
             >
@@ -21515,6 +21889,7 @@
                 type="button"
                 data-ab-navigator-main
                 aria-label="Go to next AB"
+                aria-keyshortcuts="ArrowDown"
                 title="Next AB"
             >
                 <svg class="ab-navigator-icon-normal" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -21533,7 +21908,8 @@
             const AB_HIDDEN_CLASS = "ab-detail-hidden";
             const BADGE_CLASSES = ["badge-blue", "badge-red", "badge-gray", "badge-mixed"];
             const MIN_KEY_PLAY_TAIL_SPACE = 72;
-            const AB_NAVIGATOR_FOCUS_RATIO = 0.5;
+            // Keep the active AB slightly above center so its details remain clear of the navigator.
+            const AB_NAVIGATOR_FOCUS_RATIO = 0.28;
             const FIREWORK_COLORS = [
                 "#ff2d55",
                 "#ff7a00",
@@ -21828,6 +22204,24 @@
                     return false;
                 }
 
+                const actualEvent = trigger.dataset.eventText || "";
+                const shouldPreserveHomeRunViewport = (
+                    !suppressEffects
+                    && actualEvent.trim().toLowerCase() === "home run"
+                );
+                const homeRunViewportPosition = shouldPreserveHomeRunViewport
+                    ? { left: window.scrollX, top: window.scrollY }
+                    : null;
+                const restoreHomeRunViewport = () => {
+                    if (!homeRunViewportPosition) {
+                        return;
+                    }
+                    window.scrollTo({
+                        ...homeRunViewportPosition,
+                        behavior: "auto",
+                    });
+                };
+
                 const timelineItem = trigger.closest(".timeline-item");
                 if (timelineItem) {
                     timelineItem.classList.remove("key-play-awaiting-reveal");
@@ -21839,7 +22233,6 @@
                     }
                 }
 
-                const actualEvent = trigger.dataset.eventText || "";
                 const actualBadgeVariant = trigger.dataset.actualBadgeVariant || "default";
                 const badgeLabel = trigger.querySelector("[data-badge-label]");
                 if (badgeLabel) {
@@ -21862,12 +22255,21 @@
                     }
                     if (!suppressEffects) {
                         trigger.classList.add("home-run-badge-revealed");
-                        launchHomeRunFireworks(trigger);
                     }
                 }
                 revealGate(gateId);
                 if (!deferLayoutUpdates) {
                     scheduleKeyPlayTailSpaceUpdate();
+                }
+                if (shouldPreserveHomeRunViewport) {
+                    restoreHomeRunViewport();
+                    requestAnimationFrame(() => {
+                        restoreHomeRunViewport();
+                        requestAnimationFrame(() => {
+                            restoreHomeRunViewport();
+                            launchHomeRunFireworks(trigger);
+                        });
+                    });
                 }
                 return true;
             };
@@ -21960,20 +22362,25 @@
                     const currentIndex = current ? items.indexOf(current) : -1;
                     const trigger = lockedKeyTrigger(current);
                     const isLastAb = Boolean(current && current === items.at(-1));
+                    const isPastGameEnd = isLastAb && !trigger;
+                    navigator.classList.toggle("is-past-game-end", isPastGameEnd);
+                    navigator.setAttribute("aria-hidden", String(isPastGameEnd));
+                    navigator.inert = isPastGameEnd;
+                    if (isPastGameEnd) {
+                        return;
+                    }
+
                     let label;
                     if (trigger) {
                         label = "Reveal";
-                    } else if (isLastAb) {
-                        label = "Final";
                     } else if (mode === "key") {
-                        label = nextLockedKeyAb(items, currentIndex) ? "Next key AB" : "Last AB";
+                        label = "Key AB";
                     } else {
                         label = "Next AB";
                     }
-                    navigator.dataset.state = isLastAb ? "final" : "active";
                     status.textContent = label;
                     mainButton.setAttribute("aria-label", label);
-                    mainButton.setAttribute("aria-disabled", String(isLastAb));
+                    mainButton.setAttribute("aria-disabled", "false");
                     mainButton.title = label;
                 };
 
@@ -22025,6 +22432,44 @@
                     );
                     modeButton.title = isKeyMode ? "Normal AB mode" : "Key AB fast-forward mode";
                     updateNavigatorState();
+                });
+
+                document.addEventListener("keydown", (event) => {
+                    if (
+                        event.defaultPrevented
+                        || event.repeat
+                        || event.altKey
+                        || event.ctrlKey
+                        || event.metaKey
+                        || event.shiftKey
+                        || (event.key !== "ArrowDown" && event.key !== "ArrowLeft")
+                    ) {
+                        return;
+                    }
+
+                    const target = event.target;
+                    if (
+                        target instanceof HTMLElement
+                        && (
+                            target.tagName === "INPUT"
+                            || target.tagName === "TEXTAREA"
+                            || target.tagName === "SELECT"
+                            || target.isContentEditable
+                        )
+                    ) {
+                        return;
+                    }
+
+                    if (navigator.hidden || navigator.inert) {
+                        return;
+                    }
+
+                    event.preventDefault();
+                    if (event.key === "ArrowDown") {
+                        mainButton.click();
+                    } else {
+                        modeButton.click();
+                    }
                 });
 
                 window.addEventListener("scroll", scheduleNavigatorStateUpdate, { passive: true });
