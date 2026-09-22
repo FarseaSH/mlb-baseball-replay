@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823169,
+    "official_date": "2026-09-21",
+    "game_datetime": "2026-09-22T01:45:00Z",
+    "away_label": "MIN",
+    "home_label": "SF",
+    "away_name": "Minnesota Twins",
+    "home_name": "San Francisco Giants",
+    "away_score": 2,
+    "home_score": 5,
+    "venue_name": "Oracle Park",
+    "away_starting_pitcher": "Matthews, Z",
+    "home_starting_pitcher": "Tidwell, B",
+    "html_path": "games/2026-09-21-min-at-sf-823169.html",
+    "title": "MIN @ SF",
+    "final_score": "MIN 2 - 5 SF"
+  },
+  {
     "game_pk": 824221,
     "official_date": "2026-09-21",
     "game_datetime": "2026-09-21T22:40:00Z",
