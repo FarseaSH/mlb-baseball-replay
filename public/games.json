@@ -34,6 +34,23 @@
     "final_score": "NYM 6 - 3 TEX"
   },
   {
+    "game_pk": 824624,
+    "official_date": "2026-09-22",
+    "game_datetime": "2026-09-22T23:40:00Z",
+    "away_label": "MIA",
+    "home_label": "CHC",
+    "away_name": "Miami Marlins",
+    "home_name": "Chicago Cubs",
+    "away_score": 8,
+    "home_score": 2,
+    "venue_name": "Wrigley Field",
+    "away_starting_pitcher": "Junk, J",
+    "home_starting_pitcher": "Imanaga, S",
+    "html_path": "games/2026-09-22-mia-at-chc-824624.html",
+    "title": "MIA @ CHC",
+    "final_score": "MIA 8 - 2 CHC"
+  },
+  {
     "game_pk": 824061,
     "official_date": "2026-09-22",
     "game_datetime": "2026-09-22T23:40:00Z",
