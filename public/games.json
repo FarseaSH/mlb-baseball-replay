@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 822842,
+    "official_date": "2026-09-24",
+    "game_datetime": "2026-09-24T18:35:00Z",
+    "away_label": "NYM",
+    "home_label": "TEX",
+    "away_name": "New York Mets",
+    "home_name": "Texas Rangers",
+    "away_score": 1,
+    "home_score": 3,
+    "venue_name": "Globe Life Field",
+    "away_starting_pitcher": "Thornton, Z",
+    "home_starting_pitcher": "Rocker, K",
+    "html_path": "games/2026-09-24-nym-at-tex-822842.html",
+    "title": "NYM @ TEX",
+    "final_score": "NYM 1 - 3 TEX"
+  },
+  {
     "game_pk": 824623,
     "official_date": "2026-09-24",
     "game_datetime": "2026-09-24T18:20:00Z",
