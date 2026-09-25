@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823491,
+    "official_date": "2026-09-25",
+    "game_datetime": "2026-09-25T20:05:00Z",
+    "away_label": "BAL",
+    "home_label": "NYY",
+    "away_name": "Baltimore Orioles",
+    "home_name": "New York Yankees",
+    "away_score": 10,
+    "home_score": 2,
+    "venue_name": "Yankee Stadium",
+    "away_starting_pitcher": "Rogers, T",
+    "home_starting_pitcher": "Beck, B",
+    "html_path": "games/2026-09-25-bal-at-nyy-823491.html",
+    "title": "BAL @ NYY",
+    "final_score": "BAL 10 - 2 NYY"
+  },
+  {
     "game_pk": 824703,
     "official_date": "2026-09-25",
     "game_datetime": "2026-09-25T17:05:00Z",
