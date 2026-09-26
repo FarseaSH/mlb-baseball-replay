@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 823652,
+    "official_date": "2026-09-25",
+    "game_datetime": "2026-09-26T00:10:00Z",
+    "away_label": "TEX",
+    "home_label": "MIN",
+    "away_name": "Texas Rangers",
+    "home_name": "Minnesota Twins",
+    "away_score": 2,
+    "home_score": 10,
+    "venue_name": "Target Field",
+    "away_starting_pitcher": "deGrom, J",
+    "home_starting_pitcher": "Ryan, J",
+    "html_path": "games/2026-09-25-tex-at-min-823652.html",
+    "title": "TEX @ MIN",
+    "final_score": "TEX 2 - 10 MIN"
+  },
+  {
     "game_pk": 824544,
     "official_date": "2026-09-25",
     "game_datetime": "2026-09-25T23:40:00Z",
