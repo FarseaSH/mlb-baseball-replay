@@ -34,6 +34,23 @@
     "final_score": "COL 1 - 6 CWS"
   },
   {
+    "game_pk": 824058,
+    "official_date": "2026-09-25",
+    "game_datetime": "2026-09-25T23:40:00Z",
+    "away_label": "CLE",
+    "home_label": "KC",
+    "away_name": "Cleveland Guardians",
+    "home_name": "Kansas City Royals",
+    "away_score": 12,
+    "home_score": 9,
+    "venue_name": "Kauffman Stadium",
+    "away_starting_pitcher": "Williams, G",
+    "home_starting_pitcher": "Cameron, N",
+    "html_path": "games/2026-09-25-cle-at-kc-824058.html",
+    "title": "CLE @ KC",
+    "final_score": "CLE 12 - 9 KC"
+  },
+  {
     "game_pk": 823735,
     "official_date": "2026-09-25",
     "game_datetime": "2026-09-25T23:40:00Z",
