@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 849849,
+    "official_date": "2026-09-29",
+    "game_datetime": "2026-09-29T21:00:00Z",
+    "away_label": "CWS",
+    "home_label": "HOU",
+    "away_name": "Chicago White Sox",
+    "home_name": "Houston Astros",
+    "away_score": 6,
+    "home_score": 3,
+    "venue_name": "Daikin Park",
+    "away_starting_pitcher": "Smith, H",
+    "home_starting_pitcher": "Blubaugh, A",
+    "html_path": "games/2026-09-29-cws-at-hou-849849.html",
+    "title": "CWS @ HOU",
+    "final_score": "CWS 6 - 3 HOU"
+  },
+  {
     "game_pk": 849845,
     "official_date": "2026-09-29",
     "game_datetime": "2026-09-29T18:00:00Z",
