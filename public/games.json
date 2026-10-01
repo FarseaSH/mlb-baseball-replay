@@ -1,5 +1,22 @@
 [
   {
+    "game_pk": 849842,
+    "official_date": "2026-09-30",
+    "game_datetime": "2026-10-01T02:00:00Z",
+    "away_label": "CHC",
+    "home_label": "SD",
+    "away_name": "Chicago Cubs",
+    "home_name": "San Diego Padres",
+    "away_score": 1,
+    "home_score": 4,
+    "venue_name": "Petco Park",
+    "away_starting_pitcher": "Gausman, K",
+    "home_starting_pitcher": "Pivetta, N",
+    "html_path": "games/2026-09-30-chc-at-sd-849842.html",
+    "title": "CHC @ SD",
+    "final_score": "CHC 1 - 4 SD"
+  },
+  {
     "game_pk": 849848,
     "official_date": "2026-09-30",
     "game_datetime": "2026-10-01T00:00:00Z",
